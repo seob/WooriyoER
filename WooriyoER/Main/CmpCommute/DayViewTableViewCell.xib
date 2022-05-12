@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-Medium.otf">
+            <string>NotoSansCJKkr-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayViewTableViewCell" rowHeight="250" id="KGk-i7-Jjw" customClass="DayViewTableViewCell" customModule="핀플_관리자" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" restorationIdentifier="DayView" translatesAutoresizingMaskIntoConstraints="NO" id="3Xy-dE-02c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRO-cO-RwF" userLabel="TitleView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월요일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1u-9J-bAA">
+                                        <rect key="frame" x="20" y="14" width="44.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="c1u-9J-bAA" firstAttribute="centerY" secondItem="JRO-cO-RwF" secondAttribute="centerY" id="BdZ-47-JTc"/>
+                                    <constraint firstItem="c1u-9J-bAA" firstAttribute="leading" secondItem="JRO-cO-RwF" secondAttribute="leading" constant="20" id="PaU-Mm-2on"/>
+                                    <constraint firstAttribute="height" constant="48" id="YOM-h7-nol"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GId-2P-Gp3" userLabel="근로시간">
+                                <rect key="frame" x="20" y="48" width="148" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="근로 시작시간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwk-4a-W24" customClass="AwesomeTextField" customModule="핀플_관리자" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="148" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SZX-wF-P9y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineAlphaAfter">
+                                                <real key="value" value="0.45000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="k8i-2c-XBH"/>
+                                            <action selector="datePicker:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="uN6-gH-fJM"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_status_alert_pass_14" translatesAutoresizingMaskIntoConstraints="NO" id="yXh-dw-1KQ">
+                                        <rect key="frame" x="134" y="40" width="14" height="14"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="yXh-dw-1KQ" firstAttribute="bottom" secondItem="gwk-4a-W24" secondAttribute="bottom" constant="-10" id="0wQ-fs-gTE"/>
+                                    <constraint firstItem="gwk-4a-W24" firstAttribute="centerY" secondItem="GId-2P-Gp3" secondAttribute="centerY" id="Hvo-sP-oKa"/>
+                                    <constraint firstAttribute="trailing" secondItem="gwk-4a-W24" secondAttribute="trailing" id="Qhe-RL-Qy6"/>
+                                    <constraint firstAttribute="trailing" secondItem="yXh-dw-1KQ" secondAttribute="trailing" id="X6E-ef-MOG"/>
+                                    <constraint firstAttribute="height" constant="68" id="sFk-H0-R9l"/>
+                                    <constraint firstAttribute="width" constant="148" id="veK-ae-oQK"/>
+                                    <constraint firstItem="gwk-4a-W24" firstAttribute="leading" secondItem="GId-2P-Gp3" secondAttribute="leading" id="yQy-gK-yQF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화요일 근로시간은 0시간 입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iR-c6-1no">
+                                <rect key="frame" x="161" y="202.5" width="194" height="17.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
+                                <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWk-YX-Prf" userLabel="근로시간">
+                                <rect key="frame" x="207" y="48" width="148" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="근로 종료시간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w1M-eH-7zV" customClass="AwesomeTextField" customModule="핀플_관리자" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="148" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="j1E-ze-kUc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineAlphaAfter">
+                                                <real key="value" value="0.45000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="lpz-gk-90k"/>
+                                            <action selector="datePicker:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="lLe-WG-6L8"/>
+                                        </connections>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_status_alert_pass_14" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-pI-FO8">
+                                        <rect key="frame" x="134" y="40" width="14" height="14"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="w1M-eH-7zV" firstAttribute="centerY" secondItem="TWk-YX-Prf" secondAttribute="centerY" id="J9g-8D-lyp"/>
+                                    <constraint firstItem="ddi-pI-FO8" firstAttribute="bottom" secondItem="w1M-eH-7zV" secondAttribute="bottom" constant="-10" id="KQl-QS-1Ok"/>
+                                    <constraint firstAttribute="trailing" secondItem="ddi-pI-FO8" secondAttribute="trailing" id="Lm1-S1-e3N"/>
+                                    <constraint firstAttribute="height" constant="68" id="QmB-j1-U8z"/>
+                                    <constraint firstItem="w1M-eH-7zV" firstAttribute="leading" secondItem="TWk-YX-Prf" secondAttribute="leading" id="cjC-Mc-KsR"/>
+                                    <constraint firstAttribute="trailing" secondItem="w1M-eH-7zV" secondAttribute="trailing" id="v2d-94-J2q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjT-hL-nYE" userLabel="근로시간">
+                                <rect key="frame" x="20" y="116" width="148" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="휴식 시작시간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rNy-Xy-U5X" customClass="AwesomeTextField" customModule="핀플_관리자" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="148" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="iLI-AU-jhY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineAlphaAfter">
+                                                <real key="value" value="0.45000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="4UF-ee-TxY"/>
+                                            <action selector="datePicker:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="Cp0-f7-zrs"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="4Jl-0r-ruV"/>
+                                    <constraint firstAttribute="trailing" secondItem="rNy-Xy-U5X" secondAttribute="trailing" id="IOi-m5-iNv"/>
+                                    <constraint firstAttribute="height" constant="68" id="NHM-qz-Mhg"/>
+                                    <constraint firstItem="rNy-Xy-U5X" firstAttribute="centerY" secondItem="GjT-hL-nYE" secondAttribute="centerY" id="amY-KS-955"/>
+                                    <constraint firstItem="rNy-Xy-U5X" firstAttribute="leading" secondItem="GjT-hL-nYE" secondAttribute="leading" id="srp-hg-Fex"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkK-GH-x9N" userLabel="근로시간">
+                                <rect key="frame" x="207" y="116" width="148" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="휴식 종료시간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BGJ-J9-ARM" customClass="AwesomeTextField" customModule="핀플_관리자" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="148" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BQb-TU-2Xg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underLineAlphaAfter">
+                                                <real key="value" value="0.45000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                                <color key="value" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickAction:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="dz6-Ia-fDp"/>
+                                            <action selector="datePicker:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="QQW-wr-yTH"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="XDa-OS-Ffx"/>
+                                    <constraint firstItem="BGJ-J9-ARM" firstAttribute="leading" secondItem="pkK-GH-x9N" secondAttribute="leading" id="Yvd-mj-uQB"/>
+                                    <constraint firstAttribute="trailing" secondItem="BGJ-J9-ARM" secondAttribute="trailing" id="cRI-Kv-Wo4"/>
+                                    <constraint firstAttribute="width" constant="148" id="hL2-Ja-S5Y"/>
+                                    <constraint firstItem="BGJ-J9-ARM" firstAttribute="centerY" secondItem="pkK-GH-x9N" secondAttribute="centerY" id="nTi-dy-WpZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fW6-ll-prt" firstAttribute="trailing" secondItem="TWk-YX-Prf" secondAttribute="trailing" constant="20" id="82V-Xe-bAS"/>
+                            <constraint firstItem="fW6-ll-prt" firstAttribute="bottom" secondItem="9iR-c6-1no" secondAttribute="bottom" constant="10" id="878-2o-jIy"/>
+                            <constraint firstItem="pkK-GH-x9N" firstAttribute="centerY" secondItem="GjT-hL-nYE" secondAttribute="centerY" id="8tK-Ew-m3h"/>
+                            <constraint firstAttribute="height" constant="230" id="HAr-nD-hrQ"/>
+                            <constraint firstItem="JRO-cO-RwF" firstAttribute="leading" secondItem="3Xy-dE-02c" secondAttribute="leading" id="Iw6-Y0-YKo"/>
+                            <constraint firstItem="TWk-YX-Prf" firstAttribute="centerY" secondItem="GId-2P-Gp3" secondAttribute="centerY" id="OCI-PD-aA8"/>
+                            <constraint firstItem="JRO-cO-RwF" firstAttribute="top" secondItem="3Xy-dE-02c" secondAttribute="top" id="TVp-pf-Ev8"/>
+                            <constraint firstItem="pkK-GH-x9N" firstAttribute="leading" secondItem="GjT-hL-nYE" secondAttribute="trailing" constant="39" id="UJQ-8F-3Td"/>
+                            <constraint firstItem="GId-2P-Gp3" firstAttribute="leading" secondItem="3Xy-dE-02c" secondAttribute="leading" constant="20" id="Uwa-c2-4Ft"/>
+                            <constraint firstAttribute="trailing" secondItem="9iR-c6-1no" secondAttribute="trailing" constant="20" id="Xan-Ve-FBs"/>
+                            <constraint firstItem="fW6-ll-prt" firstAttribute="trailing" secondItem="pkK-GH-x9N" secondAttribute="trailing" constant="20" id="ZLN-nt-pvG"/>
+                            <constraint firstItem="GId-2P-Gp3" firstAttribute="top" secondItem="JRO-cO-RwF" secondAttribute="bottom" id="fWx-BQ-LaZ"/>
+                            <constraint firstItem="GjT-hL-nYE" firstAttribute="leading" secondItem="GId-2P-Gp3" secondAttribute="leading" id="jb0-tb-2fy"/>
+                            <constraint firstAttribute="trailing" secondItem="JRO-cO-RwF" secondAttribute="trailing" id="mRJ-nm-CoY"/>
+                            <constraint firstItem="GjT-hL-nYE" firstAttribute="top" secondItem="GId-2P-Gp3" secondAttribute="bottom" id="p0a-pO-evX"/>
+                            <constraint firstItem="TWk-YX-Prf" firstAttribute="leading" secondItem="GId-2P-Gp3" secondAttribute="trailing" constant="39" id="r2W-Uf-mkU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fW6-ll-prt"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3Xy-dE-02c" secondAttribute="bottom" id="5Xl-wy-7Q9"/>
+                    <constraint firstAttribute="trailing" secondItem="3Xy-dE-02c" secondAttribute="trailing" id="JmA-o1-b5U"/>
+                    <constraint firstItem="3Xy-dE-02c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ePA-fU-7zN"/>
+                    <constraint firstItem="3Xy-dE-02c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="m8B-St-Sln"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TextFieldEndTime" destination="w1M-eH-7zV" id="KW0-46-iOJ"/>
+                <outlet property="TextFieldStartTime" destination="gwk-4a-W24" id="WKM-mW-F9T"/>
+                <outlet property="TextFieldbkEndTime" destination="BGJ-J9-ARM" id="6Iz-oH-iLy"/>
+                <outlet property="TextFieldbkStartTime" destination="rNy-Xy-U5X" id="CIP-MA-Kph"/>
+                <outlet property="lblTaskTime" destination="9iR-c6-1no" id="78I-pE-hW1"/>
+                <outlet property="lblTitleDay" destination="c1u-9J-bAA" id="fSz-fU-QjU"/>
+            </connections>
+            <point key="canvasLocation" x="-1459" y="-837"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_status_alert_pass_14" width="14" height="14"/>
+    </resources>
+</document>

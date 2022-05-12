@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-DemiLight.otf">
+            <string>NotoSansCJKkr-DemiLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiAreaView" customModule="pinplM" customModuleProvider="target">
+            <connections>
+                <outlet property="areaImageView" destination="f50-kR-lJk" id="BpB-Wn-xHa"/>
+                <outlet property="areaSwitch" destination="hVb-0x-5rI" id="dpd-3p-Spo"/>
+                <outlet property="contView" destination="RJ4-0Y-ogq" id="wUP-O4-oDm"/>
+                <outlet property="lblName" destination="ZtY-Np-Xo3" id="Bbu-Of-6Fe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ4-0Y-ogq" userLabel="와이파이 변경 뷰">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi를 등록해주세요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtY-Np-Xo3">
+                    <rect key="frame" x="20" y="9" width="232" height="22.5"/>
+                    <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_wifi_off" translatesAutoresizingMaskIntoConstraints="NO" id="f50-kR-lJk">
+                    <rect key="frame" x="262" y="7.5" width="24" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="GGJ-By-Sao"/>
+                        <constraint firstAttribute="width" constant="24" id="fAj-F6-PQB"/>
+                    </constraints>
+                </imageView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-0x-5rI">
+                    <rect key="frame" x="306" y="4.5" width="51" height="31"/>
+                    <color key="onTintColor" red="0.94117647058823528" green="0.41568627450980389" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="CXO-rQ-AU1"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hVb-0x-5rI" firstAttribute="leading" secondItem="f50-kR-lJk" secondAttribute="trailing" constant="20" id="67j-EB-ue2"/>
+                <constraint firstItem="f50-kR-lJk" firstAttribute="centerY" secondItem="RJ4-0Y-ogq" secondAttribute="centerY" id="Ooi-eU-Bnv"/>
+                <constraint firstItem="hVb-0x-5rI" firstAttribute="centerY" secondItem="f50-kR-lJk" secondAttribute="centerY" id="SPf-Rz-miq"/>
+                <constraint firstItem="f50-kR-lJk" firstAttribute="leading" secondItem="ZtY-Np-Xo3" secondAttribute="trailing" constant="10" id="SrV-i8-OxY"/>
+                <constraint firstItem="CXO-rQ-AU1" firstAttribute="trailing" secondItem="hVb-0x-5rI" secondAttribute="trailing" constant="20" id="Usr-qf-vgk"/>
+                <constraint firstItem="ZtY-Np-Xo3" firstAttribute="centerY" secondItem="RJ4-0Y-ogq" secondAttribute="centerY" id="chx-lp-La4"/>
+                <constraint firstItem="ZtY-Np-Xo3" firstAttribute="leading" secondItem="CXO-rQ-AU1" secondAttribute="leading" constant="20" id="tdg-UP-tEl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="69" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_wifi_off" width="29.5" height="27"/>
+    </resources>
+</document>

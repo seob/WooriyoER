@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-DemiLight.otf">
+            <string>NotoSansCJKkr-DemiLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyAnlListCell" rowHeight="60" id="QbQ-mG-A10" customClass="MyAnlListCell" customModule="핀플_관리자" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QbQ-mG-A10" id="gVK-Mv-XzO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTv-B5-x3S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.10.17(수) 오전 반차 4h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaR-8w-HLp">
+                        <rect key="frame" x="20" y="19" width="180.5" height="22"/>
+                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFQ-As-CpD">
+                        <rect key="frame" x="313.5" y="19" width="41.5" height="22"/>
+                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JFQ-As-CpD" firstAttribute="centerY" secondItem="gVK-Mv-XzO" secondAttribute="centerY" id="6Bq-91-zFb"/>
+                    <constraint firstAttribute="trailing" secondItem="fTv-B5-x3S" secondAttribute="trailing" id="HEW-Lo-b9r"/>
+                    <constraint firstItem="fTv-B5-x3S" firstAttribute="top" secondItem="gVK-Mv-XzO" secondAttribute="top" id="IGH-FW-YM1"/>
+                    <constraint firstItem="JFQ-As-CpD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MaR-8w-HLp" secondAttribute="trailing" constant="8" symbolic="YES" id="Mip-fQ-t7p"/>
+                    <constraint firstAttribute="bottom" secondItem="fTv-B5-x3S" secondAttribute="bottom" id="bYc-OV-KRW"/>
+                    <constraint firstAttribute="trailing" secondItem="JFQ-As-CpD" secondAttribute="trailing" constant="20" id="cVf-6v-dni"/>
+                    <constraint firstItem="MaR-8w-HLp" firstAttribute="leading" secondItem="gVK-Mv-XzO" secondAttribute="leading" constant="20" id="iPI-eq-thp"/>
+                    <constraint firstItem="fTv-B5-x3S" firstAttribute="leading" secondItem="gVK-Mv-XzO" secondAttribute="leading" id="mhM-T4-h6f"/>
+                    <constraint firstItem="MaR-8w-HLp" firstAttribute="centerY" secondItem="gVK-Mv-XzO" secondAttribute="centerY" id="yPU-bQ-2Pb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnCell" destination="fTv-B5-x3S" id="cre-9H-gQH"/>
+                <outlet property="lblTitle" destination="MaR-8w-HLp" id="u7U-HM-XgP"/>
+                <outlet property="lblType" destination="JFQ-As-CpD" id="WgL-70-JjO"/>
+            </connections>
+            <point key="canvasLocation" x="108" y="112"/>
+        </tableViewCell>
+    </objects>
+</document>

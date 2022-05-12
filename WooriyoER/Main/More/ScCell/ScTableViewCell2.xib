@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansCJKkr-DemiLight.otf">
+            <string>NotoSansCJKkr-DemiLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScTableViewCell2" id="KGk-i7-Jjw" customClass="ScTableViewCell2" customModule="pinplM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoP-n5-1Bj">
+                        <rect key="frame" x="20" y="0.0" width="20" height="25.5"/>
+                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="회사에서 구매한 응용프로그램 및 회사에서 개발한 프로그램을 회사 밖으로 일체 유 출하지 않겠습니다" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="twe-g7-k3u">
+                        <rect key="frame" x="53" y="0.0" width="300" height="120"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="300" id="ANr-gs-Y8F"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="lAY-uQ-bwE"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1w-zS-N3m">
+                        <rect key="frame" x="20" y="98" width="20" height="22"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ic_security_close"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="twe-g7-k3u" secondAttribute="trailing" constant="20" id="3VZ-X9-kFw"/>
+                    <constraint firstItem="twe-g7-k3u" firstAttribute="leading" secondItem="v1w-zS-N3m" secondAttribute="trailing" constant="13" id="6Kd-Wd-Vme"/>
+                    <constraint firstItem="v1w-zS-N3m" firstAttribute="bottom" secondItem="twe-g7-k3u" secondAttribute="bottom" id="Bmc-Oa-lYf"/>
+                    <constraint firstAttribute="bottom" secondItem="twe-g7-k3u" secondAttribute="bottom" constant="10" id="N1y-B1-TVS"/>
+                    <constraint firstItem="xoP-n5-1Bj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QZj-Fp-sMF"/>
+                    <constraint firstItem="twe-g7-k3u" firstAttribute="leading" secondItem="xoP-n5-1Bj" secondAttribute="trailing" constant="13" id="bvS-fx-fF1"/>
+                    <constraint firstItem="twe-g7-k3u" firstAttribute="top" secondItem="xoP-n5-1Bj" secondAttribute="top" id="e3d-cl-Obb"/>
+                    <constraint firstItem="xoP-n5-1Bj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jm8-2Z-nSr"/>
+                    <constraint firstItem="v1w-zS-N3m" firstAttribute="leading" secondItem="xoP-n5-1Bj" secondAttribute="leading" id="nOd-2G-jsu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentTextView" destination="twe-g7-k3u" id="jbj-fg-wfo"/>
+                <outlet property="deleteBtn" destination="v1w-zS-N3m" id="ubm-2d-pYE"/>
+                <outlet property="lblNumber" destination="xoP-n5-1Bj" id="Bcx-Bd-Mmv"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_security_close" width="20" height="20"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
