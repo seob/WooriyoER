@@ -22,8 +22,6 @@ class CertifiCateMainVC: UIViewController {
     @IBOutlet weak var lblFirstText: UILabel!
     @IBOutlet weak var lblSecondText: UILabel!
     
-    @IBOutlet weak var vwInformation: UIView!
-    @IBOutlet weak var vwFreeInformation: UIView!
     
     @IBOutlet weak var FreeLeadingConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
@@ -42,37 +40,6 @@ class CertifiCateMainVC: UIViewController {
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
         lblPointCharge.isUserInteractionEnabled = true
         lblPointCharge.addGestureRecognizer(labelTap)
-        vwFreeInformation.isHidden = true
-        
-        if isReviewStatus > 0 {
-            // 리뷰기간
-            vwInformation.isHidden = true
-            vwFreeInformation.isHidden = true
-        }else{
-            // 상용
-            switch moreCmpInfo.freetype {
-                case 2,3:
-                    //올프리 , 펀프리
-                    if moreCmpInfo.freedt >= muticmttodayDate() {
-                        vwDefaultTop.isHidden = true
-                        vwFreeTop.isHidden = false
-                        lblFirstText.text = PayTypeEnArray[moreCmpInfo.freetype]
-                        lblSecondText.text = PayTypeKoArray[moreCmpInfo.freetype]
-                        vwInformation.isHidden = true
-                        vwFreeInformation.isHidden = false
-                    }else{
-                        vwDefaultTop.isHidden = false
-                        vwFreeTop.isHidden = true
-                        vwInformation.isHidden = false
-                        vwFreeInformation.isHidden = true
-                    }
-                default :
-                    vwDefaultTop.isHidden = false
-                    vwFreeTop.isHidden = true
-                    vwInformation.isHidden = false
-                    vwFreeInformation.isHidden = true
-            }
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

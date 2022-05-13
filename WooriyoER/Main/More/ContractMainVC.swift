@@ -26,8 +26,7 @@ class ContractMainVC: UIViewController {
     @IBOutlet weak var lblFirstText: UILabel!
     @IBOutlet weak var lblSecondText: UILabel!
     
-    @IBOutlet weak var vwInformation: UIView!
-    @IBOutlet weak var vwFreeInformation: UIView!
+    
     @IBOutlet weak var scrollViewContent: UIView!
     @IBOutlet weak var scrollViewHeightConstraint: NSLayoutConstraint! //84 더보기 일땐 0으로
     
@@ -39,50 +38,13 @@ class ContractMainVC: UIViewController {
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        vwFreeInformation.isHidden = true
-        if view.bounds.width == 414 {
-            FreeLeadingConstraint.constant = 100
-        }else if view.bounds.width == 375 {
-            FreeLeadingConstraint.constant = 75
-        }else if view.bounds.width == 390 {
-            // iphone 12 pro
-            FreeLeadingConstraint.constant = 95
-        } 
-        
+ 
         viewflag = "contractmain"
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
         lblPointCharge.isUserInteractionEnabled = true
         lblPointCharge.addGestureRecognizer(labelTap)
         
-        if isReviewStatus > 0 {
-            // 리뷰기간
-            vwInformation.isHidden = true
-            vwFreeInformation.isHidden = true
-        }else{
-            // 상용
-            switch CompanyInfo.freetype {
-                case 2,3:
-                    //올프리 , 펀프리
-                    if CompanyInfo.freedt >= muticmttodayDate() {
-                        vwDefaultTop.isHidden = true
-                        vwFreeTop.isHidden = false
-                        lblFirstText.text = PayTypeEnArray[CompanyInfo.freetype]
-                        lblSecondText.text = PayTypeKoArray[CompanyInfo.freetype]
-                        vwInformation.isHidden = true
-                        vwFreeInformation.isHidden = false
-                    }else{
-                        vwDefaultTop.isHidden = false
-                        vwFreeTop.isHidden = true
-                        vwInformation.isHidden = false
-                        vwFreeInformation.isHidden = true
-                    }
-                default :
-                    vwDefaultTop.isHidden = false
-                    vwFreeTop.isHidden = true
-                    vwInformation.isHidden = false
-                    vwFreeInformation.isHidden = true
-            }
-        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
