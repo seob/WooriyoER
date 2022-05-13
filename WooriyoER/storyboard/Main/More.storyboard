@@ -5408,6 +5408,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c35-5q-hnD">
                                                 <rect key="frame" x="1" y="1" width="118" height="46"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="clickNo:" destination="LGk-hF-m4T" eventType="touchUpInside" id="6xE-SK-D8f"/>
                                                 </connections>
@@ -8946,22 +8949,22 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="Kiu-wb-1Jj">
-                                <rect key="frame" x="161.5" y="195" width="91.5" height="100"/>
+                                <rect key="frame" x="156.5" y="195" width="101" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에 대한 문의는  카카오톡을 통해 문의하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COI-cG-ScE">
-                                <rect key="frame" x="20" y="377" width="374" height="50.5"/>
+                                <rect key="frame" x="20" y="387" width="374" height="50.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아래 상담하기 버튼을 누르시면  카카오톡 상담이 시작됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKg-Sh-o8b">
-                                <rect key="frame" x="20" y="437.5" width="374" height="50.5"/>
+                                <rect key="frame" x="20" y="447.5" width="374" height="50.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jby-OJ-HOe">
-                                <rect key="frame" x="20" y="558" width="374" height="48"/>
+                                <rect key="frame" x="20" y="568" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="M9R-9E-fq9"/>
                                 </constraints>
@@ -16124,22 +16127,22 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="4d8-PM-NSy">
-                                <rect key="frame" x="161.5" y="195" width="91.5" height="100"/>
+                                <rect key="frame" x="156.5" y="195" width="101" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에 광고를 넣고 싶으시다면  아래 카카오톡 상담하기 버튼을 눌러주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeN-iF-3c0">
-                                <rect key="frame" x="20" y="377" width="374" height="50.5"/>
+                                <rect key="frame" x="20" y="387" width="374" height="50.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기업 관리자를 위한 앱과 경제활동을 하고 있는 직장을 위한 앱으로 분류하여 광고를 하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byk-Tk-Nhh">
-                                <rect key="frame" x="20" y="437.5" width="374" height="75.5"/>
+                                <rect key="frame" x="20" y="447.5" width="374" height="75.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsa-d6-5EP">
-                                <rect key="frame" x="20" y="583" width="374" height="48"/>
+                                <rect key="frame" x="20" y="593" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="G6u-lb-gbh"/>
                                 </constraints>
@@ -23737,22 +23740,22 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="ZbK-dZ-bil">
-                                <rect key="frame" x="114.5" y="162" width="91.5" height="100"/>
+                                <rect key="frame" x="109.5" y="162" width="101" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에 대한 문의는  카카오톡을 통해 문의하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee1-Br-YQg">
-                                <rect key="frame" x="20" y="312" width="280" height="50.5"/>
+                                <rect key="frame" x="20" y="322" width="280" height="50.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아래 상담하기 버튼을 누르시면  카카오톡 상담이 시작됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtL-Z1-N1X">
-                                <rect key="frame" x="20" y="372.5" width="280" height="50.5"/>
+                                <rect key="frame" x="20" y="382.5" width="280" height="50.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3D1-1y-dhC">
-                                <rect key="frame" x="30" y="479" width="260" height="48"/>
+                                <rect key="frame" x="30" y="489" width="260" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="cC2-rX-8RQ"/>
                                 </constraints>
@@ -23833,22 +23836,22 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="4v5-c1-9sg">
-                                <rect key="frame" x="114.5" y="162" width="91.5" height="100"/>
+                                <rect key="frame" x="109.5" y="162" width="101" height="110"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱에 광고를 넣고 싶으시다면  아래 카카오톡 상담하기 버튼을 눌러주세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-1P-UXo">
-                                <rect key="frame" x="20" y="292" width="280" height="71.5"/>
+                                <rect key="frame" x="20" y="302" width="280" height="71.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기업 관리자를 위한 앱과 경제활동을 하고 있는 직장을 위한 앱으로 분류하여 광고를 하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-KP-1oJ">
-                                <rect key="frame" x="20" y="373.5" width="280" height="71.5"/>
+                                <rect key="frame" x="20" y="383.5" width="280" height="71.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-r8-T9h">
-                                <rect key="frame" x="30" y="475" width="260" height="48"/>
+                                <rect key="frame" x="30" y="485" width="260" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="te8-aI-fLa"/>
                                 </constraints>
@@ -30099,8 +30102,8 @@
                                                     <constraint firstAttribute="height" constant="2" id="d14-yu-hsr"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="펀(FUN)프리와 올(ALL)프리 요금제 사용중에는 핀플의 모든 기능을 제한 없이 사용하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUm-3O-oEE">
-                                                <rect key="frame" x="20" y="542" width="280" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUm-3O-oEE">
+                                                <rect key="frame" x="20" y="542" width="280" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="13"/>
                                                 <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -31563,7 +31566,7 @@
         <image name="er_btn_335" width="335" height="48"/>
         <image name="er_btn_w50" width="50" height="30"/>
         <image name="er_checkbox" width="20" height="20"/>
-        <image name="er_logo_big" width="91.5" height="100"/>
+        <image name="er_logo_big" width="101" height="110"/>
         <image name="extension_btn" width="50" height="30"/>
         <image name="gray_btn_164" width="164" height="48"/>
         <image name="gray_btn_50" width="50" height="30"/>

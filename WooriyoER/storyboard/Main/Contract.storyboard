@@ -330,7 +330,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfC-gf-VVW" userLabel="Button View">
                                         <rect key="frame" x="0.0" y="667" width="375" height="48"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPp-Jp-Rtj">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPp-Jp-Rtj" userLabel="다음">
                                                 <rect key="frame" x="20" y="0.0" width="335" height="48"/>
                                                 <color key="backgroundColor" red="0.98823529409999999" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="18"/>
@@ -400,7 +400,7 @@
                     <navigationItem key="navigationItem" id="gOB-U8-4ku"/>
                     <size key="freeformSize" width="375" height="896"/>
                     <connections>
-                        <outlet property="btnNext" destination="uPp-Jp-Rtj" id="ANS-xq-Xw6"/>
+                        <outlet property="btnNext" destination="uPp-Jp-Rtj" id="l99-ud-pJ1"/>
                         <outlet property="btnNotWork" destination="wDp-OQ-aon" id="n64-yf-pt3"/>
                         <outlet property="btnWork" destination="Tlt-xk-mOu" id="Xfb-kc-iQc"/>
                         <outlet property="chkimgName" destination="F7K-uf-zeN" id="Lrx-Ip-viL"/>
@@ -581,6 +581,7 @@
                     <navigationItem key="navigationItem" id="mgK-zl-kz6"/>
                     <size key="freeformSize" width="375" height="896"/>
                     <connections>
+                        <outlet property="btnNext" destination="47e-hu-PIm" id="xcz-Fj-mGB"/>
                         <outlet property="lblNavigationTitle" destination="dr2-Cb-JBo" id="hOg-Ie-mUg"/>
                         <outlet property="stepDot1" destination="xNc-gm-rQO" id="U43-hB-sO8"/>
                         <outlet property="stepDot2" destination="Try-qw-Qzd" id="HqZ-Ed-TAC"/>
@@ -28178,7 +28179,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="392"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfl-4J-q91">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="850"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxQ-8P-7J0">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
@@ -28302,8 +28303,8 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_lc_pinple_36" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-ru-vw7">
                                                         <rect key="frame" x="54.5" y="22" width="36" height="36"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀플 근로계약서" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-2a-N0c">
-                                                        <rect key="frame" x="31" y="61" width="78.5" height="50.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="근로계약서" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRQ-2a-N0c">
+                                                        <rect key="frame" x="31" y="86" width="78.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -28538,40 +28539,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7l-GT-BU8">
-                                                <rect key="frame" x="20" y="611" width="280" height="124"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀플의 근로계약서는 포인트를 통해 출력할 수 있습니다. 포인트가 부족할 경우 결제를 통해 포인트를 충전할 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEG-OT-SYM">
-                                                        <rect key="frame" x="0.0" y="10" width="280" height="89"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
-                                                        <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="HEG-OT-SYM" firstAttribute="leading" secondItem="H7l-GT-BU8" secondAttribute="leading" id="LkD-sx-YRz"/>
-                                                    <constraint firstAttribute="height" constant="124" id="M4v-n4-n9n"/>
-                                                    <constraint firstItem="HEG-OT-SYM" firstAttribute="top" secondItem="H7l-GT-BU8" secondAttribute="top" constant="10" id="TX2-E4-5oN"/>
-                                                    <constraint firstAttribute="trailing" secondItem="HEG-OT-SYM" secondAttribute="trailing" id="Ypo-Vc-92C"/>
-                                                </constraints>
-                                            </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5H-pc-h3X">
-                                                <rect key="frame" x="20" y="611" width="280" height="124"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월프리 요금제 사용중에는 핀을 소모하지 않고 근로계약서를 출력 및 근로자에게 전송하실 수 있습니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIx-cG-r5u">
-                                                        <rect key="frame" x="0.0" y="10" width="280" height="67"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
-                                                        <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="124" id="KYp-k9-F7V"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ZIx-cG-r5u" secondAttribute="trailing" id="QMx-gf-d21"/>
-                                                    <constraint firstItem="ZIx-cG-r5u" firstAttribute="leading" secondItem="O5H-pc-h3X" secondAttribute="leading" id="fLF-03-lL0"/>
-                                                    <constraint firstItem="ZIx-cG-r5u" firstAttribute="top" secondItem="O5H-pc-h3X" secondAttribute="top" constant="10" id="j1N-ka-jYu"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-4X-3he" userLabel="보안서약서뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
                                                 <rect key="frame" x="15" y="439" width="140" height="125"/>
                                                 <subviews>
@@ -28702,26 +28669,20 @@
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="CCi-4X-3he" firstAttribute="leading" secondItem="kN1-Ud-rm6" secondAttribute="leading" id="0f8-y0-cSX"/>
-                                            <constraint firstAttribute="trailing" secondItem="O5H-pc-h3X" secondAttribute="trailing" constant="20" id="1La-m4-5yU"/>
                                             <constraint firstItem="06l-7a-12L" firstAttribute="leading" secondItem="kN1-Ud-rm6" secondAttribute="trailing" constant="10" id="6b8-gk-RyF"/>
-                                            <constraint firstItem="O5H-pc-h3X" firstAttribute="leading" secondItem="Wfl-4J-q91" secondAttribute="leading" constant="20" id="8ng-pd-brO"/>
                                             <constraint firstItem="OwQ-2B-Wgi" firstAttribute="leading" secondItem="06l-7a-12L" secondAttribute="leading" id="Biu-Dy-UoS"/>
                                             <constraint firstItem="c7X-B2-HGl" firstAttribute="leading" secondItem="6SF-X7-OWa" secondAttribute="trailing" constant="10" id="Frc-UQ-e2f"/>
                                             <constraint firstItem="kN1-Ud-rm6" firstAttribute="leading" secondItem="6SF-X7-OWa" secondAttribute="leading" id="Fs3-Rk-NjM"/>
-                                            <constraint firstItem="H7l-GT-BU8" firstAttribute="top" secondItem="CCi-4X-3he" secondAttribute="bottom" constant="47" id="Fy5-W9-8kA"/>
                                             <constraint firstItem="VxQ-8P-7J0" firstAttribute="leading" secondItem="Wfl-4J-q91" secondAttribute="leading" id="IzZ-0e-gnd"/>
-                                            <constraint firstItem="O5H-pc-h3X" firstAttribute="top" secondItem="CCi-4X-3he" secondAttribute="bottom" constant="47" id="RFu-7o-fxG"/>
                                             <constraint firstItem="OwQ-2B-Wgi" firstAttribute="top" secondItem="06l-7a-12L" secondAttribute="bottom" constant="10" id="SGH-wT-dhF"/>
                                             <constraint firstItem="kN1-Ud-rm6" firstAttribute="top" secondItem="6SF-X7-OWa" secondAttribute="bottom" constant="10" id="YfC-gY-e6B"/>
-                                            <constraint firstAttribute="trailing" secondItem="H7l-GT-BU8" secondAttribute="trailing" constant="20" id="b4s-eC-dcJ"/>
                                             <constraint firstItem="c7X-B2-HGl" firstAttribute="centerY" secondItem="6SF-X7-OWa" secondAttribute="centerY" id="cvz-9V-JHT"/>
                                             <constraint firstItem="6SF-X7-OWa" firstAttribute="top" secondItem="VxQ-8P-7J0" secondAttribute="bottom" constant="20" id="d6E-94-5rt"/>
                                             <constraint firstItem="VxQ-8P-7J0" firstAttribute="top" secondItem="Wfl-4J-q91" secondAttribute="top" id="dlr-at-IUc"/>
                                             <constraint firstItem="CCi-4X-3he" firstAttribute="top" secondItem="kN1-Ud-rm6" secondAttribute="bottom" constant="10" id="iTd-le-9p9"/>
                                             <constraint firstItem="6SF-X7-OWa" firstAttribute="leading" secondItem="Wfl-4J-q91" secondAttribute="leading" constant="15" id="kU3-2x-SrF"/>
                                             <constraint firstItem="06l-7a-12L" firstAttribute="centerY" secondItem="kN1-Ud-rm6" secondAttribute="centerY" id="oW1-Yt-XhG"/>
-                                            <constraint firstItem="H7l-GT-BU8" firstAttribute="leading" secondItem="Wfl-4J-q91" secondAttribute="leading" constant="20" id="rtw-cm-OGc"/>
-                                            <constraint firstAttribute="height" constant="850" id="sL2-AN-SWB"/>
+                                            <constraint firstAttribute="height" constant="650" id="sL2-AN-SWB"/>
                                             <constraint firstAttribute="trailing" secondItem="VxQ-8P-7J0" secondAttribute="trailing" id="z31-et-Aq7"/>
                                         </constraints>
                                     </view>
@@ -28999,9 +28960,7 @@
                         <outlet property="tabButtonPinpl" destination="Lir-fH-tbX" id="Uof-ck-ZF5"/>
                         <outlet property="tabbarCustomView" destination="uX9-6c-b7t" id="IW3-JK-XnT"/>
                         <outlet property="vwDefaultTop" destination="i1q-Ve-orV" id="fy9-eH-1vx"/>
-                        <outlet property="vwFreeInformation" destination="O5H-pc-h3X" id="JfB-YM-sQ4"/>
                         <outlet property="vwFreeTop" destination="VbJ-Np-VLJ" id="omy-Qh-Cus"/>
-                        <outlet property="vwInformation" destination="H7l-GT-BU8" id="DWw-Me-NHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pe4-05-wle" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -29049,7 +29008,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="636"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekk-Ql-haq" userLabel="Main View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="830"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="640"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-Ig-jIQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
@@ -29177,8 +29136,8 @@
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_lc_pinple_36" translatesAutoresizingMaskIntoConstraints="NO" id="93c-49-SKo">
                                                         <rect key="frame" x="57" y="22" width="36" height="36"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀플 근로계약서" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-Nm-Pf7">
-                                                        <rect key="frame" x="31" y="63" width="78.5" height="50.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="근로계약서" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-Nm-Pf7">
+                                                        <rect key="frame" x="31" y="63" width="78.5" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -29413,42 +29372,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJR-Q4-9UE">
-                                                <rect key="frame" x="43.5" y="605" width="288" height="124"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀플의 모든 문서는 포인트를 통해 출력할 수 있습니다. 포인트가 부족할 경우 결제를 통해 포인트를 충전할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftr-qy-eSK">
-                                                        <rect key="frame" x="0.0" y="10" width="288" height="89"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
-                                                        <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="288" id="0LJ-eZ-gAx"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ftr-qy-eSK" secondAttribute="trailing" id="CXo-GY-2Ab"/>
-                                                    <constraint firstItem="ftr-qy-eSK" firstAttribute="top" secondItem="FJR-Q4-9UE" secondAttribute="top" constant="10" id="IDQ-2O-ffd"/>
-                                                    <constraint firstAttribute="height" constant="124" id="U8M-so-Ahn"/>
-                                                    <constraint firstItem="ftr-qy-eSK" firstAttribute="leading" secondItem="FJR-Q4-9UE" secondAttribute="leading" id="oOU-7F-bQO"/>
-                                                </constraints>
-                                            </view>
-                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lR-mV-Qdf" userLabel="vwFreeInformation">
-                                                <rect key="frame" x="43.5" y="605" width="288" height="124"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="월프리 요금제 사용중에는 핀을 소모하지 않고 근로계약서를 출력 및 근로자에게 전송하실 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKj-GH-WzT">
-                                                        <rect key="frame" x="0.0" y="10" width="288" height="67"/>
-                                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="15"/>
-                                                        <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="124" id="2t2-Ws-acE"/>
-                                                    <constraint firstItem="lKj-GH-WzT" firstAttribute="top" secondItem="2lR-mV-Qdf" secondAttribute="top" constant="10" id="Lyi-mc-d5T"/>
-                                                    <constraint firstAttribute="trailing" secondItem="lKj-GH-WzT" secondAttribute="trailing" id="Pir-y3-tlE"/>
-                                                    <constraint firstAttribute="width" constant="288" id="VvK-dd-DBd"/>
-                                                    <constraint firstItem="lKj-GH-WzT" firstAttribute="leading" secondItem="2lR-mV-Qdf" secondAttribute="leading" id="XNV-fq-79W"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f08-Up-naV" userLabel="보안서약서리스트뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
                                                 <rect key="frame" x="192.5" y="459" width="140" height="125"/>
                                                 <subviews>
@@ -29578,20 +29501,16 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="2lR-mV-Qdf" firstAttribute="top" secondItem="buK-hi-j6Y" secondAttribute="bottom" constant="21" id="3n5-m4-pWA"/>
-                                            <constraint firstItem="FJR-Q4-9UE" firstAttribute="top" secondItem="buK-hi-j6Y" secondAttribute="bottom" constant="21" id="5tj-3m-PbB"/>
                                             <constraint firstAttribute="centerX" secondItem="k3O-Se-XFQ" secondAttribute="trailing" constant="5" id="F0W-Kr-5Dz"/>
                                             <constraint firstItem="buK-hi-j6Y" firstAttribute="top" secondItem="r1M-Dg-pxy" secondAttribute="bottom" constant="10" id="IwR-3j-9Uf"/>
                                             <constraint firstItem="f08-Up-naV" firstAttribute="top" secondItem="r1M-Dg-pxy" secondAttribute="bottom" constant="10" id="KAO-dl-o0A"/>
                                             <constraint firstItem="xnF-aR-z5y" firstAttribute="top" secondItem="k3O-Se-XFQ" secondAttribute="bottom" constant="10" id="OFt-1Q-OJT"/>
                                             <constraint firstItem="xnF-aR-z5y" firstAttribute="trailing" secondItem="k3O-Se-XFQ" secondAttribute="trailing" id="Sjj-Sf-MpU"/>
-                                            <constraint firstAttribute="height" constant="830" id="XyZ-p2-car"/>
+                                            <constraint firstAttribute="height" constant="640" id="XyZ-p2-car"/>
                                             <constraint firstItem="r1M-Dg-pxy" firstAttribute="leading" secondItem="xnF-aR-z5y" secondAttribute="trailing" constant="10" id="aX8-V5-HKi"/>
                                             <constraint firstItem="okF-GT-Qiq" firstAttribute="bottom" secondItem="k3O-Se-XFQ" secondAttribute="bottom" id="ddc-i7-Vab"/>
                                             <constraint firstItem="r1M-Dg-pxy" firstAttribute="top" secondItem="okF-GT-Qiq" secondAttribute="bottom" constant="10" id="hAC-3m-69Z"/>
-                                            <constraint firstItem="2lR-mV-Qdf" firstAttribute="centerX" secondItem="ekk-Ql-haq" secondAttribute="centerX" id="k1Q-Z7-4f1"/>
                                             <constraint firstItem="okF-GT-Qiq" firstAttribute="leading" secondItem="k3O-Se-XFQ" secondAttribute="trailing" constant="10" id="mB2-lE-QSI"/>
-                                            <constraint firstItem="FJR-Q4-9UE" firstAttribute="centerX" secondItem="ekk-Ql-haq" secondAttribute="centerX" id="oS8-61-e1w"/>
                                             <constraint firstItem="k3O-Se-XFQ" firstAttribute="top" secondItem="ub5-Ig-jIQ" secondAttribute="bottom" constant="20" id="oxp-EY-74l"/>
                                             <constraint firstItem="f08-Up-naV" firstAttribute="leading" secondItem="r1M-Dg-pxy" secondAttribute="leading" id="sef-wG-8no"/>
                                             <constraint firstItem="r1M-Dg-pxy" firstAttribute="leading" secondItem="xnF-aR-z5y" secondAttribute="trailing" constant="10" id="uc2-Yv-j6c"/>
@@ -29875,9 +29794,7 @@
                         <outlet property="tabButtonPinpl" destination="vkG-rz-pS1" id="mJj-gT-Jvu"/>
                         <outlet property="tabbarCustomView" destination="M9I-oy-5Ow" id="R2A-Gh-Umd"/>
                         <outlet property="vwDefaultTop" destination="4T7-JD-5Y8" id="R0f-4Y-Ef6"/>
-                        <outlet property="vwFreeInformation" destination="2lR-mV-Qdf" id="xxa-GO-Fd5"/>
                         <outlet property="vwFreeTop" destination="86V-Ut-Gw1" id="IU1-xK-sup"/>
-                        <outlet property="vwInformation" destination="FJR-Q4-9UE" id="Yvz-EX-fgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIx-Xl-GV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31397,7 +31314,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="bAc-mX-OVT"/>
+        <segue reference="JW0-s5-y5v"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="btn_main_2button_s" width="76" height="48"/>

@@ -18,6 +18,7 @@ class Lc_Step1VC: UIViewController {
     @IBOutlet weak var stepDot6: UIImageView!
     @IBOutlet weak var tblList: UITableView!
     @IBOutlet weak var btnNext: UIButton!
+    
     let ContractType : [(Int, String)] = [(0 , "정규직 근로계약서 작성") , (1 , "계약직 근로계약서 작성") , (2, "수습 근로계약서 작성")]
     var selInfo : LcEmpInfo = LcEmpInfo()
     var selectedRows = 0
