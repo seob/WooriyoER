@@ -52,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
+        
         //네이버 로그인
         let instance = NaverThirdPartyLoginConnection.getSharedInstance()
         // 네이버 앱으로 인증하는 방식을 활성화
@@ -248,14 +249,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         {
             return GIDSignIn.sharedInstance().handle(url)
         }
-        else if scheme.contains("com.wooriyo.pinplm")
+        else if scheme.contains("com.wooriyo.WooriyoER")
         {
             let result = NaverThirdPartyLoginConnection.getSharedInstance().receiveAccessToken(url)
             if result == CANCELBYUSER {
                 print("result: \(result)")
             }
             return true
-        }else if scheme.contains("pinplm"){
+        }else if scheme.contains("WooriyoER"){
             let urlStr = url.absoluteString //1
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let productId = component.last { // 3
@@ -296,14 +297,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         {
             return GIDSignIn.sharedInstance().handle(url)
         }
-        else if scheme.contains("com.wooriyo.pinplm")
+        else if scheme.contains("com.wooriyo.WooriyoER")
         {
             let result = NaverThirdPartyLoginConnection.getSharedInstance().receiveAccessToken(url)
             if result == CANCELBYUSER {
                 print("result: \(result)")
             }
             return true
-        }else if scheme.contains("pinplm"){
+        }else if scheme.contains("WooriyoER"){
             let urlStr = url.absoluteString //1
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let productId = component.last { // 3

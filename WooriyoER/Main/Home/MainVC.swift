@@ -280,8 +280,15 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
             if  appData.adMainImages[self.adView.currentPage].link != ""{
                 // safari --
                 let weburl =  appData.adMainImages[self.adView.currentPage].link.replacingOccurrences(of: "\\", with: "")
-                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
+//                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
                 // -- safari
+                
+                //22.05.17 정승현 작성중..
+                //다른 VC로 데이터 넘기기..
+                let vc = WKWebViewVC(nibName: "WKWebViewVC", bundle: nil)
+                vc.adURL = weburl
+                vc.adName = appData.adMainImages[self.adView.currentPage].name
+                navigationController?.pushViewController(vc, animated: true)
             }
         }else{
             //배너가 없을경우 기본

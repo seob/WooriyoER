@@ -26,7 +26,7 @@
         <!--핀플-->
         <scene sceneID="3Ro-Uw-dy5">
             <objects>
-                <viewController storyboardIdentifier="MainVC" modalPresentationStyle="fullScreen" id="ozy-AF-OAr" userLabel="핀플" customClass="MainVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" modalPresentationStyle="fullScreen" id="ozy-AF-OAr" userLabel="핀플" customClass="MainVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vWK-eD-OAr" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                                                     <action selector="goToNotice:" destination="ozy-AF-OAr" eventType="touchUpInside" id="Bqw-5v-WUl"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hj-kT-xuW" userLabel="출퇴근 현황" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hj-kT-xuW" userLabel="출퇴근 현황" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="69" width="335" height="100"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1K-AS-VFK" userLabel="출근">
@@ -299,7 +299,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-4a-4fd" userLabel="결재 대기" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-4a-4fd" userLabel="결재 대기" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="223.66666666666669" width="335" height="100"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khU-vI-FUt" userLabel="연차결재">
@@ -454,7 +454,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-Hf-mx8" userLabel="빠른설정" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-Hf-mx8" userLabel="빠른설정" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="378.33333333333337" width="335" height="100"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc5-6o-UGV" userLabel="직원추가">
@@ -690,7 +690,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="aeV-zg-Tw4"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Gsx-Ne-8Gs"/>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-u1-wPF" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="nGa-u1-wPF" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="716" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -711,7 +711,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-Wx-Ffv" userLabel="TabView">
                                 <rect key="frame" x="0.0" y="816" width="375" height="84"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBP-ks-UAB" userLabel="Gradient" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBP-ks-UAB" userLabel="Gradient" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1003,7 +1003,7 @@
         <!--직원 현황-->
         <scene sceneID="DiA-vF-EYU">
             <objects>
-                <viewController storyboardIdentifier="TotalEmpLits" modalPresentationStyle="fullScreen" id="XmB-e1-J0Q" userLabel="직원 현황" customClass="TotalEmpLits" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TotalEmpLits" modalPresentationStyle="fullScreen" id="XmB-e1-J0Q" userLabel="직원 현황" customClass="TotalEmpLits" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xp3-G2-Iot" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1097,7 +1097,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lw-Nd-onH" userLabel="TabView">
                                 <rect key="frame" x="0.0" y="728" width="375" height="84"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-bR-rfC" userLabel="Gradient" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-bR-rfC" userLabel="Gradient" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1369,7 +1369,7 @@
         <!--Total Cmt Emp List Pop Up-->
         <scene sceneID="FpD-79-xK3">
             <objects>
-                <viewController storyboardIdentifier="TotalCmtEmpListPopUp" id="tqR-jy-zZ5" customClass="TotalCmtEmpListPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TotalCmtEmpListPopUp" id="tqR-jy-zZ5" customClass="TotalCmtEmpListPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wlt-dn-RsV" userLabel="Super view">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1402,7 +1402,7 @@
                                                 <rect key="frame" x="0.0" y="10" width="375" height="390"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TotalCmtCmpCell" rowHeight="48" id="eij-WG-jCa" customClass="TotalCmtCmpCell" customModule="pinplM" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TotalCmtCmpCell" rowHeight="48" id="eij-WG-jCa" customClass="TotalCmtCmpCell" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="48"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eij-WG-jCa" id="WFP-MM-7Ry">
@@ -1460,7 +1460,7 @@
                                                             <outlet property="lblCmp" destination="rYK-7s-amf" id="mDj-en-QMI"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalCmtPopUpTTMCell" rowHeight="48" id="0dc-zS-nXL" customClass="TotalCmtPopUpTTMCell" customModule="pinplM" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalCmtPopUpTTMCell" rowHeight="48" id="0dc-zS-nXL" customClass="TotalCmtPopUpTTMCell" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="92.666666030883789" width="375" height="48"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0dc-zS-nXL" id="Q8J-2v-K5J">
@@ -1505,7 +1505,7 @@
                                                             <outlet property="lblName" destination="RB4-bo-lWN" id="dH6-EO-maE"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalCmtPopUpTemCell" rowHeight="48" id="cZl-Kr-noQ" customClass="TotalCmtPopUpTemCell" customModule="pinplM" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TotalCmtPopUpTemCell" rowHeight="48" id="cZl-Kr-noQ" customClass="TotalCmtPopUpTemCell" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="140.66666603088379" width="375" height="48"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cZl-Kr-noQ" id="NbA-vy-Qk9">
@@ -1599,7 +1599,7 @@
         <!--직원연차신청목록-->
         <scene sceneID="9J9-ha-cZ2">
             <objects>
-                <viewController storyboardIdentifier="TotalAnualaprListVC" modalPresentationStyle="fullScreen" id="eMj-Je-Gcx" userLabel="직원연차신청목록" customClass="TotalAnualaprListVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TotalAnualaprListVC" modalPresentationStyle="fullScreen" id="eMj-Je-Gcx" userLabel="직원연차신청목록" customClass="TotalAnualaprListVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdl-ka-WWl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1685,7 +1685,7 @@
                                     <constraint firstAttribute="bottom" secondItem="b2F-FP-6tv" secondAttribute="bottom" id="xHY-CL-Q0c"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-lb-doE" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-lb-doE" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="20" y="157" width="335" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awe-Uq-Fer" userLabel="남은 연차 뷰">
@@ -1814,7 +1814,7 @@
         <!--핀플-->
         <scene sceneID="Uib-8G-BLj">
             <objects>
-                <viewController storyboardIdentifier="SE_MainVC" modalPresentationStyle="fullScreen" id="I96-Lp-Uer" userLabel="핀플" customClass="MainVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_MainVC" modalPresentationStyle="fullScreen" id="I96-Lp-Uer" userLabel="핀플" customClass="MainVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="btg-U2-WT2" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1911,7 +1911,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfx-Hy-kbJ" userLabel="출퇴근 현황" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pfx-Hy-kbJ" userLabel="출퇴근 현황" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="51.666666666666686" width="280" height="80"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pej-uc-dh2" userLabel="출근">
@@ -2078,7 +2078,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-Eg-wro" userLabel="결재 대기" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFt-Eg-wro" userLabel="결재 대기" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="186.33333333333331" width="280" height="80"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-HA-SP0" userLabel="연차결재">
@@ -2233,7 +2233,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-vG-XCJ" userLabel="빠른설정" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-vG-XCJ" userLabel="빠른설정" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="321" width="280" height="80"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esc-7I-UgU" userLabel="직원추가">
@@ -2479,7 +2479,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="97V-iC-xrE"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="dvs-tZ-sKz"/>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-fp-Nva" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="2Tk-fp-Nva" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="384" width="320" height="100"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2500,7 +2500,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Mp-0l-8ML" userLabel="TabView">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-de-KpC" userLabel="Gradient" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-de-KpC" userLabel="Gradient" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -2788,7 +2788,7 @@
         <!--핀플 공지사항-->
         <scene sceneID="oje-af-ONS">
             <objects>
-                <viewController storyboardIdentifier="PinPlNoticeVC" modalPresentationStyle="fullScreen" id="yR0-KN-yKN" userLabel="핀플 공지사항" customClass="PinPlNoticeVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PinPlNoticeVC" modalPresentationStyle="fullScreen" id="yR0-KN-yKN" userLabel="핀플 공지사항" customClass="PinPlNoticeVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Gn-SV-2G2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2946,7 +2946,7 @@
         <!--핀플 공지사항-->
         <scene sceneID="oER-qk-vZR">
             <objects>
-                <viewController storyboardIdentifier="NoticeDetailVC" modalPresentationStyle="fullScreen" id="QR3-pJ-aYp" userLabel="핀플 공지사항" customClass="NoticeDetailVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoticeDetailVC" modalPresentationStyle="fullScreen" id="QR3-pJ-aYp" userLabel="핀플 공지사항" customClass="NoticeDetailVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xup-D8-KSX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3086,7 +3086,7 @@
         <!--공지사항 등록-->
         <scene sceneID="1Aj-r1-JBo">
             <objects>
-                <viewController storyboardIdentifier="RegNoticeVC" modalPresentationStyle="fullScreen" id="Uff-fB-W1x" userLabel="공지사항 등록" customClass="RegNoticeVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegNoticeVC" modalPresentationStyle="fullScreen" id="Uff-fB-W1x" userLabel="공지사항 등록" customClass="RegNoticeVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKR-A7-KL9" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3400,7 +3400,7 @@
         <!--공지사항 수정 -->
         <scene sceneID="iT4-Dh-JcJ">
             <objects>
-                <viewController storyboardIdentifier="EditNoticeVC" modalPresentationStyle="fullScreen" id="YX5-PB-uKj" userLabel="공지사항 수정 " customClass="EditNoticeVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditNoticeVC" modalPresentationStyle="fullScreen" id="YX5-PB-uKj" userLabel="공지사항 수정 " customClass="EditNoticeVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3LE-z9-lc6" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3635,7 +3635,7 @@
         <!--팀관리 - 팀삭제 - 팝업-->
         <scene sceneID="wun-nn-e9g">
             <objects>
-                <viewController storyboardIdentifier="NoticeDelPopUp" id="P5c-tE-ajs" userLabel="팀관리 - 팀삭제 - 팝업" customClass="NoticeDelPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoticeDelPopUp" id="P5c-tE-ajs" userLabel="팀관리 - 팀삭제 - 팝업" customClass="NoticeDelPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kcQ-lI-k2y" userLabel="Spuer View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3752,7 +3752,7 @@
         <!--공지사항 유료 팝업-->
         <scene sceneID="Em0-tl-NTn">
             <objects>
-                <viewController storyboardIdentifier="NoticeMonthPopVC" id="d0f-WU-TfY" userLabel="공지사항 유료 팝업" customClass="NoticeMonthPopVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoticeMonthPopVC" id="d0f-WU-TfY" userLabel="공지사항 유료 팝업" customClass="NoticeMonthPopVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KdG-nR-64x" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3950,7 +3950,7 @@
         <!--팀관리 - 팀삭제 - 팝업-->
         <scene sceneID="iUo-0l-8aN">
             <objects>
-                <viewController storyboardIdentifier="NoticeNotEditPopup" id="0Qk-Q3-3bm" userLabel="팀관리 - 팀삭제 - 팝업" customClass="NoticeNotEditPopup" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoticeNotEditPopup" id="0Qk-Q3-3bm" userLabel="팀관리 - 팀삭제 - 팝업" customClass="NoticeNotEditPopup" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFY-BE-8Fj" userLabel="Spuer View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

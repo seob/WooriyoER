@@ -25,7 +25,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.89101972554-t146sdirmlsr79gf1klm6nvjd127dn49</string>
+				<string>com.googleusercontent.apps.573681112117-l6ur0tvmhu02bgijg96lv7jtafdukpdq</string>
 			</array>
 		</dict>
 		<dict>
@@ -33,7 +33,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.wooriyo.pinplm</string>
+				<string>com.wooriyo.WooriyoER</string>
 			</array>
 		</dict>
 		<dict>
@@ -41,17 +41,17 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kakaod90f98cc122c31f562ad096db3e09634</string>
+				<string>kakao74fc6edab6a4194f3f591f5d8b04d68e</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.wooriyo.pinplm</string>
+			<string>com.wooriyo.WooriyoER</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>pinplm</string>
+				<string>WooriyoER</string>
 			</array>
 		</dict>
 		<dict>
@@ -68,14 +68,14 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>KAKAO_APP_KEY</key>
-	<string>d90f98cc122c31f562ad096db3e09634</string>
+	<string>74fc6edab6a4194f3f591f5d8b04d68e</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>comgooglemaps</string>
 		<string>googlechromes</string>
 		<string>naversearchapp</string>
 		<string>naversearchthirdlogin</string>
-		<string>kakaod90f98cc122c31f562ad096db3e09634</string>
+		<string>kakao74fc6edab6a4194f3f591f5d8b04d68e</string>
 		<string>kakaokompassauth</string>
 		<string>storykompassauth</string>
 		<string>kakaolink</string>
