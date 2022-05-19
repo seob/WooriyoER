@@ -117,8 +117,8 @@ class MoreVC: UIViewController {
         if appData.adMoreImages.count > 0 {
             for index in 0...appData.adMoreImages.count-1 {
                 source.append(KingfisherSource(urlString: appData.adMoreImages[index].img)!)
-//                let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-//                adView.addGestureRecognizer(gestureRecognizer)
+                let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+                adView.addGestureRecognizer(gestureRecognizer)
             }
             
             if(source.count > 0){
@@ -129,8 +129,8 @@ class MoreVC: UIViewController {
                 ImageSource(image: UIImage(named: "moreDefault")!)
             ])
             adView.contentScaleMode = UIViewContentMode.scaleAspectFill
-//            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-//            adView.addGestureRecognizer(gestureRecognizer)
+            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+            adView.addGestureRecognizer(gestureRecognizer)
         }
         
         //배너뷰 노출
@@ -138,14 +138,20 @@ class MoreVC: UIViewController {
         self.vwBannerView.addSubview(self.adView)
     }
     // MARK: 광고 클릭시
-    @objc func didTap(){
+    @objc func didTap(_ sender: UITapGestureRecognizer){
         if appData.adMoreImages.count > 0 {
             if  appData.adMoreImages[self.adView.currentPage].link != ""{
                 // safari --
                 let weburl =  appData.adMoreImages[self.adView.currentPage].link.replacingOccurrences(of: "\\", with: "")
-                print("\n---------- [ weburl : \(weburl) , banner : \(appData.adMoreImages[self.adView.currentPage].name)] ----------\n")
-                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
-                // -- safari
+//                print("\n---------- [ weburl : \(weburl) , banner : \(appData.adMoreImages[self.adView.currentPage].name)] ----------\n")
+//                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
+//                // -- safari
+                let vc = MoreSB.instantiateViewController(withIdentifier: "WebViewVC") as! WebViewVC
+                vc.adURL = weburl
+                vc.adName = appData.adMainImages[self.adView.currentPage].name
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
             }
         }else{
             //배너가 없을경우 기본

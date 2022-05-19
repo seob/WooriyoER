@@ -78,11 +78,11 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
                 
 //                vwNo.shadowColor = UIColor.white;
 //                vwYear.shadowColor = UIColor.black;
-                
-                vwNo.startColor = UIColor.init(hexString: "#043956");
-                vwNo.endColor = UIColor.init(hexString: "#161D4A");
-                vwYear.startColor = UIColor.white;
-                vwYear.endColor = UIColor.white;
+//
+//                vwNo.startColor = UIColor.init(hexString: "#043956");
+//                vwNo.endColor = UIColor.init(hexString: "#161D4A");
+//                vwYear.startColor = UIColor.white;
+//                vwYear.endColor = UIColor.white;
                 
                 rptFlag = 0;
                 
@@ -93,10 +93,10 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
 //                vwNo.shadowColor = UIColor.black;
 //                vwYear.shadowColor = UIColor.white;
                 
-                vwNo.startColor = UIColor.white;
-                vwNo.endColor = UIColor.white;
-                vwYear.startColor = UIColor.init(hexString: "#043956");
-                vwYear.endColor = UIColor.init(hexString: "#161D4A");
+//                vwNo.startColor = UIColor.white;
+//                vwNo.endColor = UIColor.white;
+//                vwYear.startColor = UIColor.init(hexString: "#043956");
+//                vwYear.endColor = UIColor.init(hexString: "#161D4A");
                 
                 rptFlag = 1;
                 
@@ -140,10 +140,10 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
 //        vwNo.shadowColor = UIColor.white;
 //        vwYear.shadowColor = UIColor.black;
         
-        vwNo.startColor = UIColor.init(hexString: "#043956");
-        vwNo.endColor = UIColor.init(hexString: "#161D4A");
-        vwYear.startColor = UIColor.white;
-        vwYear.endColor = UIColor.white;
+//        vwNo.startColor = UIColor.init(hexString: "#043956");
+//        vwNo.endColor = UIColor.init(hexString: "#161D4A");
+//        vwYear.startColor = UIColor.white;
+//        vwYear.endColor = UIColor.white;
         
         rptFlag = 0;
     }
@@ -158,10 +158,10 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
 //        vwNo.shadowColor = UIColor.black;
 //        vwYear.shadowColor = UIColor.white;
         
-        vwNo.startColor = UIColor.white;
-        vwNo.endColor = UIColor.white;
-        vwYear.startColor = UIColor.init(hexString: "#043956");
-        vwYear.endColor = UIColor.init(hexString: "#161D4A");
+//        vwNo.startColor = UIColor.white;
+//        vwNo.endColor = UIColor.white;
+//        vwYear.startColor = UIColor.init(hexString: "#043956");
+//        vwYear.endColor = UIColor.init(hexString: "#161D4A");
         
         rptFlag = 1;
     }

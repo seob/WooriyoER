@@ -9,6 +9,7 @@
 import UIKit
 import ImageSlideshow
 import AlamofireImage
+import WebKit
 
 
 class MainVC: UIViewController, NVActivityIndicatorViewable {
@@ -255,8 +256,9 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
         if appData.adMainImages.count > 0 {
             for index in 0...appData.adMainImages.count-1 {
                 source.append(KingfisherSource(urlString: appData.adMainImages[index].img)!)
-//                let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-//                adView.addGestureRecognizer(gestureRecognizer)
+                //UIview 에 클릭 이벤트를 넣는다...
+                let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+                adView.addGestureRecognizer(gestureRecognizer)
             }
             
             if(source.count > 0){
@@ -266,16 +268,18 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
             adView.setImageInputs([
                 ImageSource(image: UIImage(named: "mainDefault")!)
             ])
-//            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-//            adView.addGestureRecognizer(gestureRecognizer)
+            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+            adView.addGestureRecognizer(gestureRecognizer)
         }
         
         //배너 배너뷰 노출
         self.vwBannerView.isHidden = false
         self.vwBannerView.addSubview(self.adView)
     }
+    
     // MARK: 광고 클릭시
-    @objc func didTap(){
+    //샌더를 추가해준다.. (언더스코어 사용시 인자를 생략할 수 있다고 함)
+    @objc func didTap(_ sender: UITapGestureRecognizer) {
         if appData.adMainImages.count > 0 {
             if  appData.adMainImages[self.adView.currentPage].link != ""{
                 // safari --
@@ -284,11 +288,25 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
                 // -- safari
                 
                 //22.05.17 정승현 작성중..
-                //다른 VC로 데이터 넘기기..
-                let vc = WKWebViewVC(nibName: "WKWebViewVC", bundle: nil)
+                // VC 찾아서 변수에 담기 / 옵셔널 바인딩
+                // as? 변환할 타입 -->> 다운캐스팅??
+//                if let WKWebView = self.storyboard?.instantiateViewController(withIdentifier: "WKWebViewVC")as? WKWebViewVC{
+//                    //다른 vc로 연결
+//                    print("여기가 문제입니까?")
+//                    WKWebView.adURL = weburl
+//                    WKWebView.adName = appData.adMainImages[self.adView.currentPage].name
+//                    self.navigationController?.pushViewController(WKWebView, animated: true)
+//                } 네비게이션 컨트롤러가 없으면 사용할 수 없음....
+                
+                //모달을 통한 화면 전환
+                let vc = MainSB.instantiateViewController(withIdentifier: "WKWebViewVC") as! WKWebViewVC
                 vc.adURL = weburl
                 vc.adName = appData.adMainImages[self.adView.currentPage].name
-                navigationController?.pushViewController(vc, animated: true)
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+
+                
             }
         }else{
             //배너가 없을경우 기본
