@@ -23,6 +23,63 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Web ViewVC-->
+        <scene sceneID="Cfq-R5-Je5">
+            <objects>
+                <viewController storyboardIdentifier="WKWebViewVC" id="geC-m8-FBx" customClass="WKWebViewVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i37-Nd-Jpc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-Ng-wLo">
+                                <rect key="frame" x="0.0" y="99" width="375" height="713"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsg-fC-e4W">
+                                <rect key="frame" x="17" y="49.333333333333329" width="35" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icon_back">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickBackBtn:" destination="geC-m8-FBx" eventType="touchUpInside" id="BPv-gr-HV4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-FR-UIN">
+                                <rect key="frame" x="88" y="50" width="199" height="32.666666666666657"/>
+                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Ec-ar-mIp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PCY-Ng-wLo" firstAttribute="centerX" secondItem="i37-Nd-Jpc" secondAttribute="centerX" id="He7-7I-CNN"/>
+                            <constraint firstItem="1Ec-ar-mIp" firstAttribute="trailing" secondItem="Cha-FR-UIN" secondAttribute="trailing" constant="88" id="UD6-To-qi5"/>
+                            <constraint firstItem="Cha-FR-UIN" firstAttribute="top" secondItem="1Ec-ar-mIp" secondAttribute="top" constant="6" id="Urv-fA-vjO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PCY-Ng-wLo" secondAttribute="bottom" constant="-34" id="VNk-R6-NgE"/>
+                            <constraint firstItem="PCY-Ng-wLo" firstAttribute="top" secondItem="Cha-FR-UIN" secondAttribute="bottom" constant="16.333333333333329" id="Xft-92-zXy"/>
+                            <constraint firstItem="Gsg-fC-e4W" firstAttribute="leading" secondItem="1Ec-ar-mIp" secondAttribute="leading" constant="17" id="Zch-uD-Ska"/>
+                            <constraint firstItem="PCY-Ng-wLo" firstAttribute="leading" secondItem="1Ec-ar-mIp" secondAttribute="leading" id="diX-gs-ba1"/>
+                            <constraint firstItem="Cha-FR-UIN" firstAttribute="centerY" secondItem="Gsg-fC-e4W" secondAttribute="centerY" id="n2k-Xf-M94"/>
+                            <constraint firstItem="PCY-Ng-wLo" firstAttribute="centerX" secondItem="Cha-FR-UIN" secondAttribute="centerX" id="syn-bd-eL1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WKWebView" destination="PCY-Ng-wLo" id="b1z-gk-YQD"/>
+                        <outlet property="btnBack" destination="Gsg-fC-e4W" id="G7D-cg-ji1"/>
+                        <outlet property="lblADName" destination="Cha-FR-UIN" id="7Q4-Jl-Kkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJy-rg-3u0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5706.3999999999996" y="-1695.0738916256159"/>
+        </scene>
         <!--핀플-->
         <scene sceneID="3Ro-Uw-dy5">
             <objects>
