@@ -19,15 +19,13 @@ let dispatchGlobal = DispatchQueue.global()
 
 class API {
     
-//    static let baseURL:String = "http://ios.pinpl.biz/" // 실서버
-        static let baseURL:String = "http://test.pinpl.biz/" //테스트(new)
-//    static let WEBbaseURL:String = "http://pinpl.biz/" //실서버(web)
-        static let WEBbaseURL:String = "http://pinplweb.wooriyo.com/" //테스트(web)
+    static let baseURL:String = "http://app01.pinpl.biz/" // 실서버
+    static let WEBbaseURL:String = "http://pinpl.biz/" //실서버(web)
     static let pinpl_header = [ "appversion" : "0.1"]
 }
 // MARK: - naver sdk
-let NaverclientID = "PuJ7TvbiKlTI5ca9SfbN"
-let NaverclientSecret = "ehpAU1JTsV"
+let NaverclientID = "qaUqXoimq9Gp6yWYaJzQ"
+let NaverclientSecret = "oheowKrlCz"
 var noticeType = 0 // 0 알림 , 1 사내공지 ,2 핀플공지
 var noticeGidx = 0
 var newNoticeCheck = 0 //메인 공지사항 new 표시여부 (최신글이 있는지)
@@ -95,7 +93,7 @@ var notitype: String = ""
 var viewflag: String = ""
 // e2c56db5-dffb-48d2-b060-d0f5a71096e0
 // 구글맵 key
-let googlePlaceAPIKey = "AIzaSyCI4_gnLS-hyan1bTql5f8kpAVuTlBs4Qs"
+let googlePlaceAPIKey = "AIzaSyDFAEZJVm5MM2NodofAEZHtEpXXMrQYYJQ"
 var userInfo: MbrInfo = MbrInfo() // 회원정보
 var MainCount: MainInfo = MainInfo() //메인 카운트
 var CompanyInfo: CmpInfo = CmpInfo() //회사정보
