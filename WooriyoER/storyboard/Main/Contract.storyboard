@@ -22472,7 +22472,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="직원 선택" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWK-ht-ghZ">
-                                        <rect key="frame" x="55" y="7.5" width="265" height="33"/>
+                                        <rect key="frame" x="55" y="11" width="265" height="26"/>
                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -22724,7 +22724,7 @@
                                                         <rect key="frame" x="20" y="325" width="124" height="26"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미합류 직원의 근로계약서를 작성한 경우 근로계약서 리스트에서는 확인 할 수 있으나, 근로자 앱에 공유가 안됩니다.  사용자 편의를 위해 SMS 문자로 발송합니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTW-vE-d4G">
-                                                        <rect key="frame" x="20" y="366" width="335" height="126"/>
+                                                        <rect key="frame" x="20" y="366" width="335" height="99.5"/>
                                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-DemiLight" family="Noto Sans CJK KR" pointSize="17"/>
                                                         <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -31213,7 +31213,7 @@
             <size key="intrinsicContentSize" width="44.5" height="21.5"/>
         </designable>
         <designable name="htb-5t-6Lm">
-            <size key="intrinsicContentSize" width="129.5" height="21.5"/>
+            <size key="intrinsicContentSize" width="133" height="21.5"/>
         </designable>
         <designable name="hyS-6C-M9H">
             <size key="intrinsicContentSize" width="44.5" height="21.5"/>
