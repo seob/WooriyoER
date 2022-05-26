@@ -12,12 +12,7 @@ class Lc_Step7VC: UIViewController {
     @IBOutlet weak var lblNavigationTitle: UILabel!
     @IBOutlet weak var lblPoint: UILabel!
     @IBOutlet weak var lblWorkType: UILabel!
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblPointCharge: UILabel!
-    
-    @IBOutlet weak var lblInfomation: UILabel!
-    @IBOutlet weak var vwLine: UIImageView!
-    @IBOutlet weak var vwLine2: UIView!
+    @IBOutlet weak var lblName: UILabel! 
     @IBOutlet weak var btnNext: UIButton!
     
     var selInfo : LcEmpInfo = LcEmpInfo()
@@ -48,26 +43,7 @@ class Lc_Step7VC: UIViewController {
         }
         
         
-        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
-        lblPointCharge.isUserInteractionEnabled = true
-        lblPointCharge.addGestureRecognizer(labelTap)
-        
         lblPoint.text = "\(CompanyInfo.point)"
-    }
-    
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        if viewflagType == "stand_step5" {
-            vc.standInfo = self.standInfo
-            vc.viewflagType = "stand_step5"
-        }else{
-            vc.selInfo = self.selInfo 
-        }
-        
-        self.present(vc, animated: false, completion: nil)
     }
     
     fileprivate func getLCinfo(){

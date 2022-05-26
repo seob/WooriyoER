@@ -19,16 +19,11 @@ class ContractMainVC: UIViewController {
     @IBOutlet weak var tabButtonAnnual: UIButton! // 하단 탭바 연차
     @IBOutlet weak var tabButtonApply: UIButton! // 하단 탭바 신청
     @IBOutlet weak var tabButtonMore: UIButton! // 하단 탭바 더보기
-    @IBOutlet weak var lblPointCharge: UILabel!
     
     @IBOutlet weak var vwDefaultTop: UIView!
     @IBOutlet weak var vwFreeTop: UIView!
     @IBOutlet weak var lblFirstText: UILabel!
-    @IBOutlet weak var lblSecondText: UILabel!
-    
-    
-    @IBOutlet weak var scrollViewContent: UIView!
-    @IBOutlet weak var scrollViewHeightConstraint: NSLayoutConstraint! //84 더보기 일땐 0으로
+    @IBOutlet weak var lblSecondText: UILabel! 
     
     @IBOutlet weak var FreeLeadingConstraint: NSLayoutConstraint! // default 75
     
@@ -40,11 +35,6 @@ class ContractMainVC: UIViewController {
         }
  
         viewflag = "contractmain"
-        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
-        lblPointCharge.isUserInteractionEnabled = true
-        lblPointCharge.addGestureRecognizer(labelTap)
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,24 +93,7 @@ class ContractMainVC: UIViewController {
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: false, completion: nil)
     }
-    
-    
-    @IBAction func goToPrintView(_ sender: UIButton) { 
-        let vc = ContractSB.instantiateViewController(withIdentifier: "PDFMainViewController") as! PDFMainViewController
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        
-        vc.selInfo.sid = 100 //핀플
-        self.present(vc, animated: false, completion: nil)
-    }
-    
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen 
-        self.present(vc, animated: false, completion: nil)
-    }
+     
     
     //MARK: - navigation back button
     @IBAction func barBack(_ sender: UIButton) {

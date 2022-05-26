@@ -4104,6 +4104,72 @@
             </objects>
             <point key="canvasLocation" x="-729" y="-2818"/>
         </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="iBi-Fz-xEo">
+            <objects>
+                <viewController storyboardIdentifier="WebViewVC" id="gN5-Mm-Efx" customClass="WebViewVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JiP-Gg-Ecn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOO-Yo-Ljz" userLabel="Navigationbar">
+                                <rect key="frame" x="0.0" y="44" width="375" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배너" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocD-Wf-9ek">
+                                        <rect key="frame" x="167.33333333333334" y="7.6666666666666643" width="40.666666666666657" height="32.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2x-Ju-Nd4">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="48"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="barBack:" destination="gN5-Mm-Efx" eventType="touchUpInside" id="aOZ-s8-z3d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="c2x-Ju-Nd4" firstAttribute="top" secondItem="gOO-Yo-Ljz" secondAttribute="top" id="7T7-NM-hZM"/>
+                                    <constraint firstItem="ocD-Wf-9ek" firstAttribute="centerY" secondItem="gOO-Yo-Ljz" secondAttribute="centerY" id="95A-et-mq9"/>
+                                    <constraint firstItem="c2x-Ju-Nd4" firstAttribute="leading" secondItem="gOO-Yo-Ljz" secondAttribute="leading" id="9nf-RD-1F7"/>
+                                    <constraint firstItem="ocD-Wf-9ek" firstAttribute="centerX" secondItem="gOO-Yo-Ljz" secondAttribute="centerX" id="HIO-p6-ygt"/>
+                                    <constraint firstAttribute="height" constant="48" id="N4m-zr-8cY"/>
+                                    <constraint firstAttribute="bottom" secondItem="c2x-Ju-Nd4" secondAttribute="bottom" id="c4M-0A-LzQ"/>
+                                </constraints>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pz-97-3ea">
+                                <rect key="frame" x="0.0" y="92" width="375" height="720"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kPX-F4-MsW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7pz-97-3ea" firstAttribute="leading" secondItem="kPX-F4-MsW" secondAttribute="leading" id="74r-cH-eY2"/>
+                            <constraint firstItem="kPX-F4-MsW" firstAttribute="leading" secondItem="gOO-Yo-Ljz" secondAttribute="leading" id="XFu-9Q-C2N"/>
+                            <constraint firstItem="7pz-97-3ea" firstAttribute="top" secondItem="gOO-Yo-Ljz" secondAttribute="bottom" id="cu9-Hv-e7n"/>
+                            <constraint firstItem="kPX-F4-MsW" firstAttribute="trailing" secondItem="gOO-Yo-Ljz" secondAttribute="trailing" id="dmx-Cx-eXj"/>
+                            <constraint firstAttribute="bottom" secondItem="7pz-97-3ea" secondAttribute="bottom" id="j6l-Y6-tL1"/>
+                            <constraint firstItem="kPX-F4-MsW" firstAttribute="trailing" secondItem="7pz-97-3ea" secondAttribute="trailing" id="qDk-dv-EM2"/>
+                            <constraint firstItem="gOO-Yo-Ljz" firstAttribute="top" secondItem="kPX-F4-MsW" secondAttribute="top" id="qa2-CO-Sx9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNavigationTitle" destination="ocD-Wf-9ek" id="sqD-P6-x2n"/>
+                        <outlet property="webview" destination="7pz-97-3ea" id="w1T-ke-9JU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VgZ-pb-zhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2964" y="-1400"/>
+        </scene>
     </scenes>
     <resources>
         <image name="btn_cancel_notice" width="164" height="48"/>

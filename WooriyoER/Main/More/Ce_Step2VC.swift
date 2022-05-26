@@ -77,12 +77,12 @@ class Ce_Step2VC: UIViewController {
         let sid = "\(selInfo.sid)"
         if selInfo.format == 0 {
             //재직증명서
-            if let url = URL(string: "\(API.WEBbaseURL)m_ce/m_certEmply.jsp?CEYSID=\(sid.base64Encoding())") {
+            if let url = URL(string: "\(API.WEBbaseURL)m_ce/m_certEmplyWooriyo.jsp?CEYSID=\(sid.base64Encoding())") {
                 UIApplication.shared.open(url, options: [:])
             }
         }else{
             //경력증명서
-            if let url = URL(string: "\(API.WEBbaseURL)m_cc/m_certCareer.jsp?CCTSID=\(sid.base64Encoding())") {
+            if let url = URL(string: "\(API.WEBbaseURL)m_cc/m_certCareerWooriyo.jsp?CCTSID=\(sid.base64Encoding())") {
                 UIApplication.shared.open(url, options: [:])
             }
         }

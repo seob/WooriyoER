@@ -146,9 +146,9 @@ class MoreVC: UIViewController {
 //                print("\n---------- [ weburl : \(weburl) , banner : \(appData.adMoreImages[self.adView.currentPage].name)] ----------\n")
 //                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
 //                // -- safari
-                let vc = MoreSB.instantiateViewController(withIdentifier: "WebViewVC") as! WebViewVC
-                vc.adURL = weburl
-                vc.adName = appData.adMainImages[self.adView.currentPage].name
+                let vc = MainSB.instantiateViewController(withIdentifier: "WebViewVC") as! WebViewVC
+                vc.strUrl = weburl
+                vc.strTitle = appData.adMoreImages[self.adView.currentPage].name
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)

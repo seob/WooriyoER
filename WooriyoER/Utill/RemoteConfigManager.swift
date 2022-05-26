@@ -56,12 +56,12 @@ class RemoteConfigManager: NSObject {
                             if userInfo.author == 5 {
                                 let alert = UIAlertController.init(title: "알림", message: "권한이 없습니다. 근로자 앱으로 이동합니다.", preferredStyle: .alert)
                                 let okAction = UIAlertAction.init(title: "확인", style: .default, handler: { action in
-                                    let pinplURL = URL(string: "pinpl://")!
+                                    let pinplURL = URL(string: "WooriyoEE://")!
                                     
                                     if UIApplication.shared.canOpenURL(pinplURL) {
                                         UIApplication.shared.open(pinplURL, options: [:], completionHandler: nil)
                                     } else {
-                                        UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+                                        UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
                                     }
                                 })
                                 let cancel = UIAlertAction.init(title: "종료", style: .cancel, handler: { action in

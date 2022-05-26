@@ -54,13 +54,16 @@ class Lc_SendMsg: UIViewController , NVActivityIndicatorViewable{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblPointText.isHidden = true
+        btnpoint.isHidden = true
+        pointImageView.isHidden = true
         btnSend.layer.cornerRadius = 6
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
         
         
-        btnSend.isEnabled = false
+//        btnSend.isEnabled = false
         if viewflagType == "stand_step5" {
             //표준
             lbltitle.text = "'\(standInfo.name)'님께 발송합니다."
@@ -105,6 +108,9 @@ class Lc_SendMsg: UIViewController , NVActivityIndicatorViewable{
             }
         default :
             vwAgree.isHidden = false
+            lblPointText.isHidden = true
+            btnpoint.isHidden = true
+            pointImageView.isHidden = true
         }
     }
     
@@ -160,14 +166,14 @@ class Lc_SendMsg: UIViewController , NVActivityIndicatorViewable{
                     btnSend.isEnabled = false
                 }
             }else{
-                if (btncheck.isSelected == true && btnpoint.isSelected == true){
+                if (btncheck.isSelected == true){
                     btnSend.isEnabled = true
                 }else{
                     btnSend.isEnabled = false
                 }
             }
         default :
-            if (btncheck.isSelected == true && btnpoint.isSelected == true){
+            if (btncheck.isSelected == true){
                 btnSend.isEnabled = true
             }else{
                 btnSend.isEnabled = false
@@ -291,7 +297,7 @@ class Lc_SendMsg: UIViewController , NVActivityIndicatorViewable{
                 }
             }
         default :
-            if (btncheck.isSelected == true && btnpoint.isSelected == true) {
+            if (btncheck.isSelected == true) {
                 var sid = ""
                 if self.viewflagType == "stand_step5" {
                     sid = "\(self.standInfo.sid)"

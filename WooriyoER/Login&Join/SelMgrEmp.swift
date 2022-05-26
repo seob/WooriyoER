@@ -131,13 +131,13 @@ class SelMgrEmp: UIViewController {
         }
     }
     func openPinpl() {
-        let scheme = "pinpl://"
+        let scheme = "WooriyoEE://"
         let url = URL(string: scheme)!
         
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }else {
-            UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
         }
         
     }

@@ -56,10 +56,7 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        
-        
-        print("\n---------- [ selInfo : \(selInfo.toJSON())  , :\(viewflagType)] ----------\n") 
-        btnSend.isEnabled = false
+         
         lbltitle.text = "'\(selInfo.name)'님께 발송합니다."
         lblphone.text = "\(selInfo.phonenum.pretty())"
         lblemail.text = "\(selInfo.email)"
@@ -107,6 +104,9 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
                 }
             default :
                 vwAgree.isHidden = false
+                btnpoint.isHidden = true
+                pointImageView.isHidden  = true
+                lblPointText.isHidden = true
         }
     }
     
@@ -142,14 +142,14 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
                         btnSend.isEnabled = false
                     }
                 }else{
-                    if (btncheck.isSelected == true && btnpoint.isSelected == true){
+                    if (btncheck.isSelected == true){
                         btnSend.isEnabled = true
                     }else{
                         btnSend.isEnabled = false
                     }
                 }
             default :
-                if (btncheck.isSelected == true && btnpoint.isSelected == true){
+                if (btncheck.isSelected == true){
                     btnSend.isEnabled = true
                 }else{
                     btnSend.isEnabled = false
@@ -229,7 +229,7 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
                     }
                 }
             default :
-                if (btncheck.isSelected == true && btnpoint.isSelected == true) {
+                if (btncheck.isSelected == true) {
                     NetworkSend()
                 }else{
                     self.customAlertView("모두 체크시 전송 가능합니다.")
@@ -303,28 +303,6 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
                                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
                                     self.stopAnimating(nil)
                                 }
-//                                self.getShortUrl(strUrl) { (isSuccess, resData) in
-//                                    if(isSuccess){
-//                                        guard let serverData = resData else { return }
-//                                        shortUrl = serverData.result.url
-//                                        var vc = CertifiSB.instantiateViewController(withIdentifier: "CertificateSMSPopup") as! CertificateSMSPopup
-//                                        if SE_flag {
-//                                            vc = CertifiSB.instantiateViewController(withIdentifier: "SE_CertificateSMSPopup") as! CertificateSMSPopup
-//                                        }
-//                                        vc.modalTransitionStyle = .crossDissolve
-//                                        vc.modalPresentationStyle = .overCurrentContext
-//                                        self.present(vc, animated: true, completion: nil)
-//                                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-//                                            self.stopAnimating(nil)
-//                                        }
-//                                    }else{
-//                                        print("\n---------- [ 짧은주소 변환 실패  ] ----------\n")
-//                                        self.toast("다시 시도해 주세요.")
-//                                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
-//                                            self.stopAnimating(nil)
-//                                        }
-//                                    }
-//                                }
                             }
                         case 0 :
                             self.toast("다시 시도해 주세요.")

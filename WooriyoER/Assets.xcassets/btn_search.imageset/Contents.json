@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "er_logo_big.png",
+      "filename" : "btn_search.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "er_logo_big@2x.png",
+      "filename" : "btn_search@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "er_logo_big@3x.png",
+      "filename" : "btn_search@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
