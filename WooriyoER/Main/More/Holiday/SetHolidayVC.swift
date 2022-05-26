@@ -55,7 +55,7 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
         btnSave.layer.cornerRadius = 6
         btnYear.layer.cornerRadius = 6
         addToolBar(textFields: [txtTitle, txtDay])
-        
+        btnNo.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         if addflag {
             vwBtn1.isHidden = false
             vwBtn2.isHidden = true
