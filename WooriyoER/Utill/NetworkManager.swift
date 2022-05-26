@@ -1010,6 +1010,49 @@ class NetworkManager {
             return Disposables.create()
         }
     }
+    
+    // MARK: 팀, 상위팀-직속 미퇴근직원 리스트
+    /**
+     팀, 상위팀-직속 미퇴근직원 리스트
+     - parameter cmpsid:        회사번호(필수) .. 회사 전체 조회시 (상위팀번호 -1, 팀번호 -1)
+     - parameter ttmsid:        상위팀번호(상위팀 직속 조회시 팀번호는 0) .. 상위팀, 팀 번호 둘다 0인경우는 팀 미지정(팀소속 없는 직원들.. 팀이 없는경우)
+     - parameter temsid:        팀번호(팀 조회시 상위팀번호는 -1)
+     
+     - returns: 미퇴근직원 리스트
+     */
+    
+    func cmtNotLeaveEmpListRx(cmpsid: Int, ttmsid: Int, temsid: Int) -> Observable<(Bool , Int ,Int,Int ,String, [CmtEmplyInfo]?)> {
+        return Observable.create { emitter in
+            let notLeaveEmpListURL = self.getAPIURL(api: "ios/m/cmtnotleave_emplist.jsp?CMPSID=\(cmpsid)&TTMSID=\(ttmsid)&TEMSID=\(temsid)")
+            print("\n---------- [ notLeaveEmpListURL : \(notLeaveEmpListURL) ] ----------\n")
+            self.AlamofireAppManager?.request(notLeaveEmpListURL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers:nil).responseJSON(completionHandler: { (response) in
+                switch response.result {
+                case .success(let data) :
+                    let statusCode = response.response?.statusCode
+                    if statusCode == 200 {
+                        //정상
+                        if let jsonData = data as? [String : Any] {
+                            if let resData = jsonData["commute"] as? [[String : Any]] ,
+                                let empCnt = jsonData["empcnt"] as? Int ,
+                                let anualCnt = jsonData["anualcnt"] as? Int ,
+                                let applyCnt = jsonData["applycnt"] as? Int ,
+                                let joinCode = jsonData["joincode"] as? String
+                            {
+                                let response = Mapper<CmtEmplyInfo>().mapArray(JSONArray: resData)
+                                emitter.onNext((true , empCnt,anualCnt, applyCnt,joinCode,  response))
+                            }
+                        }
+                        emitter.onCompleted()
+                    }
+                case .failure(let error):
+                    print("\n---------- [ error : \(error.localizedDescription) ] ----------\n")
+                    emitter.onError(error)
+                }
+            })
+            return Disposables.create()
+        }
+    }
+    
     // MARK: 미출근직원 리스트
     /**
      팀, 상위팀-직속 미출근직원 리스트

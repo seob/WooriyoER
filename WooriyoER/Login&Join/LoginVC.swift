@@ -328,13 +328,13 @@ class LoginVC: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable 
                         let alert = UIAlertController.init(title: "알림", message: "권한이 없습니다. 근로자 앱으로 이동합니다.", preferredStyle: .alert)
                         let okAction = UIAlertAction.init(title: "확인", style: .default, handler: { action in
                             
-                            let scheme = "pinpl://"
+                            let scheme = "WooriyoEE://"
                             let url = URL(string: scheme)!
                             print("-------------------[UIApplication.shared.canOpenURL(url)=\(UIApplication.shared.canOpenURL(url))]-------------------")
                             if UIApplication.shared.canOpenURL(url) {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }else {
-                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
                             }
                         })
                         let cancel = UIAlertAction.init(title: "종료", style: .cancel, handler: { action in
@@ -423,13 +423,13 @@ class LoginVC: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable 
                         let alert = UIAlertController.init(title: "알림", message: "권한이 없습니다. 근로자 앱으로 이동합니다.", preferredStyle: .alert)
                         let okAction = UIAlertAction.init(title: "확인", style: .default, handler: { action in
                             
-                            let scheme = "pinpl://"
+                            let scheme = "WooriyoEE://"
                             let url = URL(string: scheme)!
                             print("-------------------[UIApplication.shared.canOpenURL(url)=\(UIApplication.shared.canOpenURL(url))]-------------------")
                             if UIApplication.shared.canOpenURL(url) {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }else {
-                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
                             }
                         })
                         let cancel = UIAlertAction.init(title: "종료", style: .cancel, handler: { action in
@@ -520,13 +520,13 @@ class LoginVC: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable 
                         let alert = UIAlertController.init(title: "알림", message: "권한이 없습니다. 근로자 앱으로 이동합니다.", preferredStyle: .alert)
                         let okAction = UIAlertAction.init(title: "확인", style: .default, handler: { action in
                             
-                            let scheme = "pinpl://"
+                            let scheme = "WooriyoEE://"
                             let url = URL(string: scheme)!
                             print("-------------------[UIApplication.shared.canOpenURL(url)=\(UIApplication.shared.canOpenURL(url))]-------------------")
                             if UIApplication.shared.canOpenURL(url) {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }else {
-                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
                             }
                         })
                         let cancel = UIAlertAction.init(title: "종료", style: .cancel, handler: { action in

@@ -299,9 +299,9 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
 //                } 네비게이션 컨트롤러가 없으면 사용할 수 없음....
                 
                 //모달을 통한 화면 전환
-                let vc = MainSB.instantiateViewController(withIdentifier: "WKWebViewVC") as! WKWebViewVC
-                vc.adURL = weburl
-                vc.adName = appData.adMainImages[self.adView.currentPage].name
+                let vc = MainSB.instantiateViewController(withIdentifier: "WebViewVC") as! WebViewVC
+                vc.strUrl = weburl
+                vc.strTitle = appData.adMainImages[self.adView.currentPage].name
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)

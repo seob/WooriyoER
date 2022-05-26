@@ -12,8 +12,6 @@ class Sc_Step4VC: UIViewController {
     @IBOutlet weak var lblNavigationTitle: UILabel!
     @IBOutlet weak var lblPoint: UILabel!
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblPointCharge: UILabel!
-    @IBOutlet weak var lblInfomation: UILabel!
     @IBOutlet weak var btnSave: UIButton!
     
     var selInfo : ScEmpInfo = ScEmpInfo()
@@ -37,10 +35,6 @@ class Sc_Step4VC: UIViewController {
     }
     
     func setUi(){
-        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
-        lblPointCharge.isUserInteractionEnabled = true
-        lblPointCharge.addGestureRecognizer(labelTap)
-        
         self.lblPoint.text = "\(CompanyInfo.point)"
     }
     
@@ -60,15 +54,6 @@ class Sc_Step4VC: UIViewController {
                 self.toast("다시 시도해 주세요.")
             }
         }
-    }
-    
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = SecurtSB.instantiateViewController(withIdentifier: "InApp_ScVC") as! InApp_ScVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        vc.selInfo  = selInfo
-        self.present(vc, animated: false, completion: nil)
     }
     
     //미리보기

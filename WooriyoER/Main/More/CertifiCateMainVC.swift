@@ -10,10 +10,6 @@ import UIKit
 
 class CertifiCateMainVC: UIViewController {
     @IBOutlet weak var lblNavigationTitle: UILabel!
-    @IBOutlet weak var empBaegeView: UIView!
-    @IBOutlet weak var lblempBaege: UILabel!
-    @IBOutlet weak var careerBaegeView: UIView!
-    @IBOutlet weak var lblcareerBaege: UILabel!
     @IBOutlet weak var lblPointCharge: UILabel!
     @IBOutlet weak var lblPoint: UILabel!
     
@@ -36,28 +32,11 @@ class CertifiCateMainVC: UIViewController {
         }else if view.bounds.width == 390 {
             // iphone 12 pro
             FreeLeadingConstraint.constant = 95
-        } 
-        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
-        lblPointCharge.isUserInteractionEnabled = true
-        lblPointCharge.addGestureRecognizer(labelTap)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("\n---------- [ Emplycnt : \(Emplycnt) , Emplycnt : \(Careercnt)  ] ----------\n")
-//        if Emplycnt > 0 {
-//            empBaegeView.isHidden = false
-//            lblempBaege.text = "\(Emplycnt)"
-//        }else{
-//            empBaegeView.isHidden = true
-//        }
-//
-//        if Careercnt > 0 {
-//            careerBaegeView.isHidden = false
-//            lblcareerBaege.text = "\(Careercnt)"
-//        }else{
-//            careerBaegeView.isHidden = true
-//        }
         valueSetting()
     }
     
@@ -77,16 +56,7 @@ class CertifiCateMainVC: UIViewController {
             }
         }
     }
-    
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        viewflag = "certificate"
-        self.present(vc, animated: false, completion: nil)
-    }
-    
+     
     //MARK: - navigation back button
     @IBAction func barBack(_ sender: UIButton) {
         let vc = MoreSB.instantiateViewController(withIdentifier: "MoreVC") as! MoreVC

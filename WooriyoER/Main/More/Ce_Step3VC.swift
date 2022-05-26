@@ -12,8 +12,6 @@ class Ce_Step3VC: UIViewController {
     @IBOutlet weak var lblNavigationTitle: UILabel!
     @IBOutlet weak var lblPoint: UILabel!
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblPointCharge: UILabel!
-    @IBOutlet weak var lblInfomation: UILabel!
     @IBOutlet weak var btnNext: UIButton!
     
     var selInfo : Ce_empInfo = Ce_empInfo()
@@ -35,27 +33,13 @@ class Ce_Step3VC: UIViewController {
         }else{
             lblName.text = "\(selInfo.name)님의 경력증명서"
         }
-        
-        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
-        lblPointCharge.isUserInteractionEnabled = true
-        lblPointCharge.addGestureRecognizer(labelTap)
-        
         lblPoint.text = "\(CompanyInfo.point)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-     
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = CertifiSB.instantiateViewController(withIdentifier: "InApp_CeVC") as! InApp_CeVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        vc.selInfo  = Sel_CeEmpInfo
-        self.present(vc, animated: false, completion: nil)
-    }
-    
+      
     //MARK: - navigation back button
     @IBAction func barBack(_ sender: UIButton) {
         let vc = CertifiSB.instantiateViewController(withIdentifier: "Ce_Step2VC") as! Ce_Step2VC

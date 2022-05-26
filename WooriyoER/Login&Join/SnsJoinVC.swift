@@ -304,13 +304,13 @@ class SnsJoinVC: UIViewController, NVActivityIndicatorViewable {
                     if author == 5 {
                         let alert = UIAlertController.init(title: "알림", message: "이미 \(userInfo.cmpname)에 소속되있는 근로자이므로 회사생성이 불가능합니다.\n 근로자 앱으로 이동합니다.", preferredStyle: .alert)
                         let okAction = UIAlertAction.init(title: "확인", style: .default, handler: { action in
-                            let scheme = "pinpl://"
+                            let scheme = "WooriyoEE://"
                             let url = URL(string: scheme)!
                             print("-------------------[UIApplication.shared.canOpenURL(url)=\(UIApplication.shared.canOpenURL(url))]-------------------")
                             if UIApplication.shared.canOpenURL(url) {
                                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
                             }else {
-                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1493507438")!, options: [:], completionHandler: nil)
+                                UIApplication.shared.open(URL(string: "https://apps.apple.com/kr/app/apple-store/id1624398964")!, options: [:], completionHandler: nil)
                             }
                         })
                         let cancel = UIAlertAction.init(title: "종료", style: .cancel, handler: { action in
