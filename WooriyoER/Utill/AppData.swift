@@ -19,7 +19,7 @@ let dispatchGlobal = DispatchQueue.global()
 
 class API {
     
-    static let baseURL:String = "http://app01.pinpl.biz/" // 실서버
+    static let baseURL:String = "http://appwooriyo.pinpl.biz/" // 실서버
     static let WEBbaseURL:String = "http://pinpl.biz/" //실서버(web)
     static let pinpl_header = [ "appversion" : "0.1"]
 }
