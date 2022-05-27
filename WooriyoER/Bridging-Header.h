@@ -25,6 +25,6 @@
 #import <KakaoOpenSDK/KakaoOpenSDK.h>
 #import <KakaoPlusFriend/KakaoPlusFriend.h>
 #import <CommonCrypto/CommonCrypto.h>
-
+#import <DaumMap/MTMapView.h>
 
 #endif /* Bridging_Header_h */
