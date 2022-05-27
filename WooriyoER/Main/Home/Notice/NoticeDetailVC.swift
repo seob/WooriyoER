@@ -33,7 +33,7 @@ class NoticeDetailVC: UIViewController {
                 }
             }else{
                 btnView.isHidden = true
-                lblNavigationTitle.text = "핀플알림"
+                lblNavigationTitle.text = "알림"
                 if let url = URL(string: "\(API.baseURL)ios/m/MasterNoticeDetailView.jsp?sid=\(noticeGidx)") {
                     print("\n---------- [ noticeType : \(noticeType) ] ----------\n")
                     let request = URLRequest(url: url)
@@ -51,7 +51,7 @@ class NoticeDetailVC: UIViewController {
                 }
             }else{
                 btnView.isHidden = true
-                lblNavigationTitle.text = "핀플알림"
+                lblNavigationTitle.text = "알림"
                 if let url = URL(string: "\(API.baseURL)ios/m/MasterNoticeDetailView.jsp?sid=\(noticeDetail.sid)") {
                     print("\n---------- [ url : \(url) ] ----------\n")
                     let request = URLRequest(url: url)
