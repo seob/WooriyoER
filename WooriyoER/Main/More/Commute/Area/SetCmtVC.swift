@@ -709,6 +709,7 @@ class SetCmtVC: UIViewController , CLLocationManagerDelegate{
     @IBAction func udtGPS(_ sender: UIButton) {
         if locationCheck() {
             let vc = MoreSB.instantiateViewController(withIdentifier: "GoogleMapVC") as! GoogleMapVC
+//            let vc = MainSB.instantiateViewController(withIdentifier: "KakaoMapVC") as! KakaoMapVC
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: false, completion: nil)

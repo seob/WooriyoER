@@ -286,17 +286,7 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
                 let weburl =  appData.adMainImages[self.adView.currentPage].link.replacingOccurrences(of: "\\", with: "")
 //                UIApplication.shared.open(URL(string: weburl)!, options: [:], completionHandler: nil)
                 // -- safari
-                
-                //22.05.17 정승현 작성중..
-                // VC 찾아서 변수에 담기 / 옵셔널 바인딩
-                // as? 변환할 타입 -->> 다운캐스팅??
-//                if let WKWebView = self.storyboard?.instantiateViewController(withIdentifier: "WKWebViewVC")as? WKWebViewVC{
-//                    //다른 vc로 연결
-//                    print("여기가 문제입니까?")
-//                    WKWebView.adURL = weburl
-//                    WKWebView.adName = appData.adMainImages[self.adView.currentPage].name
-//                    self.navigationController?.pushViewController(WKWebView, animated: true)
-//                } 네비게이션 컨트롤러가 없으면 사용할 수 없음....
+                 
                 
                 //모달을 통한 화면 전환
                 let vc = MainSB.instantiateViewController(withIdentifier: "WebViewVC") as! WebViewVC
