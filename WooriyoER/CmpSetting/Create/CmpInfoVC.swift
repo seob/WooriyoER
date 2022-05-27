@@ -101,7 +101,7 @@ class CmpInfoVC: UIViewController, NVActivityIndicatorViewable {
         textAddress.text = cmpaddr
         textNumber.text = cmppn
         textUrl.text = site
-        
+         
         if CompanyInfo.logo != "" {
             if CompanyInfo.logo.urlTrim() != "img_logo_default.png" {
                 profileImg = self.urlImage(url: CompanyInfo.logo)

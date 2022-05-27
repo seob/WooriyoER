@@ -10,8 +10,8 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 import CoreLocation
-
-class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
+ 
+class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate  {
     
     @IBOutlet weak var lblNavigationTitle: UILabel!
     @IBOutlet var startLocation: UITextField!
@@ -22,6 +22,11 @@ class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelega
     var locationManager = CLLocationManager()
     var locationStart = CLLocation()
     var placesClient: GMSPlacesClient!
+    
+    var mapView: MTMapView?
+    
+    var mapPoint1: MTMapPoint?
+    var poiItem1: MTMapPOIItem?
     
     var lat: Double =  0.0
     var long: Double =  0.0
@@ -70,7 +75,7 @@ class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelega
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        
+         
         
     }
     //MARK: - navigation back button
@@ -148,104 +153,105 @@ class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelega
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error to get location : \(error)")
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+
         let location = locations.last
-        
+
         guard let moreLat = Double(moreCmpInfo.loclat) != 0 ?  Double(moreCmpInfo.loclat) : (location?.coordinate.latitude)! else { return }
         guard let moreLong = Double(moreCmpInfo.loclong) != 0 ?  Double(moreCmpInfo.loclong) : (location?.coordinate.longitude)! else { return  }
-        
+
         lat = moreLat
         long = moreLong
-        
+
         //          let location = locations.last
         //          lat = (location?.coordinate.latitude)!
         //          long = (location?.coordinate.longitude)!
         print("-----------------[didUpdateLocations lat = \(lat), long = \(long)]----------------------")
         ConvertAddress()
-        
+
         let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: long, zoom: 17.0)
-        
+
         self.googleMap?.animate(to: camera)
-        
+
         let position = CLLocationCoordinate2DMake(lat,long)
-        let marker = GMSMarker(position: position) 
+        let marker = GMSMarker(position: position)
         marker.appearAnimation = GMSMarkerAnimation.pop
         marker.map = self.googleMap
         self.locationManager.stopUpdatingLocation()
     }
-    
+
     func ConvertAddress()
     {
         //latitude: 위도, longitude: 경도
         let findLocation = CLLocation(latitude: lat, longitude: long)
         let geocoder = CLGeocoder()
-        
-        
+
+
         geocoder.reverseGeocodeLocation(findLocation, completionHandler: { (placemarksArray, error) in
             let placemark = placemarksArray?[0]
             let address = "\(placemark?.administrativeArea ?? "") \(placemark?.locality ?? "") \(placemark?.subLocality ?? "") \(placemark?.thoroughfare ?? "") \(placemark?.subThoroughfare ?? "")"
             print("-----------------[ConvertAddress lat = \(self.lat), long = \(self.long), address = \(address)]----------------------")
-            
+
             self.startLocation.text = address
             self.loclat = String(self.lat)
             self.loclong = String(self.long)
             self.locaddr = address
         })
-        
+
     }
-    
+
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         googleMap.isMyLocationEnabled = true
-        
+
     }
-    
+
     func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
         googleMap.isMyLocationEnabled = true
-        
+
         if (gesture) {
             mapView.selectedMarker = nil
         }
     }
-    
+
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         googleMap.isMyLocationEnabled = true
         return false
     }
-    
+
     func mapView(_ mapView: GMSMapView, didLongPressAt coordinate: CLLocationCoordinate2D)
     {
         self.googleMap.clear()
         lat = coordinate.latitude
         long = coordinate.longitude
         ConvertAddress()
-        
+
         let marker = GMSMarker(position: coordinate)
         marker.title = "선택 장소"
         marker.map = googleMap
     }
-    
+
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         googleMap.clear()
     }
     func mapView(_ mapView: GMSMapView, didLongPressInfoWindowOf marker: GMSMarker) {
-        
+
         if (UIApplication.shared.canOpenURL(NSURL(string:"comgooglemaps://")! as URL)) {
             UIApplication.shared.open(NSURL(string:"comgooglemaps://?saddr=&daddr=\(marker.position.latitude),\(marker.position.longitude)&directionsmode=driving")! as URL, options: [:], completionHandler: nil)
-            
+
         }
         else {
-            
+
             let alert = UIAlertController(title: "Google Maps not found", message: "Please install Google Maps in your device.", preferredStyle: UIAlertController.Style.alert)
-            
+
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            
+
             self.present(alert, animated: true, completion: nil)
         }
     }
+
     
-    
+ 
     
     @IBAction func btnLocation(_ sender: UIButton) {
         let token = GMSAutocompleteSessionToken.init()
