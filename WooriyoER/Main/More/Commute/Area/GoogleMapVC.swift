@@ -22,11 +22,7 @@ class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelega
     var locationManager = CLLocationManager()
     var locationStart = CLLocation()
     var placesClient: GMSPlacesClient!
-    
-    var mapView: MTMapView?
-    
-    var mapPoint1: MTMapPoint?
-    var poiItem1: MTMapPOIItem?
+     
     
     var lat: Double =  0.0
     var long: Double =  0.0
