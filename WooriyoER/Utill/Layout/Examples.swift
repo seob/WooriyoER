@@ -7,23 +7,23 @@
 //
 
 import Foundation
-
-enum Examples {
-    
-    static var factories: [[(String, ExampleFactory)]] {
-        [
-            [
-                ("핀플근로계약서", PinplContract()),
-                ("표준근로계약서(없는거)", StdContract()), //기간없는거
-                ("표준근로게약서(기간있는거)", StdContract()), //기간 있는거
-                ("표준근로계약서(일용)", StdContractDay())
-            ],
-            [
-                ("Experiment", PinplContract()),
-            ]
-        ]
-    }
-}
+//
+//enum Examples {
+//    
+//    static var factories: [[(String, ExampleFactory)]] {
+//        [
+//            [
+//                ("핀플근로계약서", PinplContract()),
+//                ("표준근로계약서(없는거)", StdContract()), //기간없는거
+//                ("표준근로게약서(기간있는거)", StdContract()), //기간 있는거
+//                ("표준근로계약서(일용)", StdContractDay())
+//            ],
+//            [
+//                ("Experiment", PinplContract()),
+//            ]
+//        ]
+//    }
+//}
 
 func dateformatKo(_ date:String) -> String {
     let dateStr = date.components(separatedBy: "-")
