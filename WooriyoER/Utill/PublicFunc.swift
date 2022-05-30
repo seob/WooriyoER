@@ -94,6 +94,8 @@ extension UIViewController {
         case 896:
             //            print("11, XR, 11pro Max, XS Max");
             return 5;
+        case 926:
+            return 6
         default:
             break;
         }
