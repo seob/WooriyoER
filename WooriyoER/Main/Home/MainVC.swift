@@ -10,7 +10,8 @@ import UIKit
 import ImageSlideshow
 import AlamofireImage
 import WebKit
-
+import NVActivityIndicatorView
+import RxSwift
 
 class MainVC: UIViewController, NVActivityIndicatorViewable {
     
@@ -122,6 +123,19 @@ class MainVC: UIViewController, NVActivityIndicatorViewable {
         case 3:
             slideHeight.constant = UIScreen.main.bounds.size.height + 204
             slideTop.constant = 222
+        case 4:
+            print("\n---------- [ 3-1 ] ----------\n")
+            slideHeight.constant = UIScreen.main.bounds.size.height + 204
+            slideTop.constant = 197
+            
+        case 5:
+            print("\n---------- [ 4-1 ] ----------\n")
+            slideHeight.constant = UIScreen.main.bounds.size.height + 204
+            slideTop.constant = 197
+        case 6:
+            print("\n---------- [ 5-1 ] ----------\n")
+            slideHeight.constant = UIScreen.main.bounds.size.height + 204
+            slideTop.constant = 195
         default:
             slideHeight.constant = UIScreen.main.bounds.size.height + 127
             slideTop.constant = 195
