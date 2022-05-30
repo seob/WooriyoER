@@ -177,19 +177,21 @@ class Lc_Step7VC: UIViewController {
                     }else{
                         // point 가 없으면 충전 페이지 이동
                         if viewflagType == "stand_step5" {
-                            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-                            vc.modalTransitionStyle = .crossDissolve
-                            vc.modalPresentationStyle = .overFullScreen
-                            vc.viewflagType = "stand_step5"
-                            vc.standInfo = self.standInfo
-                            self.present(vc, animated: false, completion: nil)
+//                            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+//                            vc.modalTransitionStyle = .crossDissolve
+//                            vc.modalPresentationStyle = .overFullScreen
+//                            vc.viewflagType = "stand_step5"
+//                            vc.standInfo = self.standInfo
+//                            self.present(vc, animated: false, completion: nil)
+                            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                         }else{
-                            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-                            vc.modalTransitionStyle = .crossDissolve
-                            vc.modalPresentationStyle = .overFullScreen
-                            vc.viewflagType = "step7"
-                            vc.selInfo = self.selInfo
-                            self.present(vc, animated: false, completion: nil)
+//                            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+//                            vc.modalTransitionStyle = .crossDissolve
+//                            vc.modalPresentationStyle = .overFullScreen
+//                            vc.viewflagType = "step7"
+//                            vc.selInfo = self.selInfo
+//                            self.present(vc, animated: false, completion: nil)
+                            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                         }
                         
                     }
@@ -231,19 +233,21 @@ class Lc_Step7VC: UIViewController {
                 }else{
                     // point 가 없으면 충전 페이지 이동
                     if viewflagType == "stand_step5" {
-                        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-                        vc.modalTransitionStyle = .crossDissolve
-                        vc.modalPresentationStyle = .overFullScreen
-                        vc.viewflagType = "stand_step5"
-                        vc.standInfo = self.standInfo
-                        self.present(vc, animated: false, completion: nil)
+//                        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+//                        vc.modalTransitionStyle = .crossDissolve
+//                        vc.modalPresentationStyle = .overFullScreen
+//                        vc.viewflagType = "stand_step5"
+//                        vc.standInfo = self.standInfo
+//                        self.present(vc, animated: false, completion: nil)
+                        self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                     }else{
-                        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-                        vc.modalTransitionStyle = .crossDissolve
-                        vc.modalPresentationStyle = .overFullScreen
-                        vc.viewflagType = "step7"
-                        vc.selInfo = self.selInfo
-                        self.present(vc, animated: false, completion: nil)
+//                        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+//                        vc.modalTransitionStyle = .crossDissolve
+//                        vc.modalPresentationStyle = .overFullScreen
+//                        vc.viewflagType = "step7"
+//                        vc.selInfo = self.selInfo
+//                        self.present(vc, animated: false, completion: nil)
+                        self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                     }
                     
                 }
