@@ -98,7 +98,7 @@ class AddCmpsealVC: UIViewController, UIScrollViewDelegate  , ProfileViewControl
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         } 
-        
+ 
         let viewTap = UITapGestureRecognizer(target: self, action: #selector(imagePickerDidTap(_:)))
         cropView.addGestureRecognizer(viewTap)
         
@@ -194,10 +194,7 @@ class AddCmpsealVC: UIViewController, UIScrollViewDelegate  , ProfileViewControl
         config.video.libraryTimeLimit = 60.0
         
         config.showsCrop = .none
-        config.hidesStatusBar = false
-        config.hidesBottomBar = false
         config.library.preselectedItems = selectedItems
-        config.hidesCancelButton = false
         config.library.maxNumberOfItems = 1
         
         let picker = YPImagePicker(configuration: config)

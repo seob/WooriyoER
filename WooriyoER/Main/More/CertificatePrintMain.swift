@@ -48,8 +48,8 @@ class CertificatePrintMain: UIViewController {
         button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
         
         let barButton = UIBarButtonItem(customView: button)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = false
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.isTranslucent = false
         self.navigationItem.leftBarButtonItem = barButton
     }
     
@@ -57,6 +57,11 @@ class CertificatePrintMain: UIViewController {
         super.viewWillAppear(animated)
         setUi()
         navigationController?.navigationBar.isHidden = true
+        if format == 0 {
+            lblNavigationTitle.text = "재직증명서 인쇄 "
+        }else{
+            lblNavigationTitle.text = "경력증명서 인쇄 "
+        }
     }
     
     @objc private func backButtonPressed(_ sender: Any)
@@ -192,8 +197,7 @@ class CertificatePrintMain: UIViewController {
         let image = UIImage(named: "")
         let controller = PDFViewController.createNew(with: document, title: "", actionButtonImage: image, actionStyle: .activitySheet)
         controller.modalTransitionStyle = .crossDissolve
-        controller.modalPresentationStyle = .fullScreen
-        navigationController?.navigationBar.isHidden = false
+        controller.modalPresentationStyle = .fullScreen 
         navigationController?.pushViewController(controller, animated: true)
     }
 }

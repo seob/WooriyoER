@@ -134,6 +134,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         backgroundState = true
         KOSession.handleDidBecomeActive()
         checkWifi()
+        
+        print("\n---------- [ resultParam : \(resultParam) ] ----------\n")
         if resultParam != "" {
             //            Toast(text: "성공여부 \(resultParam)",  duration: Delay.short).show()
         }
@@ -216,7 +218,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         }
         
         // Print full message.
-        print(userInfo)
         UNUserNotificationCenter.current().removeAllDeliveredNotifications()
         completionHandler(UIBackgroundFetchResult.newData)
     }
@@ -244,7 +245,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         if KOSession.isKakaoAccountLoginCallback(url) {
             return KOSession.handleOpen(url)
         }
-        
+        print("\n---------- [ scheme : \(scheme) ] ----------\n")
         if scheme.contains("com.googleusercontent.apps")
         {
             return GIDSignIn.sharedInstance().handle(url)
@@ -256,7 +257,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
                 print("result: \(result)")
             }
             return true
-        }else if scheme.contains("WooriyoER"){
+        }else if scheme.contains("wooriyoer"){
             let urlStr = url.absoluteString //1
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let productId = component.last { // 3
@@ -292,7 +293,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         if KOSession.isKakaoAccountLoginCallback(url) {
             return KOSession.handleOpen(url)
         }
-        
+        print("\n---------- [ scheme 2: \(scheme) ] ----------\n")
         if scheme.contains("com.googleusercontent.apps")
         {
             return GIDSignIn.sharedInstance().handle(url)
@@ -304,7 +305,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
                 print("result: \(result)")
             }
             return true
-        }else if scheme.contains("WooriyoER"){
+        }else if scheme.contains("wooriyoer"){
             let urlStr = url.absoluteString //1
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let productId = component.last { // 3
@@ -383,7 +384,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         let body = alert["body"] as? String ?? ""
         print("body = ", body)
         //        loginMainViewController.configureAppearance()
-        //        Toast(text: "핀플 관리자\n \(body)",  duration: Delay.short).show()
+//        Toast(text: "우리요 관리자\n \(body)",  duration: Delay.short).show()
         
         if type.contains(",") {
             let notiType = type.components(separatedBy: ",")
@@ -394,7 +395,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         }
          
         
-        self.window?.makeToast("핀플 관리자\n \(body)", duration: 3.0, position: .bottom)
+        self.window?.makeToast("우리요 관리자\n \(body)", duration: 3.0, position: .bottom)
         
         completionHandler([])
     }

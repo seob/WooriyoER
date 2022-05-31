@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Photos
+import PhotosUI
+import YPImagePicker
 
 class Ce_udtsealVC: UIViewController  , UIScrollViewDelegate , Ce_ProfileViewControllerProtocol{
     @IBOutlet weak var lblNavigationTitle: UILabel!
@@ -34,6 +37,10 @@ class Ce_udtsealVC: UIViewController  , UIScrollViewDelegate , Ce_ProfileViewCon
     var issquare = 0 // 직인모양 0.원형 1.사각형
     let cropSegue = "Ce_modifyToCropSegue"
     
+    var config = YPImagePickerConfiguration()
+    var selectedItems = [YPMediaItem]()
+    let selectedImageV = UIImageView()
+    var tmpImage: UIImage!
     func setCroppedImage(_ croppedImage: UIImage) {
         self.SealimageView.image = croppedImage
     }
@@ -113,8 +120,50 @@ class Ce_udtsealVC: UIViewController  , UIScrollViewDelegate , Ce_ProfileViewCon
     }
     
     func openLibrary(){
-        picker.sourceType = .photoLibrary
-        present(picker, animated: false, completion: nil)
+//        picker.sourceType = .photoLibrary
+//        present(picker, animated: false, completion: nil)
+        config.library.mediaType = .photo
+        config.shouldSaveNewPicturesToAlbum = false
+        config.video.compression = AVAssetExportPresetMediumQuality
+        config.startOnScreen = .library
+        config.library.itemOverlayType = .grid
+        config.screens = [.library, .photo]
+        config.video.libraryTimeLimit = 60.0
+        
+        config.showsCrop = .none
+        config.hidesStatusBar = false
+        config.hidesBottomBar = false
+        config.library.preselectedItems = selectedItems
+        config.hidesCancelButton = true
+        config.library.maxNumberOfItems = 1
+        
+        let picker = YPImagePicker(configuration: config)
+        
+        /* Multiple media implementation */
+        picker.didFinishPicking { [unowned picker] items, cancelled in
+            
+            if cancelled {
+                print("Picker was canceled")
+                picker.dismiss(animated: true, completion: nil)
+                return
+            }
+            _ = items.map { print("🧀 \($0)") }
+            
+            
+            self.selectedItems = items
+            if let firstItem = items.first {
+                switch firstItem {
+                case .photo(let photo):
+                    self.cmpsealImg = photo.image
+                    self.SealimageView.image = photo.image
+                    picker.dismiss(animated: true, completion: nil)
+                case .video( _):
+                    print("\n---------- [ video ] ----------\n")
+                }
+            }
+        }
+        
+        present(picker, animated: true, completion: nil)
     }
     
     func openCamera(){
@@ -140,7 +189,7 @@ class Ce_udtsealVC: UIViewController  , UIScrollViewDelegate , Ce_ProfileViewCon
         
         let camera =  UIAlertAction(title: "카메라", style: .default) { (action) in
             
-            self.openCamera()
+            self.openLibrary()
             
         }
         
