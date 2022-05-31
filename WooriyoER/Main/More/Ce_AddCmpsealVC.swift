@@ -9,6 +9,7 @@
 import UIKit
 import Photos
 import PhotosUI
+import YPImagePicker
 
 protocol Ce_ProfileViewControllerProtocol {
     func setCroppedImage(_ croppedImage: UIImage)
@@ -52,6 +53,9 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
     @IBOutlet weak var lblSquare: UILabel!
     let picker = UIImagePickerController()
     let setWidth = UIScreen.main.bounds.size.width
+    var config = YPImagePickerConfiguration()
+    var selectedItems = [YPMediaItem]()
+    let selectedImageV = UIImageView()
     
     @IBOutlet weak var scrollView: UIScrollView!
     //    var scrollView: KACircleCropScrollView!
@@ -180,8 +184,47 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
     }
     
     func openLibrary(){
-        picker.sourceType = .photoLibrary
-        present(picker, animated: false, completion: nil)
+//        picker.sourceType = .photoLibrary
+//        present(picker, animated: false, completion: nil)
+        config.library.mediaType = .photo
+        config.shouldSaveNewPicturesToAlbum = false
+        config.video.compression = AVAssetExportPresetMediumQuality
+        config.startOnScreen = .library
+        config.library.itemOverlayType = .grid
+        config.screens = [.library, .photo]
+        config.video.libraryTimeLimit = 60.0
+        
+        config.showsCrop = .none
+        config.library.preselectedItems = selectedItems
+        config.library.maxNumberOfItems = 1
+        
+        let picker = YPImagePicker(configuration: config)
+
+        /* Multiple media implementation */
+        picker.didFinishPicking { [unowned picker] items, cancelled in
+            
+            if cancelled {
+                print("Picker was canceled")
+                picker.dismiss(animated: true, completion: nil)
+                return
+            }
+            _ = items.map { print("🧀 \($0)") }
+            
+            
+            self.selectedItems = items
+            if let firstItem = items.first {
+                switch firstItem {
+                case .photo(let photo):
+                    self.profileImg = photo.image
+                    self.SealimageView.image = photo.image
+                    picker.dismiss(animated: true, completion: nil)
+                case .video(let _):
+                    print("\n---------- [ video ] ----------\n")
+                }
+            }
+        }
+         
+        present(picker, animated: true, completion: nil)
     }
     
     func openCamera(){
