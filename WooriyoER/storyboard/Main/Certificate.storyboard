@@ -6798,7 +6798,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="720"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UK-xR-9c0" userLabel="포인트뷰">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mn8-i2-IPI" userLabel="DefaultView">
                                                                 <rect key="frame" x="20" y="20" width="335" height="89"/>
@@ -6879,15 +6879,28 @@
                                                                     <constraint firstAttribute="height" constant="4" id="RQU-wg-0V6"/>
                                                                 </constraints>
                                                             </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-ND-KC5">
+                                                                <rect key="frame" x="130.5" y="135" width="114" height="22.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀포인트 충전하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-jD-kZ6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="22.5"/>
+                                                                        <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="kYV-tJ-llz" firstAttribute="top" secondItem="1UK-xR-9c0" secondAttribute="top" constant="20" id="0WN-Pz-cgi"/>
                                                             <constraint firstItem="Mn8-i2-IPI" firstAttribute="top" secondItem="1UK-xR-9c0" secondAttribute="top" constant="20" id="4sI-wA-ZLS"/>
-                                                            <constraint firstAttribute="height" constant="149" id="EIm-hg-HSN"/>
+                                                            <constraint firstAttribute="height" constant="169" id="EIm-hg-HSN"/>
                                                             <constraint firstItem="e62-GQ-WB0" firstAttribute="leading" secondItem="1UK-xR-9c0" secondAttribute="leading" constant="20.5" id="Izi-Qv-Vv0"/>
                                                             <constraint firstItem="kYV-tJ-llz" firstAttribute="leading" secondItem="1UK-xR-9c0" secondAttribute="leading" constant="20" id="MmK-SE-i4B"/>
+                                                            <constraint firstItem="dnD-ND-KC5" firstAttribute="top" secondItem="e62-GQ-WB0" secondAttribute="bottom" constant="20" id="Xcd-Gp-p1D"/>
                                                             <constraint firstAttribute="trailing" secondItem="Mn8-i2-IPI" secondAttribute="trailing" constant="20" id="azs-mt-PHV"/>
+                                                            <constraint firstItem="dnD-ND-KC5" firstAttribute="centerX" secondItem="1UK-xR-9c0" secondAttribute="centerX" id="hC5-8A-XJa"/>
                                                             <constraint firstItem="e62-GQ-WB0" firstAttribute="top" secondItem="bBu-cU-IhH" secondAttribute="bottom" constant="8" id="hly-2a-02C"/>
                                                             <constraint firstItem="Mn8-i2-IPI" firstAttribute="leading" secondItem="1UK-xR-9c0" secondAttribute="leading" constant="20" id="sIi-UQ-jAx"/>
                                                             <constraint firstAttribute="trailing" secondItem="e62-GQ-WB0" secondAttribute="trailing" constant="19.5" id="tiX-Hd-mH9"/>
@@ -6895,7 +6908,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnd-cn-8dm" userLabel="재증명서뷰">
-                                                        <rect key="frame" x="0.0" y="149" width="375" height="430"/>
+                                                        <rect key="frame" x="0.0" y="169" width="375" height="430"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7o-pP-fRz" userLabel="재직증명서발급뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="42.5" y="20" width="140" height="125"/>
@@ -7348,6 +7361,7 @@
                         <outlet property="lblFirstText" destination="6Ly-KC-VMh" id="U8U-of-h8F"/>
                         <outlet property="lblNavigationTitle" destination="r7g-UT-3Sb" id="5gY-OJ-esn"/>
                         <outlet property="lblPoint" destination="RdB-KO-7qB" id="9D1-8M-FN4"/>
+                        <outlet property="lblPointCharge" destination="K4c-jD-kZ6" id="iHY-sb-OXp"/>
                         <outlet property="lblSecondText" destination="elB-lv-4RF" id="A4V-lR-t9X"/>
                         <outlet property="vwDefaultTop" destination="Mn8-i2-IPI" id="lkm-qn-h6T"/>
                         <outlet property="vwFreeTop" destination="kYV-tJ-llz" id="rsY-Hf-JtM"/>
@@ -7401,7 +7415,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="620"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfP-zA-L2n">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="129"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBC-Bx-6DT" userLabel="DefaultView">
                                                         <rect key="frame" x="20" y="20" width="280" height="60"/>
@@ -7478,23 +7492,36 @@
                                                             <constraint firstAttribute="height" constant="4" id="1Vz-eU-sia"/>
                                                         </constraints>
                                                     </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RJ-mB-7IA">
+                                                        <rect key="frame" x="103" y="112.5" width="114" height="22.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀포인트 충전하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOm-vN-1tg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="114" height="22.5"/>
+                                                                <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="JBC-Bx-6DT" secondAttribute="trailing" constant="20" id="1Ab-hl-Bjt"/>
                                                     <constraint firstItem="JBC-Bx-6DT" firstAttribute="leading" secondItem="RfP-zA-L2n" secondAttribute="leading" constant="20" id="22H-rX-vN8"/>
+                                                    <constraint firstItem="2RJ-mB-7IA" firstAttribute="centerX" secondItem="RfP-zA-L2n" secondAttribute="centerX" id="2nC-HZ-Let"/>
                                                     <constraint firstItem="JBC-Bx-6DT" firstAttribute="top" secondItem="RfP-zA-L2n" secondAttribute="top" constant="20" id="5rt-XD-KhT"/>
                                                     <constraint firstAttribute="trailing" secondItem="dBN-Bf-FXo" secondAttribute="trailing" constant="19.5" id="6Cy-Nw-FFl"/>
-                                                    <constraint firstAttribute="height" constant="129" id="7mO-Pp-3hI"/>
+                                                    <constraint firstAttribute="height" constant="149" id="7mO-Pp-3hI"/>
                                                     <constraint firstItem="KOF-9Y-D7u" firstAttribute="top" secondItem="RfP-zA-L2n" secondAttribute="top" constant="20" id="C2y-wO-KRL"/>
                                                     <constraint firstItem="dBN-Bf-FXo" firstAttribute="leading" secondItem="RfP-zA-L2n" secondAttribute="leading" constant="20.5" id="EpC-y6-hhM"/>
                                                     <constraint firstAttribute="trailing" secondItem="KOF-9Y-D7u" secondAttribute="trailing" constant="20" id="U6v-7R-jGa"/>
                                                     <constraint firstItem="KOF-9Y-D7u" firstAttribute="leading" secondItem="RfP-zA-L2n" secondAttribute="leading" constant="20" id="a3H-3b-xdp"/>
+                                                    <constraint firstItem="2RJ-mB-7IA" firstAttribute="top" secondItem="dBN-Bf-FXo" secondAttribute="bottom" constant="20" id="grt-oy-bpE"/>
                                                     <constraint firstItem="dBN-Bf-FXo" firstAttribute="top" secondItem="RKb-UY-zWO" secondAttribute="bottom" id="wK6-w8-fmM"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sio-W0-baz" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="149" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="169" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6X-s8-SnT">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7557,7 +7584,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-j1-6Q9" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="149" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="169" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-O5-fQd">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7620,7 +7647,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u11-ne-067" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="284" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="304" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-qN-npv">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7683,7 +7710,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNO-h2-gcA" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="284" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="304" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-Dq-lSm">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7746,7 +7773,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0O-O5-g13" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="419" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="439" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-c5-XF8">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7809,7 +7836,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJD-Lm-sj5" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="419" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="439" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LND-pB-20h">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -7923,6 +7950,7 @@
                         <outlet property="lblFirstText" destination="S47-8E-hFc" id="Uxh-62-K6M"/>
                         <outlet property="lblNavigationTitle" destination="Mk2-cJ-pGF" id="Jff-8J-rZM"/>
                         <outlet property="lblPoint" destination="HFw-GC-HvD" id="04q-oY-b2C"/>
+                        <outlet property="lblPointCharge" destination="TOm-vN-1tg" id="NPy-kv-PQn"/>
                         <outlet property="lblSecondText" destination="man-85-bcs" id="BZP-pp-HqM"/>
                         <outlet property="vwDefaultTop" destination="JBC-Bx-6DT" id="RPX-mg-Uy5"/>
                         <outlet property="vwFreeTop" destination="KOF-9Y-D7u" id="j4F-vc-fyl"/>

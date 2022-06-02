@@ -55,11 +55,11 @@ class NoticeMonthPopVC: UIViewController {
 
         }else{
             //핀포인트 충전으로 이동
-//            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-//            vc.modalTransitionStyle = .crossDissolve
-//            vc.modalPresentationStyle = .overFullScreen
-//            self.present(vc, animated: false, completion: nil)
-            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
+            let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: false, completion: nil)
+//            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
         }
     }
     

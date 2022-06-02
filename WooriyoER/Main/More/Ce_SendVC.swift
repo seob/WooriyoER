@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import NVActivityIndicatorView
 
 class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
     
