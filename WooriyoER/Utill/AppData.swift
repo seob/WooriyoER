@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import PDFKit
+import StoreKit
 
 //MARK: - Module
 let appData : AppData = AppData.sharedInstance
@@ -140,7 +141,7 @@ var SelDdcnt: Int = 0 // 팝업 닫은후 연차 차감/미차감 데이터 전�
 var resultParam: String = "" //증명서 결과값 0:실패 , 1:성공
 
 var isTap: Bool = false //전자문서 탭 인지 아닌지 에 따라 탭바 숨기기 default : false:탭바 숨기기 , true: 탭바 노출
- 
+var inAppproductsArray = [SKProduct]()
 
 let CheckimgOn = UIImage(named: "er_checkbox")
 let CheckimgOff = UIImage(named: "icon_nonecheck")

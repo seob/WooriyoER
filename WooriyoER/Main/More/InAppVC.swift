@@ -1,5 +1,6 @@
 import UIKit
 import StoreKit
+import NVActivityIndicatorView
 
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> Void
 
@@ -14,9 +15,9 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
     @IBOutlet weak var eventImageView: UIImageView! // 이벤트뷰
     
     @IBOutlet weak var btnCharge: UIImageView! // 충전하기 버튼
+    @IBOutlet weak var btnChargeBtn: UIButton! // 충전하기 버튼
     
     @IBOutlet weak var tblHeightConstraint: NSLayoutConstraint! //이벤트가 있으면 68 없으면 0
-    @IBOutlet weak var btnChargebtn: UIButton!
     
     private let presentingIndicatorTypes = {
         return NVActivityIndicatorType.allCases.filter { $0 != .blank }
@@ -41,7 +42,7 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
     var viewflagType = ""
     var isLogEnabled: Bool = true
     var eventImage = "" //이벤트 이미지
-    var productIdentifiers = Set(["com.wooriyo.pinpl.11pin", "com.wooriyo.pinpl.23pin", "com.wooriyo.pinpl.36pin","com.wooriyo.pinpl.5pin"]) //아이튠즈 커넥트에서 셋팅할 각 상품의 ID
+    var productIdentifiers = Set(["com.wooriyo.wooriyo.10pin", "com.wooriyo.wooriyo.20pin", "com.wooriyo.wooriyo.30pin","com.wooriyo.wooriyo.5pin"]) //아이튠즈 커넥트에서 셋팅할 각 상품의 ID
     var product: SKProduct = SKProduct() //상품의 이름,설명,가격 등의 정보를 담는 객체
     var productsArray = [SKProduct]()
     var validProducts = Array<SKProduct>()
@@ -52,16 +53,16 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
     var paymentTransactionArr:[SKPaymentTransaction] = [SKPaymentTransaction]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnChargebtn.layer.cornerRadius = 6
+        
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        
+        btnChargeBtn.layer.cornerRadius = 6
         let productIdentifiers = NSSet(objects:
-                                        "com.wooriyo.pinpl.11pin",
-                                       "com.wooriyo.pinpl.23pin",
-                                       "com.wooriyo.pinpl.36pin",
-                                       "com.wooriyo.pinpl.5pin"
+                                        "com.wooriyo.wooriyo.10pin",
+                                       "com.wooriyo.wooriyo.20pin",
+                                       "com.wooriyo.wooriyo.30pin",
+                                       "com.wooriyo.wooriyo.5pin"
         )
         
         productsRequest = SKProductsRequest(productIdentifiers: productIdentifiers as! Set<String>)
@@ -121,13 +122,13 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
         }
         var buttonSelector: String = ""
         
-        if transaction.payment.productIdentifier == "com.wooriyo.pinpl.5pin" {
+        if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.5pin" {
             buttonSelector = "5pin"
-        }else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.11pin" {
+        }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.10pin" {
             buttonSelector = "11pin"
-        }else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.23pin" {
+        }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.20pin" {
             buttonSelector = "23pin"
-        }else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.36pin" {
+        }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.30pin" {
             buttonSelector = "36pin"
         }else{
             return;
@@ -646,22 +647,22 @@ extension InAppVC: SKProductsRequestDelegate , SKPaymentTransactionObserver {
     
     func deliverProduct(transaction:SKPaymentTransaction) {
         
-        if transaction.payment.productIdentifier == "com.wooriyo.pinpl.5pin"
+        if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.5pin"
         {
             print("Consumable Product Purchased")
             // Unlock Feature
         }
-        else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.11pin"
+        else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.10pin"
         {
             print("Non-Consumable Product Purchased")
             // Unlock Feature
         }
-        else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.23pin"
+        else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.20pin"
         {
             print("Auto-Renewable Subscription Product Purchased")
             // Unlock Feature
         }
-        else if transaction.payment.productIdentifier == "com.wooriyo.pinpl.36pin"
+        else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.30pin"
         {
             print("Free Subscription Product Purchased")
             // Unlock Feature

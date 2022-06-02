@@ -24,7 +24,7 @@ class ContractMainVC: UIViewController {
     @IBOutlet weak var vwFreeTop: UIView!
     @IBOutlet weak var lblFirstText: UILabel!
     @IBOutlet weak var lblSecondText: UILabel! 
-    
+    @IBOutlet weak var lblPointCharge: UILabel!
     @IBOutlet weak var FreeLeadingConstraint: NSLayoutConstraint! // default 75
     
     override func viewDidLoad() {
@@ -35,11 +35,24 @@ class ContractMainVC: UIViewController {
         }
  
         viewflag = "contractmain"
+        let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
+        lblPointCharge.isUserInteractionEnabled = true
+        lblPointCharge.addGestureRecognizer(labelTap)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         valueSetting()
+ 
+    }
+    
+    //포인트 충전버튼
+    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
+        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
     //MARK: - Tabbar

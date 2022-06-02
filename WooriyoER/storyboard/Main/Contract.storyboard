@@ -3461,7 +3461,7 @@
                     <connections>
                         <outlet property="AfterPoint" destination="KzT-oH-uSL" id="tlH-N7-S76"/>
                         <outlet property="ExpectedPoint" destination="uQj-Vr-RdT" id="wz7-sd-sxq"/>
-                        <outlet property="btnChargebtn" destination="FJq-sf-Vag" id="Uge-9c-yUW"/>
+                        <outlet property="btnChargeBtn" destination="FJq-sf-Vag" id="flz-WD-A0R"/>
                         <outlet property="eventImageView" destination="LPv-0e-1hI" id="RlM-jT-7Mx"/>
                         <outlet property="eventView" destination="edq-kz-b0d" id="eLv-Mg-ja0"/>
                         <outlet property="lblMyPoint" destination="aY9-4H-Fyu" id="9zh-Ej-Ujc"/>
@@ -28182,7 +28182,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxQ-8P-7J0">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-Ve-orV" userLabel="DefaultView">
                                                         <rect key="frame" x="20" y="20" width="280" height="60"/>
@@ -28259,23 +28259,36 @@
                                                             <constraint firstAttribute="height" constant="4" id="Hlc-Su-Knl"/>
                                                         </constraints>
                                                     </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLy-Tj-ZMt">
+                                                        <rect key="frame" x="106" y="112.5" width="108" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀포인트 충전하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iF-1B-U4B">
+                                                                <rect key="frame" x="0.0" y="0.0" width="108" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="i1q-Ve-orV" firstAttribute="leading" secondItem="VxQ-8P-7J0" secondAttribute="leading" constant="20" id="0hq-Vd-mhR"/>
                                                     <constraint firstAttribute="trailing" secondItem="i1q-Ve-orV" secondAttribute="trailing" constant="20" id="AX1-YA-xmV"/>
+                                                    <constraint firstItem="uLy-Tj-ZMt" firstAttribute="centerX" secondItem="VxQ-8P-7J0" secondAttribute="centerX" id="B0S-lC-xkA"/>
                                                     <constraint firstItem="DND-XV-BZc" firstAttribute="top" secondItem="NFZ-Pa-nM9" secondAttribute="bottom" id="Mge-iu-hKA"/>
                                                     <constraint firstItem="i1q-Ve-orV" firstAttribute="top" secondItem="VxQ-8P-7J0" secondAttribute="top" constant="20" id="N9G-IW-86P"/>
+                                                    <constraint firstItem="uLy-Tj-ZMt" firstAttribute="top" secondItem="DND-XV-BZc" secondAttribute="bottom" constant="20" id="Ss0-Nt-xNg"/>
                                                     <constraint firstItem="VbJ-Np-VLJ" firstAttribute="top" secondItem="VxQ-8P-7J0" secondAttribute="top" constant="20" id="VTW-mc-4N8"/>
                                                     <constraint firstItem="VbJ-Np-VLJ" firstAttribute="leading" secondItem="VxQ-8P-7J0" secondAttribute="leading" constant="20" id="aO0-ZA-gac"/>
-                                                    <constraint firstAttribute="height" constant="119" id="c6h-Tj-8LG"/>
+                                                    <constraint firstAttribute="height" constant="139" id="c6h-Tj-8LG"/>
                                                     <constraint firstAttribute="trailing" secondItem="VbJ-Np-VLJ" secondAttribute="trailing" constant="20" id="oYC-fJ-RBz"/>
                                                     <constraint firstItem="DND-XV-BZc" firstAttribute="leading" secondItem="VxQ-8P-7J0" secondAttribute="leading" constant="20.5" id="uTR-sv-xZr"/>
                                                     <constraint firstAttribute="trailing" secondItem="DND-XV-BZc" secondAttribute="trailing" constant="19.5" id="vMX-Oa-3Eb"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6SF-X7-OWa" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="139" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="159" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU0-Mz-bgp">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28338,7 +28351,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7X-B2-HGl" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="139" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="159" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laV-LA-Hif">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28401,7 +28414,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kN1-Ud-rm6" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="274" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="294" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iz5-b4-u4S">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28464,7 +28477,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06l-7a-12L" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="274" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="294" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-fQ-jS7">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28527,7 +28540,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-4X-3he" userLabel="보안서약서뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="15" y="409" width="140" height="125"/>
+                                                <rect key="frame" x="15" y="429" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGs-08-qie">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28590,7 +28603,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwQ-2B-Wgi" userLabel="보안서약서리스트뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="165" y="409" width="140" height="125"/>
+                                                <rect key="frame" x="165" y="429" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeG-Jf-LpX">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -28938,6 +28951,7 @@
                         <outlet property="lblFirstText" destination="L7e-8N-fBz" id="7B9-xq-Yum"/>
                         <outlet property="lblNavigationTitle" destination="8cm-o9-Giq" id="v88-PM-k3z"/>
                         <outlet property="lblPoint" destination="1H4-ci-H2t" id="jCS-aG-Rdf"/>
+                        <outlet property="lblPointCharge" destination="4iF-1B-U4B" id="4ot-eM-G9f"/>
                         <outlet property="lblSecondText" destination="sZd-uC-fb7" id="pTq-Yu-fjS"/>
                         <outlet property="tabButtonAnnual" destination="XGU-c4-amF" id="Mzv-Wq-Ycr"/>
                         <outlet property="tabButtonApply" destination="oWg-Xo-44a" id="Kpm-78-CIT"/>
@@ -28997,7 +29011,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-Ig-jIQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-JD-5Y8" userLabel="DefaultView">
                                                         <rect key="frame" x="20" y="20" width="335" height="89"/>
@@ -29078,23 +29092,36 @@
                                                             <constraint firstAttribute="height" constant="4" id="Yr4-kn-b91"/>
                                                         </constraints>
                                                     </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IP-8n-K84">
+                                                        <rect key="frame" x="133.5" y="135" width="108" height="18"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핀포인트 충전하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW1-JC-fSI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="108" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="WfE-3l-XhI" secondAttribute="trailing" constant="19.5" id="04b-ZG-YPt"/>
                                                     <constraint firstItem="86V-Ut-Gw1" firstAttribute="leading" secondItem="ub5-Ig-jIQ" secondAttribute="leading" constant="20" id="2A1-Iu-bN7"/>
-                                                    <constraint firstAttribute="height" constant="149" id="DAW-xo-lOu"/>
+                                                    <constraint firstAttribute="height" constant="169" id="DAW-xo-lOu"/>
                                                     <constraint firstItem="4T7-JD-5Y8" firstAttribute="top" secondItem="ub5-Ig-jIQ" secondAttribute="top" constant="20" id="E9f-Vv-lJd"/>
                                                     <constraint firstAttribute="trailing" secondItem="4T7-JD-5Y8" secondAttribute="trailing" constant="20" id="QIU-JB-7K4"/>
                                                     <constraint firstItem="WfE-3l-XhI" firstAttribute="top" secondItem="nSq-Vg-3Xt" secondAttribute="bottom" constant="8" id="Qxp-fH-b3s"/>
                                                     <constraint firstItem="86V-Ut-Gw1" firstAttribute="top" secondItem="ub5-Ig-jIQ" secondAttribute="top" constant="20" id="UL3-Tl-IlZ"/>
                                                     <constraint firstItem="WfE-3l-XhI" firstAttribute="leading" secondItem="ub5-Ig-jIQ" secondAttribute="leading" constant="20.5" id="Wig-fh-kZ1"/>
                                                     <constraint firstAttribute="trailing" secondItem="86V-Ut-Gw1" secondAttribute="trailing" constant="20" id="cpi-L1-Tnx"/>
+                                                    <constraint firstItem="5IP-8n-K84" firstAttribute="centerX" secondItem="ub5-Ig-jIQ" secondAttribute="centerX" id="dBS-Nc-RUU"/>
                                                     <constraint firstItem="4T7-JD-5Y8" firstAttribute="leading" secondItem="ub5-Ig-jIQ" secondAttribute="leading" constant="20" id="gyz-cW-l9v"/>
+                                                    <constraint firstItem="5IP-8n-K84" firstAttribute="top" secondItem="WfE-3l-XhI" secondAttribute="bottom" constant="20" id="h7o-C0-OTF"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3O-Se-XFQ" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="42.5" y="169" width="140" height="125"/>
+                                                <rect key="frame" x="42.5" y="189" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDq-Ef-nBI">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29157,7 +29184,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okF-GT-Qiq" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="192.5" y="169" width="140" height="125"/>
+                                                <rect key="frame" x="192.5" y="189" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VON-L7-jXE">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29220,7 +29247,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnF-aR-z5y" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="42.5" y="304" width="140" height="125"/>
+                                                <rect key="frame" x="42.5" y="324" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDB-l1-jTQ">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29283,7 +29310,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1M-Dg-pxy" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="192.5" y="304" width="140" height="125"/>
+                                                <rect key="frame" x="192.5" y="324" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tM-1Q-LmH">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29346,7 +29373,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f08-Up-naV" userLabel="보안서약서리스트뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="192.5" y="439" width="140" height="125"/>
+                                                <rect key="frame" x="192.5" y="459" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-7D-GVS">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29409,7 +29436,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buK-hi-j6Y" userLabel="보안서약서뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
-                                                <rect key="frame" x="42.5" y="439" width="140" height="125"/>
+                                                <rect key="frame" x="42.5" y="459" width="140" height="125"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvh-Zx-7yE">
                                                         <rect key="frame" x="1" y="1" width="138" height="123"/>
@@ -29757,6 +29784,7 @@
                         <outlet property="btnback" destination="kzo-Mk-Mea" id="wAk-pN-gul"/>
                         <outlet property="lblNavigationTitle" destination="JHZ-8d-g7N" id="prC-Ew-z6c"/>
                         <outlet property="lblPoint" destination="tiV-TI-Xh6" id="zcE-Ct-iej"/>
+                        <outlet property="lblPointCharge" destination="vW1-JC-fSI" id="v3W-Z4-zMJ"/>
                         <outlet property="lblSecondText" destination="XDI-vu-c5W" id="feu-ZN-9Br"/>
                         <outlet property="tabButtonAnnual" destination="0wi-pf-OtN" id="Csr-fY-T1d"/>
                         <outlet property="tabButtonApply" destination="BDO-FG-1BT" id="Mgr-BN-TWn"/>
@@ -31255,7 +31283,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="JW0-s5-y5v"/>
+        <segue reference="bAc-mX-OVT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="btn_main_2button_s" width="76" height="48"/>
