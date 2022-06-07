@@ -18,8 +18,7 @@ import SnapKit
 import CryptoKit
 
 class LoginVC: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable {
-    
-    @IBOutlet weak var btnNaver: UIButton!
+     
     @IBOutlet weak var btnGoogle: UIButton!
     @IBOutlet weak var btnKakao: UIButton!
     
@@ -60,7 +59,6 @@ class LoginVC: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable 
         loginInstance?.delegate = self
         
         //isHidden
-        btnNaver.isHidden = false
         btnGoogle.isHidden = false
         btnKakao.isHidden = false
         

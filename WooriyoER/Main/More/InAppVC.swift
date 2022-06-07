@@ -42,7 +42,7 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
     var viewflagType = ""
     var isLogEnabled: Bool = true
     var eventImage = "" //이벤트 이미지
-    var productIdentifiers = Set(["com.wooriyo.wooriyo.10pin", "com.wooriyo.wooriyo.20pin", "com.wooriyo.wooriyo.30pin","com.wooriyo.wooriyo.5pin"]) //아이튠즈 커넥트에서 셋팅할 각 상품의 ID
+    var productIdentifiers = Set([ "com.wooriyo.wooriyo.10pin", "com.wooriyo.wooriyo.20pin","com.wooriyo.wooriyo.30pin","com.wooriyo.wooriyo.5pin"]) //아이튠즈 커넥트에서 셋팅할 각 상품의 ID
     var product: SKProduct = SKProduct() //상품의 이름,설명,가격 등의 정보를 담는 객체
     var productsArray = [SKProduct]()
     var validProducts = Array<SKProduct>()
@@ -59,7 +59,7 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
         }
         btnChargeBtn.layer.cornerRadius = 6
         let productIdentifiers = NSSet(objects:
-                                        "com.wooriyo.wooriyo.10pin",
+                                       "com.wooriyo.wooriyo.10pin",
                                        "com.wooriyo.wooriyo.20pin",
                                        "com.wooriyo.wooriyo.30pin",
                                        "com.wooriyo.wooriyo.5pin"
@@ -125,11 +125,11 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
         if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.5pin" {
             buttonSelector = "5pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.10pin" {
-            buttonSelector = "11pin"
+            buttonSelector = "10pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.20pin" {
-            buttonSelector = "23pin"
+            buttonSelector = "20pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.30pin" {
-            buttonSelector = "36pin"
+            buttonSelector = "30pin"
         }else{
             return;
         }
@@ -243,7 +243,7 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
         super.viewWillAppear(animated)
         IndicatorSetting() //로딩
         requestProductData()
-        beforepoint = 23
+        beforepoint = 36
         prefs.setValue(beforepoint, forKey: "InappindexPath")
         point = CompanyInfo.point
         afterpoint = point + beforepoint

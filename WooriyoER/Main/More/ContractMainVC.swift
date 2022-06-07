@@ -34,11 +34,10 @@ class ContractMainVC: UIViewController {
             lblNavigationTitle.font = navigationFontSE
         }
  
-        viewflag = "contractmain"
+        viewflag = "contractmain" 
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
         lblPointCharge.isUserInteractionEnabled = true
         lblPointCharge.addGestureRecognizer(labelTap)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

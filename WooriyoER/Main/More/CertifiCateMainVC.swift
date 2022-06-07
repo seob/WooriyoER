@@ -17,7 +17,6 @@ class CertifiCateMainVC: UIViewController {
     @IBOutlet weak var vwFreeTop: UIView!
     @IBOutlet weak var lblFirstText: UILabel!
     @IBOutlet weak var lblSecondText: UILabel!
-     
     @IBOutlet weak var FreeLeadingConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +35,21 @@ class CertifiCateMainVC: UIViewController {
         let labelTap = UITapGestureRecognizer(target: self, action: #selector(self.pointCharge(_:)))
         lblPointCharge.isUserInteractionEnabled = true
         lblPointCharge.addGestureRecognizer(labelTap)
+         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         valueSetting()
+    }
+     
+    //포인트 충전버튼
+    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
+        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        viewflag = "certificate"
+        self.present(vc, animated: false, completion: nil)
     }
     
     // 회사정보 불러오기 (핀 포인트 갱신때문에 호출)
@@ -60,14 +69,7 @@ class CertifiCateMainVC: UIViewController {
         }
     }
      
-    //포인트 충전버튼
-    @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = ContractSB.instantiateViewController(withIdentifier: "InAppVC") as! InAppVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        viewflag = "certificate"
-        self.present(vc, animated: false, completion: nil)
-    }
+ 
     
     //MARK: - navigation back button
     @IBAction func barBack(_ sender: UIButton) {

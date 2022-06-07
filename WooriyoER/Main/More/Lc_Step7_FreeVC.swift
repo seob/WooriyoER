@@ -222,7 +222,7 @@ class Lc_Step7_FreeVC: UIViewController {
                             self.present(vc, animated: false, completion: nil)
 //                            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                         }
-                        
+//                        self.toast("관리자에 문의해주세요")
                     }
                 }
             default:
@@ -278,7 +278,7 @@ class Lc_Step7_FreeVC: UIViewController {
                         self.present(vc, animated: false, completion: nil)
 //                        self.toast("핀포인트 충전은 웹에서만 가능합니다.")
                     }
-                    
+//                    self.toast("관리자에 문의해주세요")
                 }
         }
     }
