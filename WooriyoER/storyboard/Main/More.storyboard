@@ -7574,14 +7574,11 @@
                                     <constraint firstItem="hpo-wA-fxL" firstAttribute="leading" secondItem="8rw-v3-RuF" secondAttribute="leading" constant="30" id="wnS-zT-2xo"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4N-p6-6Cs" userLabel="유료서비스 뷰">
-                                <rect key="frame" x="0.0" y="292" width="414" height="60"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4N-p6-6Cs" userLabel="유료서비스 뷰">
+                                <rect key="frame" x="0.0" y="232" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht2-JE-oBA">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                        <connections>
-                                            <action selector="PayClick:" destination="BZq-Ng-Mf6" eventType="touchUpInside" id="89m-NA-tC9"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유료기능 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ4-8A-GPr" userLabel="유료서비스뷰">
                                         <rect key="frame" x="30" y="17.5" width="98" height="25.5"/>
@@ -7639,7 +7636,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdD-FM-44p" userLabel="핀플 문의하기 뷰">
-                                <rect key="frame" x="0.0" y="352" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="292" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKe-3c-og9">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7671,7 +7668,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfL-Wx-e9v" userLabel="광고 문의하기 뷰">
-                                <rect key="frame" x="0.0" y="412" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="352" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kde-S8-Pcp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7703,7 +7700,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6Z-Tb-ggH" userLabel="버전정보 뷰">
-                                <rect key="frame" x="0.0" y="472" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="412" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-1T-gdt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7735,7 +7732,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhk-ly-CSi" userLabel="로그아웃 뷰">
-                                <rect key="frame" x="0.0" y="552" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="492" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oa2-sp-KSw">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7767,7 +7764,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-Kc-pfP" userLabel="탈퇴 뷰">
-                                <rect key="frame" x="0.0" y="612" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="552" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2f-of-NUc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -7814,7 +7811,6 @@
                             <constraint firstItem="Qhk-ly-CSi" firstAttribute="leading" secondItem="OyC-fb-LZB" secondAttribute="leading" id="GFS-4N-nC5"/>
                             <constraint firstItem="OyC-fb-LZB" firstAttribute="trailing" secondItem="a4N-p6-6Cs" secondAttribute="trailing" id="HgD-BD-9a9"/>
                             <constraint firstItem="WfL-Wx-e9v" firstAttribute="bottom" secondItem="J6Z-Tb-ggH" secondAttribute="top" id="JHh-V5-UHd"/>
-                            <constraint firstItem="a4N-p6-6Cs" firstAttribute="top" secondItem="rSZ-V5-BHQ" secondAttribute="bottom" id="Jdf-to-aGT"/>
                             <constraint firstItem="8rw-v3-RuF" firstAttribute="leading" secondItem="OyC-fb-LZB" secondAttribute="leading" id="Ksi-3s-MPs"/>
                             <constraint firstItem="J6Z-Tb-ggH" firstAttribute="trailing" secondItem="OyC-fb-LZB" secondAttribute="trailing" id="NcI-Ia-ASx"/>
                             <constraint firstItem="8rw-v3-RuF" firstAttribute="trailing" secondItem="OyC-fb-LZB" secondAttribute="trailing" id="Nim-kB-dp5"/>
@@ -7835,6 +7831,7 @@
                             <constraint firstItem="QdD-FM-44p" firstAttribute="leading" secondItem="OyC-fb-LZB" secondAttribute="leading" id="k22-dg-akM"/>
                             <constraint firstItem="nek-QW-gIy" firstAttribute="leading" secondItem="OyC-fb-LZB" secondAttribute="leading" id="rQx-Sn-OYL"/>
                             <constraint firstItem="nek-QW-gIy" firstAttribute="top" secondItem="OyC-fb-LZB" secondAttribute="top" id="vei-4j-vtk"/>
+                            <constraint firstItem="QdD-FM-44p" firstAttribute="top" secondItem="rSZ-V5-BHQ" secondAttribute="bottom" id="wSk-NM-Oe0"/>
                             <constraint firstItem="zBU-Kc-pfP" firstAttribute="leading" secondItem="OyC-fb-LZB" secondAttribute="leading" id="zM9-aF-TJ0"/>
                         </constraints>
                     </view>
@@ -22861,14 +22858,11 @@
                                                             <constraint firstItem="Hpu-b2-vJq" firstAttribute="centerY" secondItem="zr4-xF-jyR" secondAttribute="centerY" id="huy-us-ORx"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efK-O0-BaI" userLabel="유료기능 설정뷰">
-                                                        <rect key="frame" x="0.0" y="180" width="320" height="60"/>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efK-O0-BaI" userLabel="유료기능 설정뷰">
+                                                        <rect key="frame" x="0.0" y="120" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOG-JR-RiV">
                                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                                                <connections>
-                                                                    <action selector="PayClick:" destination="9ie-wP-TVq" eventType="touchUpInside" id="Z0T-jT-ERr"/>
-                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유료기능 설정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e40-7I-Gy4" userLabel="유료기능 설정">
                                                                 <rect key="frame" x="30" y="17.5" width="98" height="25.5"/>
@@ -22897,7 +22891,7 @@
                                                         <rect key="frame" x="0.0" y="120" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp9-of-hp8">
-                                                                <rect key="frame" x="0.0" y="90" width="320" height="30"/>
+                                                                <rect key="frame" x="0.0" y="30" width="320" height="30"/>
                                                                 <connections>
                                                                     <action selector="PushNotiClick:" destination="9ie-wP-TVq" eventType="touchUpInside" id="GXA-Y1-wvz"/>
                                                                 </connections>
@@ -22924,7 +22918,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwJ-xP-BZD" userLabel="핀플 문의하기 뷰">
-                                                        <rect key="frame" x="0.0" y="240" width="320" height="60"/>
+                                                        <rect key="frame" x="0.0" y="180" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pK6-3e-BgS">
                                                                 <rect key="frame" x="0.0" y="30" width="320" height="30"/>
@@ -22955,7 +22949,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUG-ua-HG4" userLabel="광고 문의하기 뷰">
-                                                        <rect key="frame" x="0.0" y="300" width="320" height="60"/>
+                                                        <rect key="frame" x="0.0" y="240" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-zm-MJr">
                                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -22987,7 +22981,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-Z0-7up" userLabel="버전정보 뷰">
-                                                        <rect key="frame" x="0.0" y="360" width="320" height="60"/>
+                                                        <rect key="frame" x="0.0" y="300" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hU-Tk-3eZ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -23019,7 +23013,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgS-3n-fAO" userLabel="로그아웃 뷰">
-                                                        <rect key="frame" x="0.0" y="440" width="320" height="60"/>
+                                                        <rect key="frame" x="0.0" y="380" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvL-Nh-M5X">
                                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -23051,7 +23045,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkE-hJ-uYB" userLabel="탈퇴 뷰">
-                                                        <rect key="frame" x="0.0" y="500" width="320" height="60"/>
+                                                        <rect key="frame" x="0.0" y="440" width="320" height="60"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQb-NW-5Qz">
                                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -23101,10 +23095,10 @@
                                                     <constraint firstItem="CFL-Z0-7up" firstAttribute="leading" secondItem="ds6-nn-qxb" secondAttribute="leading" id="REw-lO-5zy"/>
                                                     <constraint firstItem="BUG-ua-HG4" firstAttribute="top" secondItem="pK6-3e-BgS" secondAttribute="bottom" id="SmL-Ks-mIg"/>
                                                     <constraint firstItem="CFL-Z0-7up" firstAttribute="top" secondItem="LgW-zm-MJr" secondAttribute="bottom" id="U1r-Yy-1GB"/>
+                                                    <constraint firstItem="kwJ-xP-BZD" firstAttribute="top" secondItem="L40-tP-fu0" secondAttribute="bottom" id="UeM-8h-gpu"/>
                                                     <constraint firstItem="kwJ-xP-BZD" firstAttribute="top" secondItem="qp9-of-hp8" secondAttribute="bottom" id="UuM-br-7Id"/>
                                                     <constraint firstItem="mNr-OP-PL0" firstAttribute="top" secondItem="ds6-nn-qxb" secondAttribute="top" id="XH2-KF-cyz"/>
                                                     <constraint firstItem="zr4-xF-jyR" firstAttribute="leading" secondItem="ds6-nn-qxb" secondAttribute="leading" id="ciC-9w-hVg"/>
-                                                    <constraint firstItem="efK-O0-BaI" firstAttribute="top" secondItem="L40-tP-fu0" secondAttribute="bottom" id="h27-fg-wDG"/>
                                                     <constraint firstItem="mNr-OP-PL0" firstAttribute="leading" secondItem="ds6-nn-qxb" secondAttribute="leading" id="jkL-Cd-dyp"/>
                                                     <constraint firstItem="efK-O0-BaI" firstAttribute="leading" secondItem="ds6-nn-qxb" secondAttribute="leading" id="kyW-XH-oXc"/>
                                                     <constraint firstItem="xgS-3n-fAO" firstAttribute="top" secondItem="9hU-Tk-3eZ" secondAttribute="bottom" constant="20" id="lWS-tL-sOs"/>

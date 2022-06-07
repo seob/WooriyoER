@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
+import SDWebImage
 
 class TotalEmpLits: UIViewController , NVActivityIndicatorViewable {
     @IBOutlet weak var lblNavigationTitle: UILabel!

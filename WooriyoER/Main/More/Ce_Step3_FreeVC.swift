@@ -72,11 +72,11 @@ class Ce_Step3_FreeVC: UIViewController {
     
     //포인트 충전버튼
     @objc func pointCharge(_ sender: UITapGestureRecognizer) {
-        let vc = CertifiSB.instantiateViewController(withIdentifier: "InApp_CeVC") as! InApp_CeVC
-        vc.modalTransitionStyle = .crossDissolve
-        vc.modalPresentationStyle = .overFullScreen
-        vc.selInfo  = Sel_CeEmpInfo
-        self.present(vc, animated: false, completion: nil)
+//        let vc = CertifiSB.instantiateViewController(withIdentifier: "InApp_CeVC") as! InApp_CeVC
+//        vc.modalTransitionStyle = .crossDissolve
+//        vc.modalPresentationStyle = .overFullScreen
+//        vc.selInfo  = Sel_CeEmpInfo
+//        self.present(vc, animated: false, completion: nil)
 //        self.toast("핀포인트 충전은 웹에서만 가능합니다.")
     }
     

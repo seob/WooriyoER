@@ -60,6 +60,7 @@ class NoticeMonthPopVC: UIViewController {
             vc.modalPresentationStyle = .overFullScreen
             self.present(vc, animated: false, completion: nil)
 //            self.toast("핀포인트 충전은 웹에서만 가능합니다.")
+             
         }
     }
     

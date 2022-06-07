@@ -102,11 +102,11 @@ class InApp_CeVC: UIViewController , NVActivityIndicatorViewable {
         if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.5pin" {
             buttonSelector = "5pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.10pin" {
-            buttonSelector = "11pin"
+            buttonSelector = "10pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.20pin" {
-            buttonSelector = "23pin"
+            buttonSelector = "20pin"
         }else if transaction.payment.productIdentifier == "com.wooriyo.wooriyo.30pin" {
-            buttonSelector = "36pin"
+            buttonSelector = "30pin"
         }else{
             return;
         }
@@ -248,7 +248,7 @@ class InApp_CeVC: UIViewController , NVActivityIndicatorViewable {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         requestProductData()
-        beforepoint = 23
+        beforepoint = 36
         prefs.setValue(beforepoint, forKey: "InappindexPath")
         point = CompanyInfo.point
         afterpoint = point + beforepoint

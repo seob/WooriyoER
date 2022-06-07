@@ -149,6 +149,7 @@ PODS:
   - SKRadioButton (1.0.3)
   - SnapKit (5.0.1)
   - SteviaLayout (4.7.3)
+  - SwiftyStoreKit (0.16.1)
   - TextFieldEffects (1.6.0)
   - Toast-Swift (5.0.1)
   - YPImagePicker (4.5.0):
@@ -180,6 +181,7 @@ DEPENDENCIES:
   - SDWebImage
   - SKRadioButton
   - SnapKit (~> 5.0.0)
+  - SwiftyStoreKit
   - TextFieldEffects
   - Toast-Swift (~> 5.0.1)
   - YPImagePicker
@@ -192,6 +194,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SteviaLayout
+    - SwiftyStoreKit
     - TextFieldEffects
     - Toast-Swift
     - YPImagePicker
@@ -278,10 +281,11 @@ SPEC CHECKSUMS:
   SKRadioButton: fe55bd1f46302f9acbdf788021085b35a4a43b79
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 66408a61e31dea5aa2ca6821f26e4bc6a59c092d
+PODFILE CHECKSUM: 21d8f3c400efe040b999aabffc91076fe3541a42
 
 COCOAPODS: 1.11.3

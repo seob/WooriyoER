@@ -18,6 +18,7 @@ target 'WooriyoER' do
 	pod 'EzPopup'
  	pod 'GoogleMaps'
         pod 'IQKeyboardManagerSwift'
+pod 'SwiftyStoreKit'
 
 	pod 'Toast-Swift', '~> 5.0.1'
 	

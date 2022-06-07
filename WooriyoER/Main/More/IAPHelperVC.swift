@@ -159,6 +159,11 @@ extension IAPHelperVC: SKPaymentTransactionObserver {
 }
 
 public struct InAppProducts {
+//    public static let product:[String] = [
+//                                          "com.wooriyo.wooriyo.11pin",
+//                                          "com.wooriyo.wooriyo.23pin",
+//                                          "com.wooriyo.wooriyo.36pin",
+//                                          "com.wooriyo.wooriyo.5pin"]
     public static let product:[String] = [
                                           "com.wooriyo.wooriyo.10pin",
                                           "com.wooriyo.wooriyo.20pin",
@@ -166,14 +171,14 @@ public struct InAppProducts {
                                           "com.wooriyo.wooriyo.5pin"]
     
     static let productIdentifiers: Set<String> = Set<String>([product[0], product[1], product[2], product[3]])
-//    static let productIdTuple = [(p_id: product[0], p_title: "store_pinpl_5"),
-//                                 (p_id: product[1], p_title: "store_pinpl_11"),
-//                                 (p_id: product[2], p_title: "store_pinpl_23"),
-//                                 (p_id: product[3], p_title: "store_pinpl_36")]
-    static let productIdTuple = [(p_id: product[0], p_title: "store_wooriyo_10"),
-                                 (p_id: product[1], p_title: "store_wooriyo_20"),
-                                 (p_id: product[2], p_title: "store_wooriyo_30"),
-                                 (p_id: product[3], p_title: "store_wooriyo_5")]
+    static let productIdTuple = [(p_id: product[0], p_title: "store_pinpl_11"),
+                                 (p_id: product[1], p_title: "store_pinpl_23"),
+                                 (p_id: product[2], p_title: "store_pinpl_36"),
+                                 (p_id: product[3], p_title: "store_pinpl_5")]
+//    static let productIdTuple = [(p_id: product[0], p_title: "store_pinpl_11"),
+//                                 (p_id: product[1], p_title: "store_pinpl_23"),
+//                                 (p_id: product[2], p_title: "store_pinpl_36"),
+//                                 (p_id: product[3], p_title: "store_pinpl_5")]
     //var productArray = [AnyObject]()
     
     public static let store = IAPHelperVC(productIds: InAppProducts.productIdentifiers)

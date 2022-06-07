@@ -21,8 +21,8 @@ class Lc_pointCharge: UIViewController {
     var productsRequest = SKProductsRequest()
     var validProducts = [SKProduct]()
     var productIndex = 0
-    fileprivate var productIdTuple = [(p_product: "com.wooriyo.wooriyo.5pin", p_id: "5"),(p_product: "com.wooriyo.wooriyo.10pin", p_id: "10"),(p_product: "com.wooriyo.wooriyo.20pin", p_id: "20"),(p_product: "com.wooriyo.wooriyo.30pin", p_id: "30")]
-    var productIdArr = ["com.wooriyo.wooriyo.5pin","com.wooriyo.wooriyo.10pin","com.wooriyo.wooriyo.20pin","com.wooriyo.wooriyo.30pin"]
+    fileprivate var productIdTuple = [(p_product: "com.wooriyo.wooriyo.10pin", p_id: "10"),(p_product: "com.wooriyo.wooriyo.20pin", p_id: "20"),(p_product: "com.wooriyo.wooriyo.30pin", p_id: "30"),(p_product: "com.wooriyo.wooriyo.5pin", p_id: "5")]
+    var productIdArr = ["com.wooriyo.wooriyo.10pin","com.wooriyo.wooriyo.20pin","com.wooriyo.wooriyo.30pin","com.wooriyo.wooriyo.5pin"]
     //MARK:- Public
     var selInfo : LcEmpInfo = LcEmpInfo() //핀플 근로계약서
     var standInfo : LcEmpInfo = LcEmpInfo() // 표준계약서
@@ -75,10 +75,10 @@ class Lc_pointCharge: UIViewController {
     
     func fetchAvailableProducts()  {
         let productIdentifiers = NSSet(objects:
-            "com.wooriyo.pinpl.5pin",
-           "com.wooriyo.pinpl.11pin",
-           "com.wooriyo.pinpl.23pin",
-           "com.wooriyo.pinpl.36pin"
+            "com.wooriyo.wooriyo.5pin",
+           "com.wooriyo.wooriyo.10pin",
+           "com.wooriyo.wooriyo.20pin",
+           "com.wooriyo.wooriyo.30pin"
         )
         
         productsRequest = SKProductsRequest(productIdentifiers: productIdentifiers as! Set<String>)

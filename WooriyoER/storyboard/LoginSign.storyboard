@@ -26,7 +26,7 @@
         <!--로그인 - 이메일 로그인-->
         <scene sceneID="xej-LT-NS9">
             <objects>
-                <viewController storyboardIdentifier="EmailLoginVC" modalPresentationStyle="fullScreen" id="w1Y-QN-7Xn" userLabel="로그인 - 이메일 로그인" customClass="EmailLoginVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailLoginVC" modalPresentationStyle="fullScreen" id="w1Y-QN-7Xn" userLabel="로그인 - 이메일 로그인" customClass="EmailLoginVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RRI-9M-840" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
         <!--로그인 - 회원가입-->
         <scene sceneID="NuE-gy-4aJ">
             <objects>
-                <viewController storyboardIdentifier="JoinVC" modalPresentationStyle="fullScreen" id="9cO-ce-ZUj" userLabel="로그인 - 회원가입" customClass="JoinVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JoinVC" modalPresentationStyle="fullScreen" id="9cO-ce-ZUj" userLabel="로그인 - 회원가입" customClass="JoinVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iGG-5t-ivU" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -590,7 +590,7 @@
         <!--로그인 - sns 로그인-->
         <scene sceneID="Euh-2n-7UZ">
             <objects>
-                <viewController storyboardIdentifier="SnsJoinVC" modalPresentationStyle="fullScreen" id="QMg-Fs-Bch" userLabel="로그인 - sns 로그인" customClass="SnsJoinVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SnsJoinVC" modalPresentationStyle="fullScreen" id="QMg-Fs-Bch" userLabel="로그인 - sns 로그인" customClass="SnsJoinVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1EK-x3-9XO" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -841,7 +841,7 @@
         <!--로그인 - 아이디 찾기-->
         <scene sceneID="8aa-GF-ZSc">
             <objects>
-                <viewController storyboardIdentifier="SearchId" modalPresentationStyle="fullScreen" id="nLf-tu-bFD" userLabel="로그인 - 아이디 찾기" customClass="SearchId" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchId" modalPresentationStyle="fullScreen" id="nLf-tu-bFD" userLabel="로그인 - 아이디 찾기" customClass="SearchId" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xt8-cw-Eh6" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -992,7 +992,7 @@
         <!--로그인 - 비밀번호-->
         <scene sceneID="8Yo-hH-DDJ">
             <objects>
-                <viewController storyboardIdentifier="SearchPass" modalPresentationStyle="fullScreen" id="pSe-CK-JtJ" userLabel="로그인 - 비밀번호" customClass="SearchPass" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchPass" modalPresentationStyle="fullScreen" id="pSe-CK-JtJ" userLabel="로그인 - 비밀번호" customClass="SearchPass" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uz2-8x-laa" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1131,7 +1131,7 @@
         <!--1.근로자 - 관리자 선택-->
         <scene sceneID="XbR-4t-c2P">
             <objects>
-                <viewController storyboardIdentifier="SelMgrEmp" modalPresentationStyle="fullScreen" id="ml6-3D-r9A" userLabel="1.근로자 - 관리자 선택" customClass="SelMgrEmp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelMgrEmp" modalPresentationStyle="fullScreen" id="ml6-3D-r9A" userLabel="1.근로자 - 관리자 선택" customClass="SelMgrEmp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GY2-iS-uak" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1289,7 +1289,7 @@
         <!--2.추가 정보-->
         <scene sceneID="ZdH-mv-wHQ">
             <objects>
-                <viewController storyboardIdentifier="AddInfo" modalPresentationStyle="fullScreen" id="j61-uq-L65" userLabel="2.추가 정보" customClass="AddInfo" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddInfo" modalPresentationStyle="fullScreen" id="j61-uq-L65" userLabel="2.추가 정보" customClass="AddInfo" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcK-Nf-sig" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1524,7 +1524,7 @@
         <!--Profile RegVC-->
         <scene sceneID="Ax7-YA-J51">
             <objects>
-                <viewController storyboardIdentifier="ProfileRegVC" modalPresentationStyle="fullScreen" id="Bht-JX-pyL" customClass="ProfileRegVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileRegVC" modalPresentationStyle="fullScreen" id="Bht-JX-pyL" customClass="ProfileRegVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ncz-bu-rBm" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1567,7 +1567,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-sH-gJw" userLabel="Main View">
                                 <rect key="frame" x="0.0" y="487" width="375" height="233"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-QF-oX1" userLabel="카메라" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-QF-oX1" userLabel="카메라" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="65" y="63.666666666666629" width="245" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OP-Fj-Ib5">
@@ -1611,7 +1611,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-xP-pMV" userLabel="앨범" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-xP-pMV" userLabel="앨범" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="65" y="129.66666666666663" width="245" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKq-le-Qwa">
@@ -1711,7 +1711,7 @@
         <!--설정-->
         <scene sceneID="beF-CJ-yNK">
             <objects>
-                <viewController storyboardIdentifier="Setting" modalPresentationStyle="fullScreen" id="m1O-Gm-7nX" userLabel="설정" customClass="Setting" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Setting" modalPresentationStyle="fullScreen" id="m1O-Gm-7nX" userLabel="설정" customClass="Setting" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v0i-Ds-dMv" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1979,23 +1979,20 @@
         <!--LaunchVC-->
         <scene sceneID="wna-Tw-PeE">
             <objects>
-                <viewController storyboardIdentifier="LaunchVC" modalPresentationStyle="fullScreen" id="2Gv-0Q-j0y" customClass="LaunchVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchVC" modalPresentationStyle="fullScreen" id="2Gv-0Q-j0y" customClass="LaunchVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UAj-yU-Rn4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="9hq-tb-i21">
-                                <rect key="frame" x="142" y="314" width="90" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="yu3-5d-iz8"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="9hq-tb-i21">
+                                <rect key="frame" x="141.33333333333334" y="314" width="91.666666666666657" height="100"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oUf-Wp-Rad"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9hq-tb-i21" firstAttribute="centerY" secondItem="UAj-yU-Rn4" secondAttribute="centerY" constant="-42" id="3LO-Kh-WRP"/>
-                            <constraint firstItem="9hq-tb-i21" firstAttribute="centerX" secondItem="UAj-yU-Rn4" secondAttribute="centerX" constant="-0.5" id="eVa-VW-O1W"/>
+                            <constraint firstItem="9hq-tb-i21" firstAttribute="centerX" secondItem="oUf-Wp-Rad" secondAttribute="centerX" id="Ccu-5E-2ka"/>
+                            <constraint firstItem="9hq-tb-i21" firstAttribute="centerY" secondItem="oUf-Wp-Rad" secondAttribute="centerY" id="dpV-0b-WaS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -2009,7 +2006,7 @@
         <!--로그인 - 메인-->
         <scene sceneID="bVt-h7-ofJ">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" modalPresentationStyle="fullScreen" id="HSX-G1-7kF" userLabel="로그인 - 메인" customClass="LoginVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" modalPresentationStyle="fullScreen" id="HSX-G1-7kF" userLabel="로그인 - 메인" customClass="LoginVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gT8-YK-ZGN" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2018,25 +2015,13 @@
                                 <rect key="frame" x="141.66666666666666" y="129.66666666666666" width="91.666666666666657" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-3T-Hfu">
-                                <rect key="frame" x="30" y="374" width="315" height="46"/>
+                                <rect key="frame" x="30" y="438" width="315" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="4OU-UH-VGd"/>
                                 </constraints>
                                 <state key="normal" image="btn_kakaostart"/>
                                 <connections>
                                     <action selector="kakaoLoginClick:" destination="HSX-G1-7kF" eventType="touchUpInside" id="tI3-7v-nLp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-1T-Vmp" userLabel="네이버">
-                                <rect key="frame" x="30" y="438" width="315" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="GF4-X7-Wa1"/>
-                                </constraints>
-                                <state key="normal" image="btn_naverstart">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="naverLoginClick:" destination="HSX-G1-7kF" eventType="touchUpInside" id="lLt-fr-e3E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-vD-Hra">
@@ -2140,19 +2125,16 @@
                             <constraint firstItem="zCY-S3-agu" firstAttribute="top" secondItem="tws-CR-0Z5" secondAttribute="bottom" constant="18" id="5ha-Pv-GdY"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="zCY-S3-agu" secondAttribute="trailing" constant="30" id="ENx-EO-Fad"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="PhO-vD-Hra" secondAttribute="trailing" constant="30" id="Gt3-2x-cKn"/>
-                            <constraint firstItem="S0S-1T-Vmp" firstAttribute="top" secondItem="TZM-3T-Hfu" secondAttribute="bottom" constant="18" id="HGu-Qn-tNC"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="tws-CR-0Z5" secondAttribute="trailing" constant="30" id="Jtz-No-DkP"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="TZM-3T-Hfu" secondAttribute="trailing" constant="30" id="KgR-EO-hHT"/>
                             <constraint firstItem="Qfg-jC-BL6" firstAttribute="centerX" secondItem="Pqg-Lk-pFF" secondAttribute="centerX" id="KsR-8E-d9q"/>
                             <constraint firstItem="zCY-S3-agu" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="O56-jF-CfF"/>
-                            <constraint firstItem="S0S-1T-Vmp" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="OB0-PK-Qmp"/>
-                            <constraint firstItem="tws-CR-0Z5" firstAttribute="top" secondItem="S0S-1T-Vmp" secondAttribute="bottom" constant="18" id="WsZ-Hf-CsO"/>
+                            <constraint firstItem="tws-CR-0Z5" firstAttribute="top" secondItem="TZM-3T-Hfu" secondAttribute="bottom" constant="18" id="S9h-eZ-KlM"/>
                             <constraint firstItem="PhO-vD-Hra" firstAttribute="top" secondItem="zCY-S3-agu" secondAttribute="bottom" constant="18" id="bab-85-DQJ"/>
                             <constraint firstItem="Trr-8l-9RT" firstAttribute="centerX" secondItem="gT8-YK-ZGN" secondAttribute="centerX" id="m19-iB-paP"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="bottom" secondItem="Trr-8l-9RT" secondAttribute="bottom" constant="10" id="rDt-DE-a9E"/>
                             <constraint firstItem="tws-CR-0Z5" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="sdN-jA-OKN"/>
                             <constraint firstItem="TZM-3T-Hfu" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="svj-eP-fyQ"/>
-                            <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="S0S-1T-Vmp" secondAttribute="trailing" constant="30" id="wzs-sA-hdl"/>
                             <constraint firstItem="PhO-vD-Hra" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="yGY-JA-sSk"/>
                         </constraints>
                     </view>
@@ -2161,7 +2143,6 @@
                         <outlet property="appleHeight" destination="x3Q-wD-KAL" id="oar-1e-dlc"/>
                         <outlet property="btnGoogle" destination="tws-CR-0Z5" id="6dR-GW-Tgh"/>
                         <outlet property="btnKakao" destination="TZM-3T-Hfu" id="Y3g-mX-moo"/>
-                        <outlet property="btnNaver" destination="S0S-1T-Vmp" id="Jbp-rt-Ihd"/>
                         <outlet property="loginProviderStackView" destination="zCY-S3-agu" id="DOh-6A-yJU"/>
                         <outlet property="logoImageView" destination="Qfg-jC-BL6" id="9b6-QG-i8N"/>
                         <segue destination="QMg-Fs-Bch" kind="show" identifier="LoginVC -&gt; SnsJoinVC" id="z4A-gR-P0g"/>
@@ -2175,7 +2156,7 @@
         <!--로그인 - 메인-->
         <scene sceneID="bIP-YS-omJ">
             <objects>
-                <viewController storyboardIdentifier="SE_LoginVC" modalPresentationStyle="fullScreen" id="gwi-3s-s18" userLabel="로그인 - 메인" customClass="LoginVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_LoginVC" modalPresentationStyle="fullScreen" id="gwi-3s-s18" userLabel="로그인 - 메인" customClass="LoginVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4mA-ss-2dH" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2347,7 +2328,7 @@
         <!--Profile RegVC-->
         <scene sceneID="415-TA-Bn0">
             <objects>
-                <viewController storyboardIdentifier="SE_ProfileRegVC" modalPresentationStyle="fullScreen" id="q0p-Ka-dna" customClass="ProfileRegVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_ProfileRegVC" modalPresentationStyle="fullScreen" id="q0p-Ka-dna" customClass="ProfileRegVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FE5-hb-1S3" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2390,7 +2371,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="II1-eD-OM0" userLabel="Main View">
                                 <rect key="frame" x="0.0" y="412" width="320" height="98"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-3s-fU1" userLabel="카메라" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-3s-fU1" userLabel="카메라" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="37.666666666666657" y="-4" width="244.99999999999997" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj0-K8-4aZ">
@@ -2434,7 +2415,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kck-jn-W1L" userLabel="앨범" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kck-jn-W1L" userLabel="앨범" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="37.666666666666657" y="52" width="244.99999999999997" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uy-0R-mlT">
@@ -2535,7 +2516,7 @@
         <!--로그인 - 이메일 로그인-->
         <scene sceneID="JqA-eY-ZFp">
             <objects>
-                <viewController storyboardIdentifier="EmailLoginVC_bak" modalPresentationStyle="fullScreen" id="c2N-PY-H7J" userLabel="로그인 - 이메일 로그인" customClass="EmailLoginVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailLoginVC_bak" modalPresentationStyle="fullScreen" id="c2N-PY-H7J" userLabel="로그인 - 이메일 로그인" customClass="EmailLoginVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xd5-9o-fkB" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2752,7 +2733,7 @@
         <!--로그인 - 회원가입-->
         <scene sceneID="ZfA-r7-2qR">
             <objects>
-                <viewController storyboardIdentifier="JoinVC_bak" modalPresentationStyle="fullScreen" id="YME-JM-2tN" userLabel="로그인 - 회원가입" customClass="JoinVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JoinVC_bak" modalPresentationStyle="fullScreen" id="YME-JM-2tN" userLabel="로그인 - 회원가입" customClass="JoinVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRO-1r-z21" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3108,7 +3089,7 @@
         <!--2.추가 정보-->
         <scene sceneID="jza-Ej-Fmu">
             <objects>
-                <viewController storyboardIdentifier="AddInfo_bak" modalPresentationStyle="fullScreen" id="0me-y1-4xj" userLabel="2.추가 정보" customClass="AddInfo" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddInfo_bak" modalPresentationStyle="fullScreen" id="0me-y1-4xj" userLabel="2.추가 정보" customClass="AddInfo" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NPi-a2-qfa" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
