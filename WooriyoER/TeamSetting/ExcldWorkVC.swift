@@ -15,6 +15,7 @@ class ExcldWorkVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var btnExcept: UIButton!
     @IBOutlet weak var btnInclude: UIButton!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     var notrc: Int = 0  // 출퇴근 포함 여부 0. 기록 1. 기록 안함
     
@@ -34,7 +35,7 @@ class ExcldWorkVC: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(14, forKey: "stage")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         btnExcept.isSelected = true
         btnExcept.setImage(checkImg, for: .selected)
         btnExcept.setImage(uncheckImg, for: .normal)

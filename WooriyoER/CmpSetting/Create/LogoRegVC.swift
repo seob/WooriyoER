@@ -15,6 +15,7 @@ class LogoRegVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var vwBox1: UIView!
     @IBOutlet weak var vwBox2: UIView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     let picker = UIImagePickerController()
     let setWidth = UIScreen.main.bounds.size.width
@@ -42,7 +43,7 @@ class LogoRegVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         picker.delegate = self
         scrollView.delegate = self
         scrollView.clipsToBounds = true

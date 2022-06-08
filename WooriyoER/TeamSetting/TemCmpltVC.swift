@@ -12,13 +12,16 @@ class TemCmpltVC: UIViewController {
     
     @IBOutlet weak var lblTeamName: UILabel!
     @IBOutlet weak var btnCreateTeam: UIButton!
+    @IBOutlet weak var lblCreateTeam: UILabel!
     
     var temname: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(11, forKey: "stage")
-        btnCreateTeam.layer.cornerRadius = 6
+       
+        EnterpriseColor.eachLblBtn(btnCreateTeam, lblCreateTeam)
+        
         if let tmptemname = prefs.value(forKey: "crt_temname") as? String {
             self.temname = tmptemname
         }

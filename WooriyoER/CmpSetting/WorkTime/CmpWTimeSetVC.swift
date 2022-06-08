@@ -22,6 +22,7 @@ class CmpWTimeSetVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnSat: UIButton! // 토요일 버튼
     @IBOutlet weak var btnSun: UIButton! // 일요일 버튼
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     let dateFormatter = DateFormatter()
     var inputData = ""                  //picker 시간
@@ -34,7 +35,7 @@ class CmpWTimeSetVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         textStarttm.delegate = self
         textEndtm.delegate = self
         

@@ -45,7 +45,7 @@ class JoinVC: UIViewController, NVActivityIndicatorViewable {
     //MARK: - view override
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnJoin.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnJoin)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         

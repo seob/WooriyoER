@@ -42,7 +42,7 @@ class TemCrtVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         prefs.setValue(10, forKey: "stage")
                 
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)

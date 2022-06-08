@@ -14,6 +14,7 @@ class CmpTtmListVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var tblList: UITableView!
     @IBOutlet weak var vwNoEmp: UIView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     var tuple: [EmplyInfo] = []
     var selTuple: [EmplyInfo] = []
@@ -44,7 +45,7 @@ class CmpTtmListVC: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(6, forKey: "stage")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         tblList.delegate = self
         tblList.dataSource = self
         

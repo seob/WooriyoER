@@ -16,7 +16,9 @@ class CmpVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var lblEName: UILabel!
     @IBOutlet weak var vwLine1: UIView!
     @IBOutlet weak var vwLine2: UIView!
-    @IBOutlet weak var btnNext: UILabel!
+    @IBOutlet weak var lblNext: UILabel!
+    @IBOutlet weak var btnNext: UIButton!
+    
     
     // MARK: - IndicatorSetting
     private let presentingIndicatorTypes = {
@@ -36,7 +38,7 @@ class CmpVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnNext, lblNext)
         // intro stage
         prefs.setValue(3, forKey: "stage")
         

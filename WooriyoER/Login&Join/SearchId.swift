@@ -36,7 +36,7 @@ class SearchId: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnFindId.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnFindId)
         textName.delegate = self
         textPhone.delegate = self
         

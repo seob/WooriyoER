@@ -10,8 +10,10 @@ import UIKit
 
 class InfoSetPopUp: UIViewController {
     
+    @IBOutlet weak var btnOk: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        EnterpriseColor.nonLblBtn(btnOk)
     }
     
     @IBAction func cancelClick(_ sender: UIButton) {

@@ -26,7 +26,8 @@ class CmpInfoVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var lblUrl: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var btnNext: UILabel!
+    @IBOutlet weak var lblNext: UILabel!
+    @IBOutlet weak var btnNext: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -58,7 +59,7 @@ class CmpInfoVC: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(4, forKey: "stage")
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnNext, lblNext)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         

@@ -33,7 +33,7 @@ class SearchPass: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnFindPw.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnFindPw)
         textEmail.delegate = self
         
         addToolBar(textFields: [textEmail])

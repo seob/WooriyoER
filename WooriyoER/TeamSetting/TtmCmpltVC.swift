@@ -13,6 +13,7 @@ class TtmCmpltVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var lblTTName: UILabel!
     @IBOutlet weak var tblTeamList: UITableView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     
     var tuple: [TemInfo] = []
@@ -45,7 +46,8 @@ class TtmCmpltVC: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(13, forKey: "stage")
-        btnSave.layer.cornerRadius = 6
+        
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         if let tmpttmsid = prefs.value(forKey: "crt_ttmsid") as? Int {
             self.ttmsid = tmpttmsid
         }

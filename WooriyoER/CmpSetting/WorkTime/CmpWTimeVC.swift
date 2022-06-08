@@ -40,6 +40,7 @@ class CmpWTimeVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var btnInfoPopC: UIButton!
     @IBOutlet weak var btnInfoPopN: UIButton!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     var cmpsid: Int = 0             //회사번호
     var cmpnm: String = ""          //회사명
@@ -74,7 +75,9 @@ class CmpWTimeVC: UIViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(8, forKey: "stage")
-        btnSave.layer.cornerRadius = 6
+        
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
+        
         btnSchdl.setImage(switchOnImg, for: .selected)
         btnSchdl.setImage(switchOffImg, for: .normal)
         btnCmtrc.setImage(switchOnImg, for: .selected)

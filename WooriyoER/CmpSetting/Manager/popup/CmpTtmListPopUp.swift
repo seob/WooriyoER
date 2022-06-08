@@ -12,6 +12,7 @@ class CmpTtmListPopUp: UIViewController {
     
     @IBOutlet weak var tblList: UITableView!
     @IBOutlet weak var tblHeight: NSLayoutConstraint!
+    @IBOutlet weak var btnSave: UIButton!
     
     var tuple: [EmplyInfo] = []
     var empsids = ""
@@ -21,6 +22,7 @@ class CmpTtmListPopUp: UIViewController {
         tblList.delegate = self
         tblList.dataSource = self
         tblList.separatorStyle = .none
+        EnterpriseColor.nonLblBtn(btnSave)
         if tuple.count < 5 {
             tblHeight.constant = CGFloat(tuple.count * 64)
         }else {

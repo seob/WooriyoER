@@ -13,10 +13,11 @@ class IntroVC1: UIViewController {
     
     @IBOutlet weak var topHeight: NSLayoutConstraint!
     @IBOutlet weak var btnNext: UIButton!
+    @IBOutlet weak var lblNext: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnNext, lblNext)
         if deviceHeight() == 2 {
             topHeight.constant = UIScreen.main.bounds.height * ( topHeight.constant / 812) - 20
         }else {
