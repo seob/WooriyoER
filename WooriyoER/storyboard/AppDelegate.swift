@@ -18,9 +18,10 @@ import GoogleMaps
 import GooglePlaces
 import IQKeyboardManagerSwift
 import AuthenticationServices
+import Toast_Swift
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLocationManagerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,  CLLocationManagerDelegate {
     
     
     var window: UIWindow?
@@ -47,32 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         //구글 맵
         GMSServices.provideAPIKey(googlePlaceAPIKey)
         GMSPlacesClient.provideAPIKey(googlePlaceAPIKey)
-        //구글 로그인
-        FirebaseApp.configure()
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
         
-        
-        //네이버 로그인
-        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
-        // 네이버 앱으로 인증하는 방식을 활성화
-        instance?.isNaverAppOauthEnable = true
-        
-        // SafariViewController에서 인증하는 방식을 활성화
-        instance?.isInAppOauthEnable = true
-        
-        // 인증 화면을 iPhone의 세로 모드에서만 사용하기
-        instance?.isOnlyPortraitSupportedInIphone()
-        
-        // 네이버 아이디로 로그인하기 설정
-        // 애플리케이션을 등록할 때 입력한 URL Scheme
-        instance?.serviceUrlScheme = kServiceAppUrlScheme
-        // 애플리케이션 등록 후 발급받은 클라이언트 아이디
-        instance?.consumerKey = kConsumerKey
-        // 애플리케이션 등록 후 발급받은 클라이언트 시크릿
-        instance?.consumerSecret = kConsumerSecret
-        // 애플리케이션 이름
-        instance?.appName = kServiceAppName
+         
         
         //푸쉬알림
         Messaging.messaging().delegate = self
@@ -335,18 +312,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, CLLoca
         return false
     }
     
-    // 구글 로그인 프로세스를 처리합니다.
-    // 여기서는 로그인 시도 시 구현된 ViewController에서 실행하도록 하였습니다.
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        loginMainViewController.sign(signIn!, didSignInFor: user, withError: error)
-    }
-    @nonobjc func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!, withError error: NSError!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
-        if let clintID = signIn.clientID {
-            print("AppDelegate:signIn:clintID : \(clintID)")
-        }
-    }
     
     func applicationWillTerminate(_ application: UIApplication) {
         isVersionCnt = 0 // 앱을 종료하고 재시작할경우 버전 체크 위해서

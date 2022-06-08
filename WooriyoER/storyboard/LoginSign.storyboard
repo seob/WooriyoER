@@ -2014,16 +2014,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-jC-BL6">
                                 <rect key="frame" x="141.66666666666666" y="129.66666666666666" width="91.666666666666657" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-3T-Hfu">
-                                <rect key="frame" x="30" y="438" width="315" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="4OU-UH-VGd"/>
-                                </constraints>
-                                <state key="normal" image="btn_kakaostart"/>
-                                <connections>
-                                    <action selector="kakaoLoginClick:" destination="HSX-G1-7kF" eventType="touchUpInside" id="tI3-7v-nLp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhO-vD-Hra">
                                 <rect key="frame" x="30" y="630" width="315" height="46"/>
                                 <constraints>
@@ -2100,50 +2090,20 @@
                                     <constraint firstAttribute="bottom" secondItem="oVn-Ba-mqh" secondAttribute="bottom" id="vpp-zh-MqF"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tws-CR-0Z5" userLabel="구글">
-                                <rect key="frame" x="30" y="502" width="315" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="57E-yf-R6d"/>
-                                </constraints>
-                                <state key="normal" image="btn_googlestart"/>
-                                <connections>
-                                    <action selector="googleLoginClick:" destination="HSX-G1-7kF" eventType="touchUpInside" id="VSc-zY-2cB"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zCY-S3-agu">
-                                <rect key="frame" x="30" y="566" width="315" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="x3Q-wD-KAL"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pqg-Lk-pFF"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Trr-8l-9RT" firstAttribute="top" secondItem="PhO-vD-Hra" secondAttribute="bottom" constant="50" id="2NM-yA-AKS"/>
                             <constraint firstItem="Qfg-jC-BL6" firstAttribute="top" secondItem="Pqg-Lk-pFF" secondAttribute="bottom" multiplier="1/6" id="4bB-Pm-pPw"/>
-                            <constraint firstItem="zCY-S3-agu" firstAttribute="top" secondItem="tws-CR-0Z5" secondAttribute="bottom" constant="18" id="5ha-Pv-GdY"/>
-                            <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="zCY-S3-agu" secondAttribute="trailing" constant="30" id="ENx-EO-Fad"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="PhO-vD-Hra" secondAttribute="trailing" constant="30" id="Gt3-2x-cKn"/>
-                            <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="tws-CR-0Z5" secondAttribute="trailing" constant="30" id="Jtz-No-DkP"/>
-                            <constraint firstItem="Pqg-Lk-pFF" firstAttribute="trailing" secondItem="TZM-3T-Hfu" secondAttribute="trailing" constant="30" id="KgR-EO-hHT"/>
                             <constraint firstItem="Qfg-jC-BL6" firstAttribute="centerX" secondItem="Pqg-Lk-pFF" secondAttribute="centerX" id="KsR-8E-d9q"/>
-                            <constraint firstItem="zCY-S3-agu" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="O56-jF-CfF"/>
-                            <constraint firstItem="tws-CR-0Z5" firstAttribute="top" secondItem="TZM-3T-Hfu" secondAttribute="bottom" constant="18" id="S9h-eZ-KlM"/>
-                            <constraint firstItem="PhO-vD-Hra" firstAttribute="top" secondItem="zCY-S3-agu" secondAttribute="bottom" constant="18" id="bab-85-DQJ"/>
                             <constraint firstItem="Trr-8l-9RT" firstAttribute="centerX" secondItem="gT8-YK-ZGN" secondAttribute="centerX" id="m19-iB-paP"/>
                             <constraint firstItem="Pqg-Lk-pFF" firstAttribute="bottom" secondItem="Trr-8l-9RT" secondAttribute="bottom" constant="10" id="rDt-DE-a9E"/>
-                            <constraint firstItem="tws-CR-0Z5" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="sdN-jA-OKN"/>
-                            <constraint firstItem="TZM-3T-Hfu" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="svj-eP-fyQ"/>
                             <constraint firstItem="PhO-vD-Hra" firstAttribute="leading" secondItem="Pqg-Lk-pFF" secondAttribute="leading" constant="30" id="yGY-JA-sSk"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="appleEmailHeight" destination="bab-85-DQJ" id="QZ2-2D-dYB"/>
-                        <outlet property="appleHeight" destination="x3Q-wD-KAL" id="oar-1e-dlc"/>
-                        <outlet property="btnGoogle" destination="tws-CR-0Z5" id="6dR-GW-Tgh"/>
-                        <outlet property="btnKakao" destination="TZM-3T-Hfu" id="Y3g-mX-moo"/>
-                        <outlet property="loginProviderStackView" destination="zCY-S3-agu" id="DOh-6A-yJU"/>
                         <outlet property="logoImageView" destination="Qfg-jC-BL6" id="9b6-QG-i8N"/>
                         <segue destination="QMg-Fs-Bch" kind="show" identifier="LoginVC -&gt; SnsJoinVC" id="z4A-gR-P0g"/>
                         <segue destination="w1Y-QN-7Xn" kind="show" identifier="LoginVC -&gt; EmailLoginVC" id="rsW-0M-BvL"/>
@@ -2164,28 +2124,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="er_logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="I39-d2-Y8a">
                                 <rect key="frame" x="114.33333333333331" y="94" width="91.666666666666686" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQs-pH-I7q">
-                                <rect key="frame" x="30" y="243" width="260" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="TMH-VZ-yzF"/>
-                                </constraints>
-                                <state key="normal" image="btn_kakaostart"/>
-                                <connections>
-                                    <action selector="kakaoLoginClick:" destination="gwi-3s-s18" eventType="touchUpInside" id="UQS-D4-GLu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftU-H6-pqe" userLabel="네이버">
-                                <rect key="frame" x="30" y="293" width="260" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="5qK-JL-Fpf"/>
-                                </constraints>
-                                <state key="normal" image="btn_naverstart">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="naverLoginClick:" destination="gwi-3s-s18" eventType="touchUpInside" id="Ed0-5v-ds0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r25-UF-MbP">
                                 <rect key="frame" x="30" y="443" width="260" height="40"/>
                                 <constraints>
@@ -2268,56 +2206,22 @@
                                     <constraint firstItem="D7A-SJ-GKc" firstAttribute="centerY" secondItem="lQq-jK-nZk" secondAttribute="centerY" id="jk7-QY-BA0"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sx-Eh-Gmh" userLabel="구글">
-                                <rect key="frame" x="30" y="343" width="260" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="qpa-sy-TyF"/>
-                                </constraints>
-                                <state key="normal" image="btn_googlestart"/>
-                                <connections>
-                                    <action selector="googleLoginClick:" destination="gwi-3s-s18" eventType="touchUpInside" id="tz9-37-faI"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bIi-q1-Nfw">
-                                <rect key="frame" x="30" y="393" width="260" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="h2Y-g2-ZPR"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pdb-8z-klb"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="2IG-27-0Fy" secondAttribute="trailing" constant="15" id="7yl-yn-hgp"/>
-                            <constraint firstItem="ftU-H6-pqe" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="30" id="BSq-HU-sFc"/>
-                            <constraint firstItem="6Sx-Eh-Gmh" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="30" id="FVS-k5-FCK"/>
-                            <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="ftU-H6-pqe" secondAttribute="trailing" constant="30" id="IQW-EG-03I"/>
-                            <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="6Sx-Eh-Gmh" secondAttribute="trailing" constant="30" id="LzY-Ee-Wzz"/>
                             <constraint firstItem="2IG-27-0Fy" firstAttribute="top" secondItem="r25-UF-MbP" secondAttribute="bottom" constant="35" id="Opi-Vy-oef"/>
-                            <constraint firstItem="WQs-pH-I7q" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="30" id="Xyu-mk-fok"/>
                             <constraint firstItem="I39-d2-Y8a" firstAttribute="top" secondItem="pdb-8z-klb" secondAttribute="top" constant="50" id="avK-4H-BYM"/>
-                            <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="bIi-q1-Nfw" secondAttribute="trailing" constant="30" id="bHW-SP-fSw"/>
                             <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="r25-UF-MbP" secondAttribute="trailing" constant="30" id="cGm-Vn-qmi"/>
-                            <constraint firstItem="r25-UF-MbP" firstAttribute="top" secondItem="bIi-q1-Nfw" secondAttribute="bottom" constant="10" id="ecs-mV-N3L"/>
-                            <constraint firstItem="bIi-q1-Nfw" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="30" id="fZG-lc-aMw"/>
                             <constraint firstItem="pdb-8z-klb" firstAttribute="bottom" secondItem="2IG-27-0Fy" secondAttribute="bottom" constant="10" id="gle-yz-nWi"/>
                             <constraint firstItem="2IG-27-0Fy" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="15" id="isR-7J-q81"/>
-                            <constraint firstItem="bIi-q1-Nfw" firstAttribute="top" secondItem="6Sx-Eh-Gmh" secondAttribute="bottom" constant="10" id="jF4-HN-Ldm"/>
-                            <constraint firstItem="pdb-8z-klb" firstAttribute="trailing" secondItem="WQs-pH-I7q" secondAttribute="trailing" constant="30" id="lss-U9-JLa"/>
                             <constraint firstItem="r25-UF-MbP" firstAttribute="leading" secondItem="pdb-8z-klb" secondAttribute="leading" constant="30" id="wQl-1a-PMo"/>
-                            <constraint firstItem="ftU-H6-pqe" firstAttribute="top" secondItem="WQs-pH-I7q" secondAttribute="bottom" constant="10" id="xGc-Fl-MPi"/>
-                            <constraint firstItem="6Sx-Eh-Gmh" firstAttribute="top" secondItem="ftU-H6-pqe" secondAttribute="bottom" constant="10" id="xJu-Ud-Vhz"/>
                             <constraint firstItem="I39-d2-Y8a" firstAttribute="centerX" secondItem="pdb-8z-klb" secondAttribute="centerX" id="zPQ-6X-KeL"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
-                        <outlet property="appleEmailHeight" destination="ecs-mV-N3L" id="Wzr-bo-L9V"/>
-                        <outlet property="appleHeight" destination="h2Y-g2-ZPR" id="Wn3-Jz-zhz"/>
-                        <outlet property="btnGoogle" destination="6Sx-Eh-Gmh" id="at4-q0-dtV"/>
-                        <outlet property="btnKakao" destination="WQs-pH-I7q" id="ggQ-tx-gGp"/>
-                        <outlet property="btnNaver" destination="ftU-H6-pqe" id="cAl-c7-clF"/>
-                        <outlet property="loginProviderStackView" destination="bIi-q1-Nfw" id="saV-DB-3Uo"/>
                         <outlet property="logoImageView" destination="I39-d2-Y8a" id="Szu-IQ-SSD"/>
                     </connections>
                 </viewController>
@@ -3451,9 +3355,6 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="btn_emailstart" width="315" height="46"/>
-        <image name="btn_googlestart" width="315" height="46"/>
-        <image name="btn_kakaostart" width="315" height="46"/>
-        <image name="btn_naverstart" width="315" height="46"/>
         <image name="er_checkbox" width="20" height="20"/>
         <image name="er_logo_big" width="91.666664123535156" height="100"/>
         <image name="gray_btn_195" width="195" height="48"/>
