@@ -13,9 +13,12 @@ class CertificateSMSPopup: UIViewController ,MFMessageComposeViewControllerDeleg
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblContent: UILabel!
+    @IBOutlet weak var btnOk: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnOk.backgroundColor = EnterpriseColor.btnColor
         print("\n---------- [ SmsCertEmpInfo : \(SmsCertEmpInfo.toJSON()) ] ----------\n")
         
     }

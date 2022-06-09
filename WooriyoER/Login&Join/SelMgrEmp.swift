@@ -37,7 +37,7 @@ class SelMgrEmp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(1, forKey: "stage")
-        btnOk.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnOk)
         if let tmploginType = prefs.value(forKey: "loginType") as? String {
             self.loginType = tmploginType
         }

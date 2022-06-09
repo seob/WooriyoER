@@ -22,6 +22,8 @@ class StartSecurtContractPopup: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         if format == 0 {
             empsid = selInfo.empsid
         }else{

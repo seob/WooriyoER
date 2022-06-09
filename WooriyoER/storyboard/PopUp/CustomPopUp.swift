@@ -11,6 +11,7 @@ import UIKit
 class CustomPopUp: UIViewController {
     
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var btnOk: UIButton!
     
     var contents = ""
     var focusTextField: UITextField?
@@ -18,6 +19,8 @@ class CustomPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textLabel.text = contents
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         
     }
     

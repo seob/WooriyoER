@@ -17,6 +17,7 @@ class Ce_CertifiCrop: UIViewController , UIScrollViewDelegate, NVActivityIndicat
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var cropImage: UIImageView!
     @IBOutlet weak var gridImage: UIImageView!
+    @IBOutlet weak var btnOk: UIButton!
     
     private let presentingIndicatorTypes = {
         return NVActivityIndicatorType.allCases.filter { $0 != .blank }
@@ -32,6 +33,7 @@ class Ce_CertifiCrop: UIViewController , UIScrollViewDelegate, NVActivityIndicat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        EnterpriseColor.nonLblBtn(btnOk)
         
         self.scrollView.delegate = self
         

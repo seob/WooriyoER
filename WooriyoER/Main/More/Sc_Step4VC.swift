@@ -18,7 +18,7 @@ class Sc_Step4VC: UIViewController {
     var viewflagType = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

@@ -66,8 +66,8 @@ class Ce_udtsealVC: UIViewController  , UIScrollViewDelegate , Ce_ProfileViewCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnModify.layer.cornerRadius = 6
-        btnModifysplit.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnModify)
+        EnterpriseColor.nonLblBtn(btnModifysplit)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

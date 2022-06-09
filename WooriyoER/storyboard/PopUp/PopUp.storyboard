@@ -17,7 +17,7 @@
         <!--Custom Pop Up-->
         <scene sceneID="IsN-rR-I7G">
             <objects>
-                <viewController storyboardIdentifier="CustomPopUp" id="gBv-q4-5A5" customClass="CustomPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomPopUp" id="gBv-q4-5A5" customClass="CustomPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGt-PD-WaU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnOk" destination="MjP-zQ-fUh" id="RRI-ao-e16"/>
                         <outlet property="textLabel" destination="SnF-rV-3xx" id="3Ho-hF-VHk"/>
                     </connections>
                 </viewController>
@@ -114,7 +115,7 @@
         <!--Custom Action Pop Up-->
         <scene sceneID="Zr5-vJ-vtY">
             <objects>
-                <viewController storyboardIdentifier="CustomActionPopUp" id="VGf-R3-R9Y" customClass="CustomActionPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomActionPopUp" id="VGf-R3-R9Y" customClass="CustomActionPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPA-WF-Ow9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,6 +219,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnOk" destination="oMJ-ey-57B" id="S2d-97-N0X"/>
                         <outlet property="textLabel" destination="CBi-oq-NAs" id="UXq-87-7Ky"/>
                     </connections>
                 </viewController>
@@ -228,7 +230,7 @@
         <!--Custom Navi Pop Up-->
         <scene sceneID="rJa-yh-VsK">
             <objects>
-                <viewController storyboardIdentifier="CustomNaviPopUp" id="GkE-Xg-mM1" customClass="CustomNaviPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomNaviPopUp" id="GkE-Xg-mM1" customClass="CustomNaviPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wD7-K2-deP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

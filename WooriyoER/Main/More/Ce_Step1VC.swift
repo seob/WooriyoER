@@ -54,7 +54,7 @@ class Ce_Step1VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

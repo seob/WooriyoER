@@ -10,9 +10,11 @@ import UIKit
 
 class CmpCertificatePopUp: UIViewController {
 
+    @IBOutlet weak var btnYes: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnYes.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnYes.backgroundColor = EnterpriseColor.btnColor
         // Do any additional setup after loading the view.
     }
     

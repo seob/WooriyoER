@@ -23,7 +23,7 @@ class Ce_Step3_FreeVC: UIViewController {
     var viewflagType = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

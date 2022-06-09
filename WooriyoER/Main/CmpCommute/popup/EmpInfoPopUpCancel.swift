@@ -12,6 +12,7 @@ class EmpInfoPopUpCancel: UIViewController {
     
     @IBOutlet weak var lblTname: UILabel!
     @IBOutlet weak var lblEmpname: UILabel!
+    @IBOutlet weak var btnOut: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -39,6 +40,8 @@ class EmpInfoPopUpCancel: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOut.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnOut.backgroundColor = EnterpriseColor.btnColor
         lblTname.text = temname
         lblEmpname.text = selname
     }

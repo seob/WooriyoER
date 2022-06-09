@@ -25,6 +25,8 @@ class StartCertificatePopUp: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnOk.backgroundColor = EnterpriseColor.btnColor
         if self.format == 0 {
             lblTitle.text = "재직증명서를\n발급하시겠습니까?"
         }else{

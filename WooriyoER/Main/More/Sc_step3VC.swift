@@ -31,7 +31,7 @@ class Sc_step3VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n---------- [ self :\(selInfo.toJSON()) ] ----------\n")
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if selInfo.format == 0 {
             lblNavigationTitle.text = "핀플 입사 보안서약서"
         }else{

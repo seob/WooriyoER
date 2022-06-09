@@ -11,9 +11,12 @@ import UIKit
 class AddmghrPopup: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnAppoint: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnAppoint.backgroundColor = EnterpriseColor.btnColor
+        btnAppoint.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         lblName.text = "'\(SelCeEmpInfo.name)'을(를)"
     }
     @IBAction func okClick(_ sender: UIButton) {

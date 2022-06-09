@@ -15,9 +15,12 @@ class AnnualPopUp: UIViewController {
     var usemin = 0
     var type = 0
     var AnualInfo: anualmgrInfo = anualmgrInfo()
+    @IBOutlet weak var btnDelete: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnDelete.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnDelete.backgroundColor = EnterpriseColor.btnColor
     }
     
     @IBAction func cancelClick(_ sender: UIButton) {

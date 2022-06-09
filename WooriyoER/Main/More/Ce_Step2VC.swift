@@ -21,7 +21,7 @@ class Ce_Step2VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSign.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSign)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

@@ -43,7 +43,9 @@ class Career_empListVC: UIViewController {
         super.viewDidLoad()
         tblList.delegate = self
         tblList.dataSource = self
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        lblWork.textColor = EnterpriseColor.lblColor
         
         tblList.rowHeight = UITableView.automaticDimension
         tblList.separatorStyle = .none

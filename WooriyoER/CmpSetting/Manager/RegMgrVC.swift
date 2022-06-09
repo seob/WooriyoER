@@ -13,13 +13,14 @@ class RegMgrVC: UIViewController {
     @IBOutlet weak var lblSEtext1: UILabel!
     @IBOutlet weak var lblSEtext2: UILabel!
     @IBOutlet weak var btnJoin: UIButton!
+    @IBOutlet weak var lblJoin: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prefs.setValue(5, forKey: "stage")
         lblSEtext1.adjustsFontSizeToFitWidth = true
         lblSEtext2.adjustsFontSizeToFitWidth = true
-        btnJoin.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnJoin, lblJoin)
         viewflag = "RegMgrVC"
     }
     //MARK: - navigation back button

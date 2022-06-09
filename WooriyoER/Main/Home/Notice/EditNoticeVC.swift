@@ -20,6 +20,7 @@ class EditNoticeVC: UIViewController {
     
     @IBOutlet weak var vwLine1: UIView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     @IBOutlet weak var scrollView: UIScrollView!
     var strTitle = ""
@@ -30,7 +31,7 @@ class EditNoticeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n---------- [ noticeDetail : \(noticeDetail.toJSON()) ] ----------\n")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         
         textTName.delegate = self
         textTMemo.delegate = self

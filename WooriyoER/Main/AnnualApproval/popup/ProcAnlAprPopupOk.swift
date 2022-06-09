@@ -12,6 +12,7 @@ class ProcAnlAprPopupOk: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblSpot: UILabel!
+    @IBOutlet weak var btnOk: UIButton!
     
     let urlClass = UrlClass()
     let jsonClass = JsonClass()
@@ -32,6 +33,8 @@ class ProcAnlAprPopupOk: UIViewController {
         super.viewDidLoad()
         lblName.text = name
         lblSpot.text = spot
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     
     @IBAction func okClick(_ sender: UIButton) {

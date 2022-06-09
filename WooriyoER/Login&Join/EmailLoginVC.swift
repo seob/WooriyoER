@@ -37,7 +37,9 @@ class EmailLoginVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnLogin.layer.cornerRadius = 6
+        
+        EnterpriseColor.nonLblBtn(btnLogin)
+        
         textEmail.delegate = self
         textPw.delegate = self
         textPw.isSecureTextEntry = true

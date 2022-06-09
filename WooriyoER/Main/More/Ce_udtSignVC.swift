@@ -37,7 +37,7 @@ class Ce_udtSignVC: UIViewController , UIScrollViewDelegate{
     var issquare = 0 // 직인모양 0.원형 1.사각형
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnModify.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnModify)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

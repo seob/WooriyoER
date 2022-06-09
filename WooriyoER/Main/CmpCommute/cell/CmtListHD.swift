@@ -35,12 +35,13 @@ class CmtListHD: UITableViewCell, UITextFieldDelegate {
 //        btnNotWork.setImage(UIImage(named: "gray_square"), for: .normal)
 //        btnNotLeaveWork.setImage(UIImage(named: "er_btn_square"), for: .selected)
 //        btnNotLeaveWork.setImage(UIImage(named: "gray_square"), for: .normal)
-         
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        
         btnWork.isSelected = true
         btnNotWork.isSelected = false
         btnNotLeaveWork.isSelected = false
         
-        lblWork.textColor = .init(hexString: "#000000")
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = .init(hexString: "#CBCBD3")
         lblNotLeaveWork.textColor = .init(hexString: "#CBCBD3")
          
@@ -99,11 +100,11 @@ class CmtListHD: UITableViewCell, UITextFieldDelegate {
         btnNotWork.isSelected = false
         btnNotLeaveWork.isSelected = false
         
-        btnWork.backgroundColor = UIColor.init(hexString: "#FCCA00")
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         btnNotWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
         btnNotLeaveWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
         
-        lblWork.textColor = .init(hexString: "#000000")
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = .init(hexString: "#CBCBD3")
         lblNotLeaveWork.textColor = .init(hexString: "#CBCBD3")
     }
@@ -113,11 +114,11 @@ class CmtListHD: UITableViewCell, UITextFieldDelegate {
         btnNotLeaveWork.isSelected = false
         
         btnWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
-        btnNotWork.backgroundColor = UIColor.init(hexString: "#FCCA00")
+        btnNotWork.backgroundColor = EnterpriseColor.btnColor
         btnNotLeaveWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
         
         lblWork.textColor = .init(hexString: "#CBCBD3")
-        lblNotWork.textColor = .init(hexString: "#000000")
+        lblNotWork.textColor = EnterpriseColor.lblColor
         lblNotLeaveWork.textColor = .init(hexString: "#CBCBD3")
     }
     
@@ -128,11 +129,11 @@ class CmtListHD: UITableViewCell, UITextFieldDelegate {
         
         btnWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
         btnNotWork.backgroundColor = UIColor.init(hexString: "#F7F7FA")
-        btnNotLeaveWork.backgroundColor = UIColor.init(hexString: "#FCCA00")
+        btnNotLeaveWork.backgroundColor = EnterpriseColor.btnColor
         
         lblWork.textColor = .init(hexString: "#CBCBD3")
         lblNotWork.textColor = .init(hexString: "#CBCBD3")
-        lblNotLeaveWork.textColor = .init(hexString: "#000000")
+        lblNotLeaveWork.textColor = EnterpriseColor.lblColor
     }
      
     func textFieldDidBeginEditing(_ textField: UITextField) {

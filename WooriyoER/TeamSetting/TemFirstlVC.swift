@@ -11,10 +11,11 @@ import UIKit
 class TemFirstlVC: UIViewController {    
     
     @IBOutlet weak var btnCreate: UIButton!
+    @IBOutlet weak var lblCreate: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnCreate.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnCreate, lblCreate)
         prefs.setValue(9, forKey: "stage")
         
         viewflag = "TemFirstlVC"

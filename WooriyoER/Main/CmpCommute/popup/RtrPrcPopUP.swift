@@ -12,6 +12,7 @@ class RtrPrcPopUP: UIViewController {
     
     @IBOutlet weak var lblTname: UILabel!
     @IBOutlet weak var lblEmpname: UILabel!
+    @IBOutlet weak var btnLeave: UIButton!
     
     let urlClass = UrlClass()
     let jsonClass = JsonClass()
@@ -39,6 +40,8 @@ class RtrPrcPopUP: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnLeave.backgroundColor = EnterpriseColor.btnColor
+        btnLeave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         lblTname.text = temname
         lblEmpname.text = selname
         

@@ -21,7 +21,8 @@ class InApp_CeVC: UIViewController , NVActivityIndicatorViewable {
     @IBOutlet weak var eventView: UIView! // 이벤트뷰
     @IBOutlet weak var eventImageView: UIImageView! // 이벤트뷰
     
-    @IBOutlet weak var btnCharge: UIImageView! // 충전하기 버튼
+    @IBOutlet weak var btnCharge: UIButton! //충전하기 버튼
+    
     
     @IBOutlet weak var tblHeightConstraint: NSLayoutConstraint! //이벤트가 있으면 68 없으면 0
     
@@ -56,7 +57,7 @@ class InApp_CeVC: UIViewController , NVActivityIndicatorViewable {
     var paymentTransactionArr:[SKPaymentTransaction] = [SKPaymentTransaction]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        EnterpriseColor.nonLblBtn(btnCharge)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

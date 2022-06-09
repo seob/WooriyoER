@@ -14,11 +14,12 @@ class NoticeDetailVC: UIViewController {
     @IBOutlet weak var webNoticeView: WKWebView!
     @IBOutlet weak var btnView: UIView!
     @IBOutlet weak var btnModify: UIButton!
+    @IBOutlet weak var lblModify: UILabel!
     var noticeDetail : NoticeListInfo = NoticeListInfo()
     var type = 0 // 1 사내공지 , 2 핀플 공지
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnModify.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnModify, lblModify)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

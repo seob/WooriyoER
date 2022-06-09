@@ -29,7 +29,7 @@
         <!--3.회사생성-->
         <scene sceneID="596-3p-HVI">
             <objects>
-                <viewController storyboardIdentifier="CmpVC" modalPresentationStyle="fullScreen" id="LRx-Tc-hTG" userLabel="3.회사생성" customClass="CmpVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpVC" modalPresentationStyle="fullScreen" id="LRx-Tc-hTG" userLabel="3.회사생성" customClass="CmpVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jn1-xR-qL1" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,9 +173,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnNext" destination="taJ-dT-aVz" id="03v-ZI-wbx"/>
+                        <outlet property="btnNext" destination="4C5-pm-KSs" id="hKC-Ej-fPr"/>
                         <outlet property="lblEName" destination="NSb-GP-PBj" id="nvC-2b-wdM"/>
                         <outlet property="lblName" destination="iBt-uJ-JCO" id="HJH-6l-Rkm"/>
+                        <outlet property="lblNe" destination="taJ-dT-aVz" id="wZp-hn-4f2"/>
                         <outlet property="textEName" destination="cOe-yy-gZW" id="Mab-j4-dwH"/>
                         <outlet property="textName" destination="dJ6-Pu-Ex3" id="V6q-uj-ImE"/>
                         <outlet property="vwLine1" destination="dyU-Lw-ZIK" id="roH-aG-O5a"/>
@@ -190,7 +191,7 @@
         <!--4.회사 정보-->
         <scene sceneID="ZdH-mv-wHQ">
             <objects>
-                <viewController storyboardIdentifier="CmpInfoVC" modalPresentationStyle="fullScreen" id="j61-uq-L65" userLabel="4.회사 정보" customClass="CmpInfoVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpInfoVC" modalPresentationStyle="fullScreen" id="j61-uq-L65" userLabel="4.회사 정보" customClass="CmpInfoVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcK-Nf-sig" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -399,11 +400,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnNext" destination="tXi-5Q-CDA" id="7Bg-Vk-JSf"/>
+                        <outlet property="btnNext" destination="Kdc-qd-GXO" id="SaG-Zb-FJL"/>
                         <outlet property="companyImg" destination="K37-17-jQ3" id="ziz-X7-VoT"/>
                         <outlet property="lblAddress" destination="DQO-EP-yI4" id="IO7-lf-U1U"/>
                         <outlet property="lblEName" destination="enT-0M-uxs" id="hCo-pM-Zey"/>
                         <outlet property="lblName" destination="PLo-DF-iwm" id="Edq-kJ-i9a"/>
+                        <outlet property="lblNext" destination="tXi-5Q-CDA" id="xck-VE-pzQ"/>
                         <outlet property="lblNumber" destination="f2x-eX-uLA" id="T2H-f7-NfJ"/>
                         <outlet property="lblUrl" destination="4YC-bA-YeR" id="ACk-5W-1c6"/>
                         <outlet property="scrollView" destination="Vuu-vO-sbo" id="qM7-EZ-1MP"/>
@@ -424,7 +426,7 @@
         <!--4-1.회사로고설정-->
         <scene sceneID="Ax7-YA-J51">
             <objects>
-                <viewController storyboardIdentifier="LogoRegVC" modalPresentationStyle="fullScreen" id="Bht-JX-pyL" userLabel="4-1.회사로고설정" customClass="LogoRegVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoRegVC" modalPresentationStyle="fullScreen" id="Bht-JX-pyL" userLabel="4-1.회사로고설정" customClass="LogoRegVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ncz-bu-rBm" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,7 +469,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-sH-gJw" userLabel="Main View">
                                 <rect key="frame" x="0.0" y="487" width="375" height="233"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-QF-oX1" userLabel="카메라" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJx-QF-oX1" userLabel="카메라" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="65" y="63.666666666666629" width="245" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OP-Fj-Ib5">
@@ -511,7 +513,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-xP-pMV" userLabel="앨범" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zn6-xP-pMV" userLabel="앨범" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="65" y="129.66666666666663" width="245" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKq-le-Qwa">
@@ -606,6 +608,7 @@
                     <connections>
                         <outlet property="btnSave" destination="RSx-Gb-6O5" id="XmA-tG-Qwf"/>
                         <outlet property="cropView" destination="F3P-p2-yMS" id="TGt-9i-WUm"/>
+                        <outlet property="lblSave" destination="wcy-lG-y9y" id="c1Z-Qo-7zI"/>
                         <outlet property="vwBox1" destination="zJx-QF-oX1" id="5Rc-jE-7AF"/>
                         <outlet property="vwBox2" destination="zn6-xP-pMV" id="SzG-L7-6E4"/>
                     </connections>
@@ -617,7 +620,7 @@
         <!--5.합류코드-->
         <scene sceneID="GSD-vW-wpN">
             <objects>
-                <viewController storyboardIdentifier="RegMgrVC" modalPresentationStyle="fullScreen" id="Ntp-r6-LkN" userLabel="5.합류코드" customClass="RegMgrVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegMgrVC" modalPresentationStyle="fullScreen" id="Ntp-r6-LkN" userLabel="5.합류코드" customClass="RegMgrVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pGX-DX-IWb" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -784,6 +787,7 @@
                     </view>
                     <connections>
                         <outlet property="btnJoin" destination="QBZ-Ec-SMO" id="fvd-01-n97"/>
+                        <outlet property="lblJoin" destination="LNo-R7-tBY" id="0dU-Np-zvw"/>
                         <outlet property="lblSEtext1" destination="GaK-ym-AEl" id="UVM-8a-D6C"/>
                         <outlet property="lblSEtext2" destination="50e-bD-WEq" id="quw-1V-6bK"/>
                         <segue destination="9Ys-nR-teF" kind="show" identifier="RegMgrVC -&gt; CmpTtmListVC" id="Mgv-Rj-UdA"/>
@@ -797,7 +801,7 @@
         <!--6.관리자 추가-->
         <scene sceneID="Pbp-In-pRL">
             <objects>
-                <viewController storyboardIdentifier="CmpTtmListVC" modalPresentationStyle="fullScreen" id="9Ys-nR-teF" userLabel="6.관리자 추가" customClass="CmpTtmListVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpTtmListVC" modalPresentationStyle="fullScreen" id="9Ys-nR-teF" userLabel="6.관리자 추가" customClass="CmpTtmListVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wfe-at-whR" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -908,7 +912,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CmpTTMListCell" rowHeight="90" id="sTc-ps-qsV" customClass="CmpTTMListCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CmpTTMListCell" rowHeight="90" id="sTc-ps-qsV" customClass="CmpTTMListCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="90"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sTc-ps-qsV" id="eOG-MY-hQs">
@@ -962,7 +966,7 @@
                                                     <outlet property="lblSpot" destination="nsK-ar-L4t" id="Bcs-ZO-pSv"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingCell" id="BKN-cf-6Ho" customClass="LoadingCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingCell" id="BKN-cf-6Ho" customClass="LoadingCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="134.66666603088379" width="375" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BKN-cf-6Ho" id="IB4-J3-J86">
@@ -1108,6 +1112,7 @@
                     <connections>
                         <outlet property="btnSave" destination="8do-Rd-gEs" id="9vn-lw-dKd"/>
                         <outlet property="lblCode" destination="2al-Kv-XrQ" id="Uwd-ic-HF4"/>
+                        <outlet property="lblSave" destination="Xdr-zD-6c6" id="JdQ-3Y-VqT"/>
                         <outlet property="tblList" destination="P5y-Tf-jyn" id="XTD-0M-4hg"/>
                         <outlet property="vwNoEmp" destination="b2O-xq-IcP" id="sAg-KQ-hi1"/>
                         <segue destination="WyF-MT-ybx" kind="show" identifier="CmpTtmListVC -&gt; WTInfoVC" id="LCP-0s-avw"/>
@@ -1120,7 +1125,7 @@
         <!--Cmp Ttm List Pop Up-->
         <scene sceneID="WoW-NS-77a">
             <objects>
-                <viewController storyboardIdentifier="CmpTtmListPopUp" id="LOS-Zg-tPe" customClass="CmpTtmListPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpTtmListPopUp" id="LOS-Zg-tPe" customClass="CmpTtmListPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yNM-di-7Qo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1170,7 +1175,7 @@
                                                             <constraint firstAttribute="height" constant="64" id="6Gy-PJ-tiV"/>
                                                         </constraints>
                                                         <prototypes>
-                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CmpTTMPopUp" rowHeight="64" id="iO5-uL-D8s" customClass="CmpTTMPopUp" customModule="pinplM" customModuleProvider="target">
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CmpTTMPopUp" rowHeight="64" id="iO5-uL-D8s" customClass="CmpTTMPopUp" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="44.666666030883789" width="335" height="64"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iO5-uL-D8s" id="PnS-3h-KLp">
@@ -1308,6 +1313,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="oi0-u4-Ap3" id="kHh-VI-NEv"/>
                         <outlet property="tblHeight" destination="6Gy-PJ-tiV" id="ani-6A-EI4"/>
                         <outlet property="tblList" destination="ysL-aP-1Wp" id="ZBr-zJ-Trf"/>
                     </connections>
@@ -1319,7 +1325,7 @@
         <!--8.회사 근로 시간-->
         <scene sceneID="1ha-Xb-soE">
             <objects>
-                <viewController storyboardIdentifier="CmpWTimeVC" modalPresentationStyle="fullScreen" id="OQQ-sa-kxT" userLabel="8.회사 근로 시간" customClass="CmpWTimeVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpWTimeVC" modalPresentationStyle="fullScreen" id="OQQ-sa-kxT" userLabel="8.회사 근로 시간" customClass="CmpWTimeVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K3R-2H-eqd" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1749,6 +1755,7 @@
                         <outlet property="lblFri" destination="Bbc-5Z-HRP" id="QVW-gv-I6P"/>
                         <outlet property="lblMon" destination="Vw1-pU-31K" id="NQF-sy-s6a"/>
                         <outlet property="lblSat" destination="r0e-Mv-iA7" id="huX-ec-DnI"/>
+                        <outlet property="lblSave" destination="cRq-vN-QTe" id="Wjj-qA-xhm"/>
                         <outlet property="lblSun" destination="LdJ-XO-jnb" id="vB5-rW-7XO"/>
                         <outlet property="lblThu" destination="7oq-UK-syJ" id="v20-Rn-agL"/>
                         <outlet property="lblTue" destination="ETU-Du-7db" id="osa-L0-6Rf"/>
@@ -1769,7 +1776,7 @@
         <!--8-1.근무시간 상세 설정-->
         <scene sceneID="rNU-JD-Yqf">
             <objects>
-                <viewController storyboardIdentifier="CmpWTimeSetVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="wkK-Yb-sDe" userLabel="8-1.근무시간 상세 설정" customClass="CmpWTimeSetVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmpWTimeSetVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="wkK-Yb-sDe" userLabel="8-1.근무시간 상세 설정" customClass="CmpWTimeSetVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0RU-9O-pk3" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2060,6 +2067,7 @@
                         <outlet property="btnThu" destination="giV-jo-3ck" id="x4X-L1-WLg"/>
                         <outlet property="btnTue" destination="i5J-YT-9Ub" id="fe9-vO-pUF"/>
                         <outlet property="btnWed" destination="1NE-PU-bI1" id="fPO-ns-eaY"/>
+                        <outlet property="lblSave" destination="eAC-xT-gP4" id="2EB-AE-cHo"/>
                         <outlet property="textEndtm" destination="3ml-Cv-gsU" id="m29-9s-Gse"/>
                         <outlet property="textStarttm" destination="SiG-m2-AK7" id="hIk-q9-qIw"/>
                     </connections>
@@ -2071,7 +2079,7 @@
         <!--7.근로시간 설정-->
         <scene sceneID="xjY-Of-QUP">
             <objects>
-                <viewController storyboardIdentifier="WTInfoVC" modalPresentationStyle="fullScreen" id="WyF-MT-ybx" userLabel="7.근로시간 설정" customClass="WTInfoVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTInfoVC" modalPresentationStyle="fullScreen" id="WyF-MT-ybx" userLabel="7.근로시간 설정" customClass="WTInfoVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqA-Ne-kWg" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2234,6 +2242,7 @@
                     </view>
                     <connections>
                         <outlet property="btnCustom" destination="QMU-HO-dUu" id="Gzx-eK-SmB"/>
+                        <outlet property="lblCustom" destination="TYW-Et-eDI" id="G5p-8X-0Lx"/>
                         <segue destination="OQQ-sa-kxT" kind="show" identifier="WTInfoVC -&gt; CmpWTimeVC" id="Cdn-B8-5nq"/>
                     </connections>
                 </viewController>
@@ -2244,7 +2253,7 @@
         <!--4-1.회사로고설정-->
         <scene sceneID="LMq-Uy-sgN">
             <objects>
-                <viewController storyboardIdentifier="SE_LogoRegVC" modalPresentationStyle="fullScreen" id="ggl-yp-zcA" userLabel="4-1.회사로고설정" customClass="LogoRegVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_LogoRegVC" modalPresentationStyle="fullScreen" id="ggl-yp-zcA" userLabel="4-1.회사로고설정" customClass="LogoRegVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1f-tD-MuF" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2287,7 +2296,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-Lx-Vss" userLabel="Main View">
                                 <rect key="frame" x="0.0" y="412" width="320" height="98"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwX-sM-34s" userLabel="카메라" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwX-sM-34s" userLabel="카메라" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="37.666666666666657" y="-4" width="244.99999999999997" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-uV-ahd">
@@ -2331,7 +2340,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c84-yA-cNj" userLabel="앨범" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c84-yA-cNj" userLabel="앨범" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="37.666666666666657" y="52" width="244.99999999999997" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhb-xP-6ZQ">
@@ -2427,6 +2436,7 @@
                     <connections>
                         <outlet property="btnSave" destination="cEr-x3-1HR" id="e3G-7p-WnD"/>
                         <outlet property="cropView" destination="WtJ-wz-Wg3" id="H7e-v8-Y1x"/>
+                        <outlet property="lblSave" destination="LVG-G3-cru" id="TCg-he-Vxj"/>
                         <outlet property="vwBox1" destination="bwX-sM-34s" id="jq6-Vp-sOM"/>
                         <outlet property="vwBox2" destination="c84-yA-cNj" id="Vg2-WO-Yno"/>
                     </connections>
@@ -2438,7 +2448,7 @@
         <!--8-1.근무시간 상세 설정-->
         <scene sceneID="gJV-Fv-Esy">
             <objects>
-                <viewController storyboardIdentifier="SE_CmpWTimeSetVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="7Qu-Yw-82f" userLabel="8-1.근무시간 상세 설정" customClass="CmpWTimeSetVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_CmpWTimeSetVC" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="7Qu-Yw-82f" userLabel="8-1.근무시간 상세 설정" customClass="CmpWTimeSetVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W6r-66-L7n" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2761,6 +2771,7 @@
                         <outlet property="btnThu" destination="YMY-QB-8Lb" id="iEG-f4-zs5"/>
                         <outlet property="btnTue" destination="EfD-q6-Oa1" id="oQm-1L-QSP"/>
                         <outlet property="btnWed" destination="JoS-7x-bE7" id="plm-Ik-A7w"/>
+                        <outlet property="lblSave" destination="cak-nr-Ony" id="6bo-3d-EGm"/>
                         <outlet property="textEndtm" destination="R6p-rw-tQs" id="HHk-Lf-8GA"/>
                         <outlet property="textStarttm" destination="Jtt-Kt-eit" id="rCe-az-vxc"/>
                     </connections>
@@ -2772,7 +2783,7 @@
         <!--회사근로시간 - 메인-->
         <scene sceneID="XAd-Vr-JzT">
             <objects>
-                <viewController storyboardIdentifier="CmtTimeVC" modalPresentationStyle="fullScreen" id="14C-Qm-UIb" userLabel="회사근로시간 - 메인" customClass="CmtTimeVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CmtTimeVC" modalPresentationStyle="fullScreen" id="14C-Qm-UIb" userLabel="회사근로시간 - 메인" customClass="CmtTimeVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sv2-KC-mCM" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

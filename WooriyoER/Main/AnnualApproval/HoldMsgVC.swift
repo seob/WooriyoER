@@ -31,7 +31,7 @@ class HoldMsgVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         tvMemo.delegate = self
         tvMemo.textContainer.maximumNumberOfLines = 0
         tvMemo.textContainer.lineFragmentPadding = 10

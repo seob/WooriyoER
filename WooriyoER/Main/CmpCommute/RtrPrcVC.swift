@@ -55,7 +55,7 @@ class RtrPrcVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOut.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnOut)
         txtRtrDt.delegate = self
         addToolBar(textFields: [txtRtrDt])
         

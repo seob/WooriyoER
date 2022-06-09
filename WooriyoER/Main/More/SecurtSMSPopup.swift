@@ -13,9 +13,12 @@ class SecurtSMSPopup: UIViewController, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblContent: UILabel!
+    @IBOutlet weak var btnOk: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         print("\n---------- [ SmsCertEmpInfo : \(SmsScEmpInfo.toJSON()) ] ----------\n")
         
     }

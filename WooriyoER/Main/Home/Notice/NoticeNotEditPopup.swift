@@ -10,9 +10,11 @@ import UIKit
 
 class NoticeNotEditPopup: UIViewController {
 
+    @IBOutlet weak var btnOk: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         // Do any additional setup after loading the view.
     }
     

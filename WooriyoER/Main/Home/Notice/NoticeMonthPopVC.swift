@@ -22,7 +22,8 @@ class NoticeMonthPopVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblPoint.text = "\(CompanyInfo.point)"
-        
+        btnText.backgroundColor = EnterpriseColor.btnColor
+        btnText.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         if CompanyInfo.datalimits >= muticmttodayDate() {
             checkEextension = 1
         }else{
