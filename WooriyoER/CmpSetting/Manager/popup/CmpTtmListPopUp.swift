@@ -12,6 +12,7 @@ class CmpTtmListPopUp: UIViewController {
     
     @IBOutlet weak var tblList: UITableView!
     @IBOutlet weak var tblHeight: NSLayoutConstraint!
+    @IBOutlet weak var btnSave: UIButton!
     
     var tuple: [EmplyInfo] = []
     var empsids = ""
@@ -26,6 +27,9 @@ class CmpTtmListPopUp: UIViewController {
         }else {
             tblHeight.constant = 4 * 64
         }
+        
+        btnSave.backgroundColor = EnterpriseColor.btnColor
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     
     @IBAction func okClick(_ sender: UIButton) {

@@ -36,7 +36,7 @@ class UseAnnualModifyVC: UIViewController {
     var AnualInfo: anualmgrInfo = anualmgrInfo()
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnModify.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnModify)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

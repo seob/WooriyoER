@@ -21,6 +21,7 @@ class TtmCrtVC: UIViewController, NVActivityIndicatorViewable {
     @IBOutlet weak var vwLine2: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     // MARK: - IndicatorSetting
     private let presentingIndicatorTypes = {
@@ -40,7 +41,7 @@ class TtmCrtVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
         prefs.setValue(12, forKey: "stage")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         

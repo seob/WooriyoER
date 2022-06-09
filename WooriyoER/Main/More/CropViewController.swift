@@ -22,7 +22,7 @@ class CropViewController: UIViewController , UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOk.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnOk)
         self.scrollView.delegate = self
         
         self.scrollView.decelerationRate = .fast

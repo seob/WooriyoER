@@ -29,7 +29,7 @@
         <!--Apl Apr List-->
         <scene sceneID="5kp-OO-wxx">
             <objects>
-                <viewController storyboardIdentifier="AplAprList" modalPresentationStyle="fullScreen" id="ODt-3E-hxU" customClass="AplAprList" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AplAprList" modalPresentationStyle="fullScreen" id="ODt-3E-hxU" customClass="AplAprList" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tqD-t9-5wD" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="636"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.98039215686274506" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplAprCell" rowHeight="110" id="bn2-6f-DrD" customClass="AplAprCell" customModule="pinplM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplAprCell" rowHeight="110" id="bn2-6f-DrD" customClass="AplAprCell" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bn2-6f-DrD" id="fwi-Bp-wUR">
@@ -207,7 +207,7 @@
                                             <outlet property="lblType" destination="tDk-Wu-9Mj" id="9jd-0U-kcC"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplLoadingCell" rowHeight="30" id="YMo-Ov-1eF" customClass="AplLoadingCell" customModule="pinplM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplLoadingCell" rowHeight="30" id="YMo-Ov-1eF" customClass="AplLoadingCell" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="154.66666603088379" width="375" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YMo-Ov-1eF" id="XsS-ju-gT0">
@@ -250,7 +250,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klm-i7-Ldk" userLabel="TabView">
                                 <rect key="frame" x="0.0" y="728" width="375" height="84"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIA-to-4YJ" userLabel="Gradient" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIA-to-4YJ" userLabel="Gradient" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -522,7 +522,7 @@
         <!--Apl Apr SetVC-->
         <scene sceneID="WfX-5f-vbb">
             <objects>
-                <viewController storyboardIdentifier="AplAprSetVC" modalPresentationStyle="fullScreen" id="U0C-bA-SkS" customClass="AplAprSetVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AplAprSetVC" modalPresentationStyle="fullScreen" id="U0C-bA-SkS" customClass="AplAprSetVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zuV-mJ-Ci8" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,7 +560,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="720"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO9-x0-ro9" userLabel="결재 라인 관리" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NO9-x0-ro9" userLabel="결재 라인 관리" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="42.666666666666657" y="343.66666666666669" width="140" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex9-MW-ITk">
@@ -625,7 +625,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyC-BD-un9" userLabel="연차 내역 보기" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyC-BD-un9" userLabel="연차 내역 보기" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="192.66666666666663" y="343.66666666666669" width="140" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8c-QG-lZ0">
@@ -718,7 +718,7 @@
         <!--Proc Apl Apr Pop Up-->
         <scene sceneID="23s-2r-Qij">
             <objects>
-                <viewController storyboardIdentifier="ProcAplAprPopUp" id="lgL-kT-bkt" customClass="ProcAplAprPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProcAplAprPopUp" id="lgL-kT-bkt" customClass="ProcAplAprPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIi-n2-wcv" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -842,6 +842,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnOk" destination="iio-4L-Fu8" id="bkN-jh-BkW"/>
                         <outlet property="lblName" destination="gDE-EM-Tdn" id="mfx-a2-xxO"/>
                         <outlet property="lblSpot" destination="1H1-WY-66I" id="6MU-li-hYk"/>
                     </connections>
@@ -853,7 +854,7 @@
         <!--Proc Apl AprVC-->
         <scene sceneID="ZDe-WV-4uw">
             <objects>
-                <viewController storyboardIdentifier="ProcAplAprVC" modalPresentationStyle="fullScreen" id="U2F-OH-Zhh" customClass="ProcAplAprVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProcAplAprVC" modalPresentationStyle="fullScreen" id="U2F-OH-Zhh" customClass="ProcAplAprVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ie-TL-Jt3" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -948,7 +949,7 @@
                                                             <constraint firstItem="w05-RJ-Fej" firstAttribute="top" secondItem="cYa-au-jgc" secondAttribute="top" constant="20" id="oqa-dN-U7x"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-XX-SIw" userLabel="연차뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-XX-SIw" userLabel="연차뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="94" width="374" height="36"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 연차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXs-hP-6nN">
@@ -1041,7 +1042,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLg-kO-Lam" userLabel="상세뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLg-kO-Lam" userLabel="상세뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="140" width="374" height="171"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="종류  :  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOc-iN-MTm">
@@ -1206,7 +1207,7 @@
                                                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utD-LA-EIK" userLabel="신청자" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utD-LA-EIK" userLabel="신청자" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="38.666666666666657" y="56.333333333333314" width="130" height="36"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청자" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF3-x1-d9g">
@@ -1249,7 +1250,7 @@
                                                                     <constraint firstAttribute="width" constant="10" id="RWv-f3-Lq3"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQq-yD-my9" userLabel="결재자1" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQq-yD-my9" userLabel="결재자1" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="38.666666666666657" y="115.33333333333337" width="130" height="36"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Di-jW-j4n">
@@ -1297,7 +1298,7 @@
                                                                             <constraint firstAttribute="width" constant="10" id="6G0-XK-gm2"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIV-8S-Imu" userLabel="결재자2" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIV-8S-Imu" userLabel="결재자2" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                         <rect key="frame" x="38.666666666666657" y="23" width="130" height="36"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opz-ir-Wig">
@@ -1344,7 +1345,7 @@
                                                                                     <constraint firstAttribute="width" constant="10" id="a9t-0b-mi6"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-2P-Ayg" userLabel="결재자3" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-2P-Ayg" userLabel="결재자3" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                                 <rect key="frame" x="38.666666666666657" y="23" width="130" height="36"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-AP-hbZ">
@@ -1441,7 +1442,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLR-1e-VsG" userLabel="참조자 없음">
                                                                 <rect key="frame" x="0.0" y="41.333333333333314" width="207" height="324.66666666666669"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K48-i4-1Qt" userLabel="참조자1" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K48-i4-1Qt" userLabel="참조자1" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                         <rect key="frame" x="38.666666666666657" y="15" width="130" height="36"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참조자1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-1N-Vgt">
@@ -1488,7 +1489,7 @@
                                                                                     <constraint firstAttribute="width" constant="10" id="nIx-Sv-5v8"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwj-k9-fFM" userLabel="참조자2" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwj-k9-fFM" userLabel="참조자2" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                                 <rect key="frame" x="38.666666666666657" y="23" width="130" height="36"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참조자2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qO-z9-qgd">
@@ -1758,6 +1759,8 @@
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="btnConfirm" destination="Dcw-iy-HXa" id="L4x-qu-bLe"/>
+                        <outlet property="btnConfirm2" destination="aBM-Ht-Z2e" id="gLa-1w-f8h"/>
+                        <outlet property="btnConfirm3" destination="YUh-RI-zQA" id="dPn-cx-8Cs"/>
                         <outlet property="contentHeight" destination="h0v-qv-ysY" id="Kxs-ru-B4d"/>
                         <outlet property="imgProfile" destination="xED-fh-RmX" id="HqQ-pF-btx"/>
                         <outlet property="lblApr1" destination="0Di-jW-j4n" id="J5q-uj-DXe"/>
@@ -1803,7 +1806,7 @@
         <!--Hold Apl MsgVC-->
         <scene sceneID="XOz-BN-YLQ">
             <objects>
-                <viewController storyboardIdentifier="HoldAplMsgVC" modalPresentationStyle="fullScreen" id="AYS-Gl-ZQp" customClass="HoldAplMsgVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HoldAplMsgVC" modalPresentationStyle="fullScreen" id="AYS-Gl-ZQp" customClass="HoldAplMsgVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u8g-Qd-l5L" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1847,7 +1850,7 @@
                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Naj-5p-Fhl" customClass="CustomTextView" customModule="pinplM" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Naj-5p-Fhl" customClass="CustomTextView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="20" y="178.33333333333334" width="335" height="120.00000000000003"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -1935,7 +1938,7 @@
         <!--Apl Apr List-->
         <scene sceneID="ehW-9m-sJj">
             <objects>
-                <viewController storyboardIdentifier="SE_AplAprList" modalPresentationStyle="fullScreen" id="Z7c-UT-C4P" customClass="AplAprList" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_AplAprList" modalPresentationStyle="fullScreen" id="Z7c-UT-C4P" customClass="AplAprList" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aNP-n4-aYV" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1977,7 +1980,7 @@
                                 <rect key="frame" x="0.0" y="97" width="320" height="387"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplAprCell" rowHeight="110" id="sao-yv-Buc" customClass="AplAprCell" customModule="pinplM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplAprCell" rowHeight="110" id="sao-yv-Buc" customClass="AplAprCell" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="320" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sao-yv-Buc" id="PHk-eA-3YY">
@@ -2113,7 +2116,7 @@
                                             <outlet property="lblType" destination="Yox-Nq-V58" id="WS5-Qw-TeV"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplLoadingCell" rowHeight="30" id="y5w-cp-DtL" customClass="AplLoadingCell" customModule="pinplM" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AplLoadingCell" rowHeight="30" id="y5w-cp-DtL" customClass="AplLoadingCell" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="154.66666603088379" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y5w-cp-DtL" id="fxu-Om-6q2">
@@ -2156,7 +2159,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXQ-i4-jHn" userLabel="TabView">
                                 <rect key="frame" x="0.0" y="484" width="320" height="84"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-hh-Och" userLabel="Gradient" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-hh-Och" userLabel="Gradient" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
                                         <color key="backgroundColor" red="0.56862745100000001" green="0.56862745100000001" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -2428,7 +2431,7 @@
         <!--Proc Apl AprVC-->
         <scene sceneID="cs4-61-zqa">
             <objects>
-                <viewController storyboardIdentifier="SE_ProcAplAprVC" modalPresentationStyle="fullScreen" id="DrW-al-6re" customClass="ProcAplAprVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_ProcAplAprVC" modalPresentationStyle="fullScreen" id="DrW-al-6re" customClass="ProcAplAprVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GfS-im-J7j" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2523,7 +2526,7 @@
                                                             <constraint firstItem="pS3-is-07o" firstAttribute="top" secondItem="Lhw-Rh-neu" secondAttribute="bottom" id="xJw-EJ-nzu"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrK-rJ-fB8" userLabel="연차뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrK-rJ-fB8" userLabel="연차뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="94" width="280" height="36"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 연차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bU-fs-RwZ">
@@ -2616,7 +2619,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-OE-Jdi" userLabel="상세뷰" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebR-OE-Jdi" userLabel="상세뷰" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="140" width="280" height="171"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="종류  :  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klB-ot-vsT">
@@ -2781,7 +2784,7 @@
                                                                 <color key="textColor" red="0.1529411765" green="0.1529411765" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQX-nT-RrK" userLabel="신청자" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQX-nT-RrK" userLabel="신청자" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="15" y="56.333333333333314" width="130" height="36"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신청자" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqV-9o-7S2">
@@ -2824,7 +2827,7 @@
                                                                     <constraint firstAttribute="width" constant="10" id="9GN-y7-5gB"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mim-BL-bpD" userLabel="결재자1" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mim-BL-bpD" userLabel="결재자1" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                 <rect key="frame" x="15" y="115.33333333333337" width="130" height="36"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSj-dv-eAZ">
@@ -2872,7 +2875,7 @@
                                                                             <constraint firstAttribute="width" constant="10" id="24g-zj-HQ6"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-9N-zGK" userLabel="결재자2" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-9N-zGK" userLabel="결재자2" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                         <rect key="frame" x="15" y="23" width="130" height="36"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWV-IH-GJ1">
@@ -2919,7 +2922,7 @@
                                                                                     <constraint firstAttribute="width" constant="10" id="ZSK-rG-OjQ"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeV-ZQ-3zR" userLabel="결재자3" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WeV-ZQ-3zR" userLabel="결재자3" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                                 <rect key="frame" x="15" y="23" width="130" height="36"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결재자3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-94-yNO">
@@ -3016,7 +3019,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Z8-K8-E8D" userLabel="참조자 없음">
                                                                 <rect key="frame" x="0.0" y="41.333333333333314" width="160" height="324.66666666666669"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMH-HY-tPi" userLabel="참조자1" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMH-HY-tPi" userLabel="참조자1" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                         <rect key="frame" x="15" y="15" width="130" height="36"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참조자1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN3-RK-Inl">
@@ -3063,7 +3066,7 @@
                                                                                     <constraint firstAttribute="width" constant="10" id="hUD-2Q-oUp"/>
                                                                                 </constraints>
                                                                             </imageView>
-                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-9u-HMj" userLabel="참조자2" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dA-9u-HMj" userLabel="참조자2" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                                                                 <rect key="frame" x="15" y="23" width="130" height="36"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참조자2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knR-Vv-lWa">
@@ -3331,6 +3334,8 @@
                     <navigationItem key="navigationItem" id="x66-Kd-8FC"/>
                     <size key="freeformSize" width="320" height="900"/>
                     <connections>
+                        <outlet property="btnConfirm2" destination="mkk-sf-edw" id="Kfj-BY-WFD"/>
+                        <outlet property="btnConfirm3" destination="hQz-Hc-1Ex" id="JFG-du-FU5"/>
                         <outlet property="contentHeight" destination="wss-I7-yY1" id="NhS-3m-XCe"/>
                         <outlet property="imgProfile" destination="Lhw-Rh-neu" id="vvJ-Zm-4JN"/>
                         <outlet property="lblApr1" destination="rSj-dv-eAZ" id="KVh-b8-gB1"/>

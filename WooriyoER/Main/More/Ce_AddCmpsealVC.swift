@@ -93,7 +93,9 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnPlus.layer.cornerRadius = 6
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        btnWork.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        EnterpriseColor.nonLblBtn(btnPlus)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
@@ -151,9 +153,9 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
         vwBox2.isHidden = true
         vwBox1.isHidden = false
         type = 0
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        btnWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         btnNotWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         scrollView.isScrollEnabled = true
     }
@@ -169,8 +171,8 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
         vwBox2.isHidden = false
         type = 1
         lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        lblNotWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
-        btnNotWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        lblNotWork.textColor = EnterpriseColor.lblColor
+        btnNotWork.backgroundColor = EnterpriseColor.btnColor
         btnWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         signView.delegate = self
         signView.brush.width = 2

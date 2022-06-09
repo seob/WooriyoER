@@ -11,10 +11,11 @@ import UIKit
 class WTInfoVC: UIViewController {
     
     @IBOutlet weak var btnCustom: UIButton!
+    @IBOutlet weak var lblCustom: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnCustom.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnCustom, lblCustom)
         prefs.setValue(7, forKey: "stage")
     }
     

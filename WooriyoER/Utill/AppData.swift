@@ -335,3 +335,25 @@ extension Date {
     }
 }
 
+//MARK: 버튼 컬러 지정
+class EnterpriseColor {
+    //변경할 곳
+    //1.버튼 색깔
+//    static let btnColor = UIColor.init(hexString: "#FCCA00")
+    static let btnColor = UIColor.init(hexString: "#000000")
+    //2.글자 색깔
+    static let lblColor = UIColor.init(hexString: "#FFFFFF")
+    
+    // 레이블 없는 버튼
+    static func nonLblBtn (_ btn: UIButton) -> Void {
+        btn.layer.cornerRadius = 6
+        btn.backgroundColor = btnColor
+        btn.setTitleColor(lblColor, for: .normal)
+    }
+    // 따로 있을때
+    static func eachLblBtn (_ btn: UIButton,_ lbl: UILabel) -> Void {
+        lbl.textColor = lblColor
+        btn.layer.cornerRadius = 6
+        btn.backgroundColor = btnColor
+    }
+}

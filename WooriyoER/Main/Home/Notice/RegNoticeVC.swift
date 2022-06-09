@@ -27,6 +27,7 @@ class RegNoticeVC: UIViewController {
     @IBOutlet weak var btnEr: UIButton!
     @IBOutlet weak var erckImageView: UIImageView!
     @IBOutlet weak var btnInsert: UIButton!
+    @IBOutlet weak var lblInsert: UILabel!
     
     var strTitle = ""
     var strMemo = ""
@@ -36,7 +37,7 @@ class RegNoticeVC: UIViewController {
         super.viewDidLoad()
         textTName.delegate = self
         textTMemo.delegate = self
-        btnInsert.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnInsert, lblInsert)
         addToolBar(textFields: [textTName], textView: textTMemo)
         
         textTMemo.layer.cornerRadius = 6

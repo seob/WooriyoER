@@ -46,6 +46,8 @@ class ProcAnlAprVC: UIViewController {
     @IBOutlet weak var vwRef2: CustomView!
     @IBOutlet weak var btnDdctn: UIButton!
     @IBOutlet weak var btnConfirm: UIButton!
+    @IBOutlet weak var btnConfirm2: UIButton!
+    @IBOutlet weak var btnConfirm3: UIButton!
     
     let urlClass = UrlClass()
     let jsonClass = JsonClass()
@@ -107,7 +109,9 @@ class ProcAnlAprVC: UIViewController {
     var aprLineInfo: AprInfo!
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnConfirm.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnConfirm)
+        EnterpriseColor.nonLblBtn(btnConfirm2)
+        EnterpriseColor.nonLblBtn(btnConfirm3)
         imgProfile.makeRounded()
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE

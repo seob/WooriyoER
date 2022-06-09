@@ -10,6 +10,7 @@ import UIKit
 
 class TtmListVC: UIViewController, NVActivityIndicatorViewable {
     
+    @IBOutlet weak var lblNext: UILabel!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var tblList: UITableView!
     
@@ -43,7 +44,7 @@ class TtmListVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnNext, lblNext)
         tblList.delegate = self
         tblList.dataSource = self
         

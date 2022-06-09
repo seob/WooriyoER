@@ -91,6 +91,8 @@ class PinPlNoticeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        lblWork.textColor = EnterpriseColor.lblColor
         if CompanyInfo.notice >= muticmttodayDate() {
             noticeoff = 1
         }else{
@@ -119,7 +121,7 @@ class PinPlNoticeVC: UIViewController {
     // MARK: reloadTableData
     @objc func reloadTableData(_ notification: Notification) {
         clickFlag = true
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
         
         if noticeType == 0 {
@@ -172,7 +174,7 @@ class PinPlNoticeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         clickFlag = true
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
         
         if noticeType == 0 {
@@ -239,9 +241,9 @@ class PinPlNoticeVC: UIViewController {
         clickFlag = true
         btnWork.isSelected = true
         btnNotWork.isSelected = false
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        btnWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         btnNotWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         faButton.isHidden = false
     }
@@ -260,9 +262,9 @@ class PinPlNoticeVC: UIViewController {
         btnNotWork.isSelected = true
         
         faButton.isHidden = true
-        lblNotWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblNotWork.textColor = EnterpriseColor.lblColor
         lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        btnNotWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnNotWork.backgroundColor = EnterpriseColor.btnColor
         btnWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
     }
 }

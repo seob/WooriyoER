@@ -10,9 +10,11 @@ import UIKit
 
 class CmpSecurtPopUp: UIViewController {
 
+    @IBOutlet weak var btnyes: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnyes.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnyes.backgroundColor = EnterpriseColor.btnColor
         // Do any additional setup after loading the view.
     }
     

@@ -49,6 +49,8 @@ class ProcAplAprVC: UIViewController {
     @IBOutlet weak var vwRef1: CustomView!
     @IBOutlet weak var vwRef2: CustomView!
     @IBOutlet weak var btnConfirm: UIButton!
+    @IBOutlet weak var btnConfirm2: UIButton!
+    @IBOutlet weak var btnConfirm3: UIButton!
     
     
     
@@ -117,7 +119,9 @@ class ProcAplAprVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
-        btnConfirm.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnConfirm)
+        EnterpriseColor.nonLblBtn(btnConfirm2)
+        EnterpriseColor.nonLblBtn(btnConfirm3)
         imgProfile.makeRounded()
     }
     override func viewWillAppear(_ animated: Bool) {

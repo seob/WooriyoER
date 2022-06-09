@@ -53,7 +53,7 @@ class Ce_SendVC: UIViewController , NVActivityIndicatorViewable{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSend.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSend)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

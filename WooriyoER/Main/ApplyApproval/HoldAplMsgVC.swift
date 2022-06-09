@@ -33,7 +33,7 @@ class HoldAplMsgVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         txtView.delegate = self
         txtView.textContainer.maximumNumberOfLines = 0
         txtView.textContainer.lineFragmentPadding = 10

@@ -28,7 +28,7 @@ class TemAnlSet: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("<<<<<<<----------------------[TemAnlSet : 팀 연차 인원 설정]---------------------->>>>>>>>")
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         selSid = prefs.value(forKey: "mt_selsid") as? Int ?? 0
         selFlag = prefs.value(forKey: "mt_selflag") as! Bool
         selName = prefs.value(forKey: "mt_name") as? String ?? ""

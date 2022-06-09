@@ -552,6 +552,9 @@
                             <constraint firstItem="X42-Ld-noo" firstAttribute="centerY" secondItem="s33-Hl-EgX" secondAttribute="centerY" id="xSJ-xn-2oR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnYes" destination="XJ0-Qa-ya2" id="paK-4p-6Mr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OmE-ZK-CBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -651,6 +654,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="btnYes" destination="cl5-xU-hG7" id="Coo-gc-bMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ad-SQ-5lh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3141,7 +3147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idZ-u4-YAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7853" y="-1588"/>
+            <point key="canvasLocation" x="7852.898550724638" y="-1588.3928571428571"/>
         </scene>
         <!--Ce CropVC-->
         <scene sceneID="n8m-l2-a6D">
@@ -5287,6 +5293,7 @@
                     </view>
                     <size key="freeformSize" width="372" height="812"/>
                     <connections>
+                        <outlet property="btnAppoint" destination="hxz-LD-qR8" id="Zj9-AR-QB0"/>
                         <outlet property="lblName" destination="LFb-rl-6vp" id="3Gq-Uu-E3i"/>
                     </connections>
                 </viewController>
@@ -5567,6 +5574,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="688"/>
                     <connections>
+                        <outlet property="btnOk" destination="wOf-yA-nBL" id="73O-73-7U1"/>
                         <outlet property="cropImage" destination="8FV-nB-bcp" id="Qxr-OG-4oE"/>
                         <outlet property="gridImage" destination="MYX-qh-ZP9" id="bYg-Q9-PBz"/>
                         <outlet property="scrollView" destination="ltA-yR-deL" id="yJI-ZN-8um"/>
@@ -5701,6 +5709,7 @@
                     </view>
                     <size key="freeformSize" width="320" height="567"/>
                     <connections>
+                        <outlet property="btnOk" destination="wfo-Pw-jG0" id="XFX-lh-Q4D"/>
                         <outlet property="lblContent" destination="nQU-UV-uxn" id="PaG-dV-XM5"/>
                         <outlet property="lblTitle" destination="4oz-0H-Zx8" id="FCv-v6-IaD"/>
                     </connections>
@@ -5833,6 +5842,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnOk" destination="0jh-SI-0CF" id="IKA-UW-A28"/>
                         <outlet property="lblContent" destination="4so-jY-tBK" id="ZdK-yW-J3A"/>
                         <outlet property="lblTitle" destination="Uok-Ob-paE" id="Usq-Cm-QDh"/>
                     </connections>
@@ -6738,7 +6748,7 @@
                     <connections>
                         <outlet property="AfterPoint" destination="We4-ZQ-Im4" id="3nr-bY-nzN"/>
                         <outlet property="ExpectedPoint" destination="CPI-oU-Ro9" id="MGK-8e-4ut"/>
-                        <outlet property="btnPoint" destination="giP-5V-NsX" id="ZHN-IV-Jgw"/>
+                        <outlet property="btnCharge" destination="giP-5V-NsX" id="GC0-Uo-mJv"/>
                         <outlet property="eventImageView" destination="jlS-AX-Ig4" id="cJe-Iz-mxy"/>
                         <outlet property="eventView" destination="27Q-k3-Qqc" id="dBE-cy-4Uf"/>
                         <outlet property="lblMyPoint" destination="AGc-I1-KAx" id="8hX-gM-EgT"/>

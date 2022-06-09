@@ -29,7 +29,7 @@
         <!--9.팀(부서 설정)-->
         <scene sceneID="g3q-rL-E3v">
             <objects>
-                <viewController storyboardIdentifier="TemFirstlVC" modalPresentationStyle="fullScreen" id="Bn9-SM-Uej" userLabel="9.팀(부서 설정)" customClass="TemFirstlVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TemFirstlVC" modalPresentationStyle="fullScreen" id="Bn9-SM-Uej" userLabel="9.팀(부서 설정)" customClass="TemFirstlVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sp3-Io-krr" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +174,7 @@
                     </view>
                     <connections>
                         <outlet property="btnCreate" destination="NMI-vQ-ez4" id="mCY-1z-nvo"/>
+                        <outlet property="lblCreate" destination="osw-lR-e6J" id="E9l-Vm-KvH"/>
                         <segue destination="nkY-FY-Ena" kind="show" identifier="TemFirstlVC -&gt; TemCrtVC" id="mh6-Ct-IX2"/>
                         <segue destination="MRt-nd-KTa" kind="show" identifier="TemFirstlVC -&gt; ExcldWorkVC" id="tJv-U0-QB4"/>
                     </connections>
@@ -185,7 +186,7 @@
         <!--12.상위팀 생성-->
         <scene sceneID="Jaa-V6-Wme">
             <objects>
-                <viewController storyboardIdentifier="TtmCrtVC" modalPresentationStyle="fullScreen" id="l0g-Jx-Cpa" userLabel="12.상위팀 생성" customClass="TtmCrtVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TtmCrtVC" modalPresentationStyle="fullScreen" id="l0g-Jx-Cpa" userLabel="12.상위팀 생성" customClass="TtmCrtVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qfS-rW-qck" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +280,7 @@
                                                         <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Qz-NXO" customClass="CustomTextView" customModule="pinplM" customModuleProvider="target">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-Qz-NXO" customClass="CustomTextView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="293.66666666666669" width="335" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -410,6 +411,7 @@
                     <connections>
                         <outlet property="btnSave" destination="0Wz-fH-lcX" id="UZ6-Z7-64f"/>
                         <outlet property="lblPlaceholder" destination="HWH-5m-Anx" id="beh-IT-mwO"/>
+                        <outlet property="lblSave" destination="vwb-Hn-AvR" id="KDm-il-hhi"/>
                         <outlet property="lblTMemo" destination="4ob-dn-ecn" id="PV8-cz-OyL"/>
                         <outlet property="lblTName" destination="pTC-YQ-qdP" id="pNg-B6-pzj"/>
                         <outlet property="lblTPhone" destination="L7L-iK-RkY" id="zbr-Pc-9Ca"/>
@@ -429,7 +431,7 @@
         <!--13.상위팀 생성 완료-->
         <scene sceneID="xMz-Gk-nKY">
             <objects>
-                <viewController storyboardIdentifier="TtmCmpltVC" modalPresentationStyle="fullScreen" id="lDr-2T-bGo" userLabel="13.상위팀 생성 완료" customClass="TtmCmpltVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TtmCmpltVC" modalPresentationStyle="fullScreen" id="lDr-2T-bGo" userLabel="13.상위팀 생성 완료" customClass="TtmCmpltVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nyn-K6-A0H" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,7 +564,7 @@
                                         <rect key="frame" x="0.0" y="152.66666666666671" width="375" height="440.33333333333326"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamListCell" id="5AF-Hj-29u" customClass="TeamListCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeamListCell" id="5AF-Hj-29u" customClass="TeamListCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5AF-Hj-29u" id="s6b-Yg-HXN">
@@ -596,7 +598,7 @@
                                                     <outlet property="lblTeamName" destination="hDj-uA-7c2" id="7Ir-bN-81Z"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TTCLoadingCell" id="njZ-24-w0v" customClass="TTCLoadingCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TTCLoadingCell" id="njZ-24-w0v" customClass="TTCLoadingCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="88.333333969116211" width="375" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="njZ-24-w0v" id="70r-gF-cid">
@@ -690,6 +692,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnSave" destination="hxG-fl-lkX" id="edE-Vt-2Rv"/>
+                        <outlet property="lblSave" destination="KT0-ck-sX7" id="27H-4D-3Xw"/>
                         <outlet property="lblTTName" destination="SQT-PY-1sA" id="YVS-md-hKC"/>
                         <outlet property="tblTeamList" destination="oyL-Gf-fvX" id="91v-NF-oLG"/>
                         <segue destination="zWO-1W-wMH" kind="show" identifier="TtmCmpltVC -&gt; TtmListVC" id="fuF-8D-GXw"/>
@@ -702,7 +705,7 @@
         <!--11.팀 생성 완료-->
         <scene sceneID="5DJ-Bt-oP2">
             <objects>
-                <viewController storyboardIdentifier="TemCmpltVC" modalPresentationStyle="fullScreen" id="Yu8-IP-tiM" userLabel="11.팀 생성 완료" customClass="TemCmpltVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TemCmpltVC" modalPresentationStyle="fullScreen" id="Yu8-IP-tiM" userLabel="11.팀 생성 완료" customClass="TemCmpltVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ieQ-9r-tu5" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -965,6 +968,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnCreateTeam" destination="z4s-Pl-S8u" id="Bqx-cT-6PH"/>
+                        <outlet property="lblCreateTeam" destination="nVY-G2-bio" id="pag-sS-OeQ"/>
                         <outlet property="lblTeamName" destination="4lA-n7-HtA" id="fBn-GA-rf2"/>
                         <segue destination="l0g-Jx-Cpa" kind="show" identifier="TemCmpltVC -&gt; TtmCrtVC" id="A4F-L5-weg"/>
                         <segue destination="MRt-nd-KTa" kind="show" identifier="TemCmpltVC -&gt; ExcldWorkVC" id="pMa-qt-cnQ"/>
@@ -977,7 +981,7 @@
         <!--10.팀(부서) 생성-->
         <scene sceneID="XYB-LX-Wpo">
             <objects>
-                <viewController storyboardIdentifier="TemCrtVC" modalPresentationStyle="fullScreen" id="nkY-FY-Ena" userLabel="10.팀(부서) 생성" customClass="TemCrtVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TemCrtVC" modalPresentationStyle="fullScreen" id="nkY-FY-Ena" userLabel="10.팀(부서) 생성" customClass="TemCrtVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WY7-6O-nwu" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1071,7 +1075,7 @@
                                                         <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbC-Bb-d5z" customClass="CustomTextView" customModule="pinplM" customModuleProvider="target">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbC-Bb-d5z" customClass="CustomTextView" customModule="WooriyoER" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="293.66666666666669" width="335" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1204,7 +1208,7 @@
         <!--13-1.팀 리스트-->
         <scene sceneID="64c-CJ-cLg">
             <objects>
-                <viewController storyboardIdentifier="TtmListVC" modalPresentationStyle="fullScreen" id="zWO-1W-wMH" userLabel="13-1.팀 리스트" customClass="TtmListVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TtmListVC" modalPresentationStyle="fullScreen" id="zWO-1W-wMH" userLabel="13-1.팀 리스트" customClass="TtmListVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hbu-Fk-ysx" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1244,7 +1248,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TTeamCell" rowHeight="78.333335876464844" id="HWa-6x-Khc" customClass="TTeamCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TTeamCell" rowHeight="78.333335876464844" id="HWa-6x-Khc" customClass="TTeamCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="78.333335876464844"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWa-6x-Khc" id="Bt3-KL-xkz">
@@ -1365,7 +1369,7 @@
                                                     <outlet property="lblName" destination="Zr1-Ta-J3B" id="2OK-4b-9jA"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TeamCell" rowHeight="78" id="qH1-fx-njj" customClass="TeamCell" customModule="pinplM" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TeamCell" rowHeight="78" id="qH1-fx-njj" customClass="TeamCell" customModule="WooriyoER" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="123.00000190734863" width="375" height="78"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qH1-fx-njj" id="A57-26-Fit">
@@ -1543,6 +1547,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btnNext" destination="7hY-oi-nsM" id="M3P-qZ-o4k"/>
+                        <outlet property="lblNext" destination="4Qs-bT-LAW" id="KkQ-fy-8hW"/>
                         <outlet property="tblList" destination="ts7-yy-IfR" id="HXx-5e-aQD"/>
                         <segue destination="MRt-nd-KTa" kind="show" identifier="TtmListVC -&gt; ExcldWorkVC" id="unm-lb-hl1"/>
                     </connections>
@@ -1554,7 +1559,7 @@
         <!--14.출퇴근 제외-->
         <scene sceneID="Zxw-mJ-Rdu">
             <objects>
-                <viewController storyboardIdentifier="ExcldWorkVC" modalPresentationStyle="fullScreen" id="MRt-nd-KTa" userLabel="14.출퇴근 제외" customClass="ExcldWorkVC" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExcldWorkVC" modalPresentationStyle="fullScreen" id="MRt-nd-KTa" userLabel="14.출퇴근 제외" customClass="ExcldWorkVC" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eNw-P8-r6z" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1748,6 +1753,7 @@
                         <outlet property="btnSave" destination="xMP-iO-n8a" id="H6y-8i-OqT"/>
                         <outlet property="lblManagerName" destination="ZjE-9Q-lxy" id="eKJ-vE-qay"/>
                         <outlet property="lblNavigationTitle" destination="NOO-QY-4Xx" id="ztD-E5-VFl"/>
+                        <outlet property="lblS" destination="Ob4-UH-JlV" id="Wol-5F-tDp"/>
                         <segue destination="qWa-OI-cpc" kind="show" identifier="infoSet" id="ife-sW-dw7"/>
                     </connections>
                 </viewController>
@@ -1758,7 +1764,7 @@
         <!--정보 입력-->
         <scene sceneID="Xff-Q2-00M">
             <objects>
-                <viewController storyboardIdentifier="InfoSet" modalPresentationStyle="fullScreen" id="qWa-OI-cpc" customClass="InfoSet" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoSet" modalPresentationStyle="fullScreen" id="qWa-OI-cpc" customClass="InfoSet" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Odm-XA-KWs" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2042,7 +2048,7 @@
         <!--Info Set Pop Up-->
         <scene sceneID="hQ8-B1-1xR">
             <objects>
-                <viewController storyboardIdentifier="InfoSetAddPopUp" id="SKA-en-noq" customClass="InfoSetPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoSetAddPopUp" id="SKA-en-noq" customClass="InfoSetPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6bs-MK-sCM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2144,6 +2150,9 @@
                             <constraint firstAttribute="trailing" secondItem="6Mh-cx-VPD" secondAttribute="trailing" id="lup-lf-gNa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOk" destination="2te-kr-6n3" id="sff-1a-WAb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfR-6H-uGC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2152,7 +2161,7 @@
         <!--Info Set Pop Up-->
         <scene sceneID="wtJ-8f-5dC">
             <objects>
-                <viewController storyboardIdentifier="InfoSetUsePopUp" id="CxN-ZY-jhP" customClass="InfoSetPopUp" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoSetUsePopUp" id="CxN-ZY-jhP" customClass="InfoSetPopUp" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pxy-LE-ecP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2213,7 +2222,7 @@
                                                             </fragment>
                                                             <fragment content=" ">
                                                                 <attributes>
-                                                                    <font key="NSFont" metaFont="message" size="11"/>
+                                                                    <font key="NSFont" metaFont="toolTip"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment content="1~2년차 : 2년 이내에 사용한 총 연차 입력  3년차 이상 : 입사 3년 이후에 사용한 연차 입력 사용한 연차가 없다면 입력하지 않아도 됩니다.">
@@ -2270,6 +2279,9 @@
                             <constraint firstAttribute="trailing" secondItem="LxP-QE-wHp" secondAttribute="trailing" id="w0k-t9-6Yx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOk" destination="38n-Xq-GCR" id="SRh-oH-dJx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cc-AV-xCO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2278,7 +2290,7 @@
         <!--Info Set-->
         <scene sceneID="8WE-1X-4Uh">
             <objects>
-                <viewController storyboardIdentifier="SE_InfoSet" modalPresentationStyle="fullScreen" id="srm-PX-Nej" customClass="InfoSet" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_InfoSet" modalPresentationStyle="fullScreen" id="srm-PX-Nej" customClass="InfoSet" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFJ-Sd-V9a" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

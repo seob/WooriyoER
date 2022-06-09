@@ -15,7 +15,7 @@ class IntroVC2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if deviceHeight() == 2 {
             topHeight.constant = UIScreen.main.bounds.height * ( topHeight.constant / 812) - 20
         }else {

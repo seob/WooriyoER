@@ -56,7 +56,8 @@ class SnsJoinVC: UIViewController, NVActivityIndicatorViewable {
     // MARK: - view override
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSignup.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSignup)
+        
         textEmail.delegate = self
         textName.delegate = self
         

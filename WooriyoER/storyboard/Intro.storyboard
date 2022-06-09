@@ -23,7 +23,7 @@
         <!--인트로 1-->
         <scene sceneID="gSG-Dk-JMH">
             <objects>
-                <viewController storyboardIdentifier="IntroVC1" modalPresentationStyle="fullScreen" id="yyx-De-RcJ" userLabel="인트로 1" customClass="IntroVC1" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroVC1" modalPresentationStyle="fullScreen" id="yyx-De-RcJ" userLabel="인트로 1" customClass="IntroVC1" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5a5-ur-XCO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +206,7 @@
                                     <constraint firstItem="7xC-ND-cLQ" firstAttribute="top" secondItem="CBI-Cv-deN" secondAttribute="top" id="wdZ-ub-6HS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-vO-SZD" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-vO-SZD" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="20" y="720" width="335" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeQ-iZ-aje">
@@ -288,6 +288,7 @@
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="FeQ-iZ-aje" id="4eY-kV-bm6"/>
+                        <outlet property="lblNext" destination="PMN-Sg-Ota" id="lEe-FV-nAa"/>
                         <outlet property="topHeight" destination="0m7-69-FkV" id="W65-Zq-601"/>
                         <segue destination="yny-bO-erE" kind="show" identifier="IntroVC1 -&gt; IntroVC2" id="voV-8p-WAc"/>
                     </connections>
@@ -299,7 +300,7 @@
         <!--인트로 2-->
         <scene sceneID="F1C-mS-OMT">
             <objects>
-                <viewController storyboardIdentifier="IntroVC2" modalPresentationStyle="fullScreen" id="yny-bO-erE" userLabel="인트로 2" customClass="IntroVC2" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroVC2" modalPresentationStyle="fullScreen" id="yny-bO-erE" userLabel="인트로 2" customClass="IntroVC2" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FZQ-5w-tUe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -528,7 +529,7 @@
         <!--인트로 1-->
         <scene sceneID="Iu1-nW-fKS">
             <objects>
-                <viewController storyboardIdentifier="SE_IntroVC1" modalPresentationStyle="fullScreen" id="eo6-xz-fbm" userLabel="인트로 1" customClass="IntroVC1" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_IntroVC1" modalPresentationStyle="fullScreen" id="eo6-xz-fbm" userLabel="인트로 1" customClass="IntroVC1" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="weW-ZZ-xxB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -743,7 +744,7 @@
                                     <constraint firstItem="JGw-3l-vJf" firstAttribute="centerX" secondItem="8ai-1u-etQ" secondAttribute="centerX" id="N9l-Aq-wLN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ps-4j-zvO" customClass="CustomView" customModule="pinplM" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ps-4j-zvO" customClass="CustomView" customModule="WooriyoER" customModuleProvider="target">
                                 <rect key="frame" x="20" y="510" width="280" height="48"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZh-lR-XZc">
@@ -826,6 +827,7 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="btnNext" destination="IZh-lR-XZc" id="7qr-ge-9Sf"/>
+                        <outlet property="lblNext" destination="6ne-s2-h74" id="1zs-Ch-EAT"/>
                         <outlet property="topHeight" destination="Ej2-sI-xpK" id="lPg-HG-seV"/>
                         <segue destination="794-HQ-MRr" kind="show" identifier="IntroVC1 -&gt; IntroVC2" id="SY8-il-75U"/>
                     </connections>
@@ -837,7 +839,7 @@
         <!--인트로 2-->
         <scene sceneID="N5m-WQ-6pu">
             <objects>
-                <viewController storyboardIdentifier="SE_IntroVC2" modalPresentationStyle="fullScreen" id="794-HQ-MRr" userLabel="인트로 2" customClass="IntroVC2" customModule="pinplM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SE_IntroVC2" modalPresentationStyle="fullScreen" id="794-HQ-MRr" userLabel="인트로 2" customClass="IntroVC2" customModule="WooriyoER" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aRl-ID-7IJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

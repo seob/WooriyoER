@@ -24,7 +24,7 @@ class Lc_Step1VC: UIViewController {
     var selectedRows = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

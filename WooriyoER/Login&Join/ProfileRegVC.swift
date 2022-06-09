@@ -42,7 +42,7 @@ class ProfileRegVC: UIViewController, NVActivityIndicatorViewable {
         print("\n-----------------[UIViewController : \(self) ]---------------------\n")
         print("\n-----------------[ func : \(#function) ]---------------------\n")
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         picker.delegate = self
         scrollView.delegate = self
         scrollView.clipsToBounds = true

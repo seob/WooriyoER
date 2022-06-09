@@ -9,9 +9,12 @@
 import UIKit
 
 class NoticeDelPopUp: UIViewController {
+    @IBOutlet weak var btnDelete: UIButton!
     var sid = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnDelete.backgroundColor = EnterpriseColor.btnColor
+        btnDelete.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     
     @IBAction func okClick(_ sender: UIButton) {

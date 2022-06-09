@@ -46,6 +46,8 @@ class ProcAnlAprMultiVC: UIViewController {
         @IBOutlet weak var vwRef2: CustomView!
         @IBOutlet weak var btnDdctn: UIButton!
         @IBOutlet weak var btnComfirm: UIButton!
+        @IBOutlet weak var btnConfirm2: UIButton!
+        @IBOutlet weak var btnConfirm3: UIButton!
     
         
         @IBOutlet weak var tblList: UITableView!
@@ -113,7 +115,9 @@ class ProcAnlAprMultiVC: UIViewController {
      
         override func viewDidLoad() {
             super.viewDidLoad()
-            btnComfirm.layer.cornerRadius = 6
+            EnterpriseColor.nonLblBtn(btnComfirm)
+            EnterpriseColor.nonLblBtn(btnConfirm2)
+            EnterpriseColor.nonLblBtn(btnConfirm3)
             imgProfile.makeRounded()
             if SE_flag {
                 lblNavigationTitle.font = navigationFontSE

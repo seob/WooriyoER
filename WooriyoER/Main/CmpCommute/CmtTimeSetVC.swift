@@ -15,11 +15,13 @@ class CmtTimeSetVC: UIViewController {
     @IBOutlet weak var textEndDate: UITextField!
     @IBOutlet weak var textStartTime: UITextField!
     @IBOutlet weak var txtEndTime: UITextField!
-    @IBOutlet weak var vwAdd: UIView!
+    @IBOutlet weak var btnLongSave: UIButton!
     @IBOutlet weak var btnAdd: UIButton!
     @IBOutlet weak var vwBtn: UIStackView!
+    @IBOutlet weak var btnShortSave: UIButton!
     @IBOutlet weak var lblWork: UILabel!
     @IBOutlet weak var lblLeave: UILabel!
+    @IBOutlet weak var vwAdd: UIView!
     
     @IBOutlet weak var vwCmtHistory: CustomView!
     
@@ -29,8 +31,7 @@ class CmtTimeSetVC: UIViewController {
     @IBOutlet weak var textMemo: UITextView! 
     @IBOutlet weak var lbltextlimit: UILabel!
     @IBOutlet weak var lblMemo: UILabel!
-    
-    @IBOutlet weak var saveButtonView: UIView!
+
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
     let device = DeviceInfo()
@@ -58,10 +59,13 @@ class CmtTimeSetVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.btnLongSave.isHidden = false;
         self.vwAdd.isHidden = false;
-        self.btnAdd.isHidden = true;
         self.vwBtn.isHidden = false;
-        btnAdd.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnLongSave)
+        EnterpriseColor.nonLblBtn(btnShortSave)
+        print(seltype)
+        
         addToolBar(textFields: [textEndDate, textStartTime, txtEndTime])
 
         addToolBar(textView: textMemo)
@@ -156,48 +160,48 @@ class CmtTimeSetVC: UIViewController {
         switch seltype {
         case 0:
             titleStr = "근로시간 수정"
+            self.btnLongSave.isHidden = false
             self.vwAdd.isHidden = true
-            self.btnAdd.isHidden = false
             self.vwBtn.isHidden = true
         case 1:
             titleStr = "근로시간 수정"
-            self.vwAdd.isHidden = true
+            self.btnLongSave.isHidden = true
         case 2:
             titleStr = "지각시간 수정"
-            self.vwAdd.isHidden = true
+            self.btnLongSave.isHidden = true
         case 3:
             titleStr = "근로시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = true
+            self.btnLongSave.isHidden = true
         case 4:
             titleStr = "근로시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         case 5:
             titleStr = "근로시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         case 6:
             titleStr = "근로시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         case 7:
             titleStr = "외출시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         case 8:
             titleStr = "연차시간 수정"
             self.lblWork.text = "시작"
             self.lblLeave.text = "종료"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         case 9:
             titleStr = "근로시간 수정"
-            self.vwAdd.isHidden = false
+            self.btnLongSave.isHidden = false
         default:
            break
         }
@@ -308,11 +312,12 @@ class CmtTimeSetVC: UIViewController {
     }
     //근로 시간 추가
     @IBAction func btnCmtAdd(_ sender: UIButton) {
+        print("----------touch!!!----------")
         seltype = 0
         selsid = 0
         lblNavigationTitle.text = "근로시간 추가"
+        self.btnLongSave.isHidden = false
         self.vwAdd.isHidden = true
-        self.btnAdd.isHidden = false
         self.vwBtn.isHidden = true
         
         lblStartDate.text = seldt

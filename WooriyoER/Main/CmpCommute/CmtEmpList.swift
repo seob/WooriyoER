@@ -378,7 +378,7 @@ extension CmtEmpList: UITableViewDelegate, UITableViewDataSource {
                     cell.btnNotWork.isSelected = false
                     cell.btnNotLeaveWork.isSelected = false
                     
-                    cell.lblWork.textColor = .init(hexString: "#000000")
+                    cell.lblWork.textColor = EnterpriseColor.lblColor
                     cell.lblNotWork.textColor = .init(hexString: "#CBCBD3")
                     cell.lblNotLeaveWork.textColor = .init(hexString: "#CBCBD3")
                 }else if nCheckTab == 1 {
@@ -387,7 +387,7 @@ extension CmtEmpList: UITableViewDelegate, UITableViewDataSource {
                     cell.btnNotLeaveWork.isSelected = false
                     
                     cell.lblWork.textColor = .init(hexString: "#CBCBD3")
-                    cell.lblNotWork.textColor = .init(hexString: "#000000")
+                    cell.lblNotWork.textColor = EnterpriseColor.lblColor
                     cell.lblNotLeaveWork.textColor = .init(hexString: "#CBCBD3")
                 }else {
                     cell.btnWork.isSelected = false
@@ -396,7 +396,7 @@ extension CmtEmpList: UITableViewDelegate, UITableViewDataSource {
                     
                     cell.lblWork.textColor = .init(hexString: "#CBCBD3")
                     cell.lblNotWork.textColor = .init(hexString: "#CBCBD3")
-                    cell.lblNotLeaveWork.textColor = .init(hexString: "#000000")
+                    cell.lblNotLeaveWork.textColor = EnterpriseColor.lblColor
                 }
                 print("\n---------- [ tname : \(tname) ] ----------\n")
                 cell.lblTname.text = tname
