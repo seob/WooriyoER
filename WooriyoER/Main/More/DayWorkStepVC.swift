@@ -51,7 +51,7 @@ class DayWorkStepVC: UIViewController, NVActivityIndicatorViewable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         print("\n---------- [ viewDidLoad ] ----------\n")
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE

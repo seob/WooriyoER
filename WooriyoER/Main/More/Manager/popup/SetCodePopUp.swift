@@ -11,6 +11,7 @@ import UIKit
 class SetCodePopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnChange: UIButton!
     
     let urlClass = UrlClass()
     let jsonClass = JsonClass()
@@ -21,6 +22,8 @@ class SetCodePopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = name
+        btnChange.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnChange.backgroundColor = EnterpriseColor.btnColor
         
     }
     // FIXME: 팝업창 닫기

@@ -11,6 +11,7 @@ import UIKit
 class PersonMgrPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnSave: UIButton!
     
     var name = ""
     var empsids = ""
@@ -18,6 +19,8 @@ class PersonMgrPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = "'\(name)'을(를)"
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnSave.backgroundColor = EnterpriseColor.btnColor
     }
     
     @IBAction func cancelClick(_ sender: UIButton) {

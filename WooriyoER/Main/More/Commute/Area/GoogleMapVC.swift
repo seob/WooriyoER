@@ -50,7 +50,7 @@ class GoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         placesClient = GMSPlacesClient.shared()
         
         locationManager = CLLocationManager()

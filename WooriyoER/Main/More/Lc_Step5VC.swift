@@ -341,7 +341,7 @@ class Lc_Step5VC: UIViewController {
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         setUi()
     }
     

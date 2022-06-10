@@ -10,6 +10,7 @@ import UIKit
 
 class MgmtCmpMgrPopUp: UIViewController {
     
+    @IBOutlet weak var btnCancel: UIButton!
     @IBOutlet weak var lblName: UILabel!
     
     var name = ""
@@ -18,6 +19,8 @@ class MgmtCmpMgrPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = name
+        btnCancel.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnCancel.backgroundColor = EnterpriseColor.btnColor
     }
     
     @IBAction func cancelClick(_ sender: UIButton) {

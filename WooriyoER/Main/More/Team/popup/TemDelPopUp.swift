@@ -11,10 +11,13 @@ import UIKit
 class TemDelPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnDelete: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = SelTemInfo.name
+        btnDelete.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnDelete.backgroundColor = EnterpriseColor.btnColor
     }
     
     @IBAction func okClick(_ sender: UIButton) {

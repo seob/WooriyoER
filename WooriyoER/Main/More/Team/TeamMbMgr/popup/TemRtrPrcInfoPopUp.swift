@@ -10,9 +10,11 @@ import UIKit
 
 class TemRtrPrcInfoPopUp: UIViewController {
     
+    @IBOutlet weak var btnSave: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnSave.backgroundColor = EnterpriseColor.btnColor
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     
     @IBAction func cancelClick(_ sender: UIButton) {

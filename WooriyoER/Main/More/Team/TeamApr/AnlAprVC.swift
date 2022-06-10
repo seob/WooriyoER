@@ -45,7 +45,7 @@ class AnlAprVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

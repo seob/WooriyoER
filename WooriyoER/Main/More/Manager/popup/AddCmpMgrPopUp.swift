@@ -11,6 +11,7 @@ import UIKit
 class AddCmpMgrPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnSave: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -21,6 +22,8 @@ class AddCmpMgrPopUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnSave.backgroundColor = EnterpriseColor.btnColor
         lblName.text = name
     }
     // FIXME: 팝업창 닫기

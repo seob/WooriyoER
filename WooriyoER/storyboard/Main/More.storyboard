@@ -1922,6 +1922,7 @@
                         <outlet property="btnThu" destination="Esq-lt-SRV" id="DHZ-Aq-QSq"/>
                         <outlet property="btnTue" destination="wMV-J2-8TZ" id="fHR-Ni-ZW8"/>
                         <outlet property="btnWed" destination="555-9G-LBc" id="ygI-AK-BtJ"/>
+                        <outlet property="lblOk" destination="LdM-Bv-8mF" id="vCD-kZ-8SU"/>
                         <outlet property="swBT" destination="svj-l1-TGj" id="NYj-3A-ykU"/>
                         <outlet property="textEnd" destination="bKW-C8-sTK" id="1Qo-6d-Fr2"/>
                         <outlet property="textStart" destination="Mzo-da-7S7" id="jbx-NH-8jb"/>
@@ -2438,6 +2439,7 @@
                     <connections>
                         <outlet property="btnSave" destination="Ajr-dG-ECO" id="Aj1-ee-3oI"/>
                         <outlet property="cropView" destination="crp-6S-9uy" id="EsJ-45-wC0"/>
+                        <outlet property="lblSave" destination="Tuz-Ld-FOw" id="22O-Vl-WzB"/>
                         <outlet property="vwBox1" destination="CPi-nI-B88" id="2i0-Gr-f8x"/>
                         <outlet property="vwBox2" destination="4fF-5P-nQU" id="Ppo-7I-Kmd"/>
                     </connections>
@@ -5323,10 +5325,10 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwc-mx-faG">
                                                 <rect key="frame" x="1" y="1" width="118" height="46"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5381,10 +5383,10 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매년" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgu-Pi-cbb">
                                                 <rect key="frame" x="1" y="1" width="118" height="46"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -6460,6 +6462,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnChange" destination="zD3-Xh-rXA" id="en4-DT-uL5"/>
                         <outlet property="lblName" destination="Hid-G5-P5r" id="6Jr-au-N3p"/>
                     </connections>
                 </viewController>
@@ -11620,6 +11623,7 @@
                     <connections>
                         <outlet property="btnSave" destination="I3R-T9-CuV" id="6NI-zI-qs3"/>
                         <outlet property="lblPlaceholder" destination="cCR-bk-vET" id="hYq-RO-c8w"/>
+                        <outlet property="lblSave" destination="G2k-pA-2Y6" id="g4Q-CC-k2q"/>
                         <outlet property="lblTMemo" destination="Hvr-zo-A5r" id="q9C-VN-102"/>
                         <outlet property="lblTName" destination="tQm-HP-7o7" id="rld-RC-RUs"/>
                         <outlet property="lblTPhone" destination="ron-nA-csa" id="t1v-eL-Qpe"/>
@@ -11862,6 +11866,7 @@
                     <connections>
                         <outlet property="btnSave" destination="gk4-fn-eku" id="dE8-3O-jOT"/>
                         <outlet property="lblPlaceholder" destination="IC1-h9-VXl" id="Mko-gc-vaP"/>
+                        <outlet property="lblSave" destination="6LN-Wd-H8u" id="fbR-pT-g3G"/>
                         <outlet property="lblTMemo" destination="nqH-gD-9O5" id="GrV-GP-Tuo"/>
                         <outlet property="lblTName" destination="pvN-Jf-bbt" id="zaT-y3-gRU"/>
                         <outlet property="lblTPhone" destination="jEw-zn-62k" id="OCU-Z2-sfR"/>
@@ -12173,6 +12178,7 @@
                     </view>
                     <connections>
                         <outlet property="btnOk" destination="dbk-YX-IOG" id="b8W-hj-Gd3"/>
+                        <outlet property="lblOk" destination="uyf-6U-ZXP" id="6XB-vZ-wgl"/>
                         <outlet property="lblTTName" destination="qVi-JZ-h21" id="pbU-6b-hnH"/>
                         <outlet property="tblTeamList" destination="q6b-gZ-vAQ" id="auO-8J-x0k"/>
                     </connections>
@@ -13963,7 +13969,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phn-9S-b3t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17388" y="1474"/>
+            <point key="canvasLocation" x="17391" y="1497"/>
         </scene>
         <!--더보기 - 팀관리 - 팀원관리 -  근무시간 추가-->
         <scene sceneID="thT-HG-igh">
@@ -15387,6 +15393,7 @@
                         <outlet property="lblNavigationTitle" destination="2Z8-jr-nIA" id="NzY-bW-4e1"/>
                         <outlet property="lblSTime" destination="fdC-6T-kvC" id="lSP-Ri-UYa"/>
                         <outlet property="lblSat" destination="3ok-KI-WdL" id="ChZ-jb-ty4"/>
+                        <outlet property="lblSave" destination="FM1-Tx-mzO" id="3Qa-M1-xax"/>
                         <outlet property="lblSun" destination="vez-Do-FEO" id="4Mp-k1-TJS"/>
                         <outlet property="lblThu" destination="eXx-o4-VwA" id="k4L-um-VhR"/>
                         <outlet property="lblTname" destination="0Cv-Jj-OvL" id="c87-gv-wyv"/>
@@ -15739,6 +15746,7 @@
                         <outlet property="btnThu" destination="bLy-bb-jnh" id="gw1-Ta-1hT"/>
                         <outlet property="btnTue" destination="8yb-dl-RGy" id="GPB-QQ-ZsD"/>
                         <outlet property="btnWed" destination="UJa-yT-DOK" id="zcL-zU-1og"/>
+                        <outlet property="lblSave" destination="8vb-uo-baB" id="3PQ-t3-xFK"/>
                         <outlet property="lblTname" destination="KnT-oh-mEf" id="WlS-Eb-8Om"/>
                         <outlet property="swBT" destination="8Y7-3f-yvU" id="t75-0T-rDE"/>
                         <outlet property="textEnd" destination="E66-0P-c66" id="YLX-dm-lkk"/>
@@ -16281,6 +16289,7 @@
                         <outlet property="btnSave" destination="hzu-r4-hmH" id="51h-Iz-N7O"/>
                         <outlet property="cropView" destination="IA9-Ml-p1z" id="QzX-Kq-yXr"/>
                         <outlet property="lblNavigationTitle" destination="sjk-Wh-xwh" id="dkD-4s-4bo"/>
+                        <outlet property="lblSave" destination="bh1-9P-7rT" id="dg8-Jf-bRW"/>
                         <outlet property="vwBox1" destination="RoA-uA-XTS" id="DZr-HB-MsQ"/>
                         <outlet property="vwBox2" destination="IR8-wX-9jq" id="9dl-EZ-nQ1"/>
                     </connections>
@@ -16765,6 +16774,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCancel" destination="xeY-OX-zl0" id="OfX-Au-Xkl"/>
                         <outlet property="lblName" destination="GmL-RD-DaL" id="863-f6-9zz"/>
                     </connections>
                 </viewController>
@@ -16871,6 +16881,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="vXH-vr-fbR" id="LgT-PW-Mj5"/>
                         <outlet property="lblName" destination="7Sd-Xs-ILA" id="UGf-ds-O4X"/>
                     </connections>
                 </viewController>
@@ -16999,6 +17010,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnDelete" destination="9iu-KE-ZhX" id="bak-7H-BGL"/>
                         <outlet property="lblName" destination="dHn-zt-SbS" id="ovO-kX-A7y"/>
                     </connections>
                 </viewController>
@@ -17961,6 +17973,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCancel" destination="jWY-9i-87B" id="VOC-sX-QEK"/>
                         <outlet property="lblName" destination="Ny8-vJ-oGt" id="r7R-NC-1Ua"/>
                     </connections>
                 </viewController>
@@ -18089,6 +18102,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="du6-Tp-a1a" id="zKN-Tb-R4A"/>
                         <outlet property="lblName" destination="uJd-QO-LXc" id="jb6-Z0-JgQ"/>
                     </connections>
                 </viewController>
@@ -18279,6 +18293,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCancel" destination="RKU-7d-a5d" id="ObF-Q3-58C"/>
                         <outlet property="lblName" destination="2kT-Au-3eI" id="A4u-tj-1EG"/>
                         <outlet property="lblPost" destination="883-ge-u6n" id="AkU-y7-VUF"/>
                         <outlet property="lblTname" destination="RCj-MS-icA" id="Fqk-mW-oNe"/>
@@ -18451,6 +18466,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnOut" destination="mYG-ya-HTs" id="Uar-lq-eD9"/>
                         <outlet property="lblName" destination="MQj-gq-1oB" id="Axt-7Y-2Mw"/>
                         <outlet property="lblPost" destination="zQC-O3-7af" id="7LH-7i-61P"/>
                         <outlet property="lblTname" destination="pfw-qF-wqc" id="Dp9-dn-AuM"/>
@@ -18582,6 +18598,9 @@
                             <constraint firstAttribute="trailing" secondItem="PXd-Vf-g7x" secondAttribute="trailing" id="rhd-Pl-cAV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSave" destination="rhG-Uc-iWK" id="IGJ-NY-1I1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPW-ub-yGk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -18692,6 +18711,9 @@
                             <constraint firstItem="HdJ-1D-pWr" firstAttribute="top" secondItem="6ZV-98-mRM" secondAttribute="top" id="vMB-SE-g78"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSave" destination="g09-3p-ccb" id="WMk-3Q-GHu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NnZ-ma-2G7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -18792,6 +18814,9 @@
                             <constraint firstAttribute="bottom" secondItem="3J1-Af-2D8" secondAttribute="bottom" id="wRe-Ke-Bgx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSave" destination="XzN-WB-hQo" id="3fB-AP-QaC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuX-ka-heT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -19096,6 +19121,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="q9n-WJ-Qak" id="M2O-1n-mW5"/>
                         <outlet property="lblName" destination="1Yj-kf-C5T" id="cLd-WV-kLl"/>
                     </connections>
                 </viewController>
@@ -19858,6 +19884,7 @@
                     <connections>
                         <outlet property="btnSave" destination="1u3-tB-ets" id="NhM-Wo-OfY"/>
                         <outlet property="lblPlaceholder" destination="Tt3-Vf-ody" id="UeA-u5-XzT"/>
+                        <outlet property="lblSave" destination="cz6-vL-ypp" id="83h-Pp-tiW"/>
                         <outlet property="lblTMemo" destination="FuD-FO-oO1" id="6cv-9a-jUY"/>
                         <outlet property="lblTName" destination="a3J-ht-Hn4" id="HLk-Gz-sk1"/>
                         <outlet property="lblTPhone" destination="CJf-9g-LWt" id="5Kc-mo-f47"/>
@@ -20061,6 +20088,7 @@
                         <outlet property="btnSave" destination="l8F-h8-ffg" id="oZW-fQ-TCJ"/>
                         <outlet property="cropView" destination="KaL-Ua-a0I" id="Rjq-ke-oQG"/>
                         <outlet property="lblNavigationTitle" destination="BJE-Pi-zL3" id="mKP-a1-sV8"/>
+                        <outlet property="lblSave" destination="OJf-DH-G18" id="lo8-Ta-0Ya"/>
                         <outlet property="vwBox1" destination="Hvq-Q2-vqP" id="4Hl-yg-hPR"/>
                         <outlet property="vwBox2" destination="NXb-I3-6jL" id="Ak6-wy-iOn"/>
                     </connections>
@@ -20265,6 +20293,7 @@
                         <outlet property="btnSave" destination="h4C-fC-kpN" id="fQi-eA-EYr"/>
                         <outlet property="cropView" destination="mjt-AT-nmI" id="Ijb-2J-rWB"/>
                         <outlet property="lblNavigationTitle" destination="how-Ke-sHM" id="uLU-pi-lEp"/>
+                        <outlet property="lblSave" destination="zYv-Xh-OMU" id="TPH-J8-vdY"/>
                         <outlet property="vwBox1" destination="lg4-Lp-Hqb" id="FY5-fy-kNr"/>
                         <outlet property="vwBox2" destination="apC-3e-nBP" id="3ya-Dx-jWL"/>
                     </connections>
@@ -20598,6 +20627,7 @@
                         <outlet property="btnTue" destination="ic3-yQ-i6z" id="e5k-PK-ZWx"/>
                         <outlet property="btnWed" destination="kZS-P8-OzN" id="Jmf-AK-f1M"/>
                         <outlet property="lblNavigationTitle" destination="76f-5N-KXT" id="srS-vv-o7l"/>
+                        <outlet property="lblOk" destination="D34-4c-5Jb" id="Ww3-bf-Bpa"/>
                         <outlet property="swBT" destination="bMq-t4-3iz" id="mI9-qp-lrq"/>
                         <outlet property="textEnd" destination="uyo-di-vyb" id="EDJ-73-WqE"/>
                         <outlet property="textStart" destination="Kko-el-ydZ" id="bed-5I-VGx"/>
@@ -20958,6 +20988,7 @@
                         <outlet property="btnTue" destination="wIp-GQ-aEe" id="5gA-7W-fSI"/>
                         <outlet property="btnWed" destination="87X-67-m1H" id="2GS-R6-fJ4"/>
                         <outlet property="lblNavigationTitle" destination="6SE-b2-POc" id="P1w-Hx-tc5"/>
+                        <outlet property="lblSave" destination="vjf-4G-dmO" id="LEJ-TB-EqD"/>
                         <outlet property="lblTname" destination="R61-zk-qqW" id="S3f-tZ-eH1"/>
                         <outlet property="swBT" destination="ttv-K4-xmP" id="7s4-Dn-76N"/>
                         <outlet property="textEnd" destination="bqN-eJ-750" id="O3H-DP-ss7"/>
@@ -22733,6 +22764,7 @@
                         <outlet property="btnSave" destination="WJg-l0-CJF" id="GvD-3W-Nf9"/>
                         <outlet property="lblNavigationTitle" destination="Q3I-Hd-M8t" id="w9f-8L-QGL"/>
                         <outlet property="lblPlaceholder" destination="WCU-EM-fCd" id="hSp-rh-HVe"/>
+                        <outlet property="lblSave" destination="m8j-rA-nvQ" id="8AY-wY-CJU"/>
                         <outlet property="lblTMemo" destination="Xmt-cY-O03" id="hn8-6Z-oDA"/>
                         <outlet property="lblTName" destination="OEF-lD-uEQ" id="ipD-9X-8ii"/>
                         <outlet property="lblTPhone" destination="Sc2-q6-mcs" id="kwj-LK-fHj"/>
@@ -23898,10 +23930,10 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안함" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC9-Yw-XgJ">
                                                 <rect key="frame" x="1" y="1" width="94" height="36.5"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                 <color key="textColor" red="0.85490196080000003" green="0.85490196080000003" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -23956,10 +23988,10 @@
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매년" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5c-TZ-asY">
                                                 <rect key="frame" x="1" y="1" width="94" height="36.5"/>
-                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="NotoSansCJKkr-Medium" family="Noto Sans CJK KR" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -24361,6 +24393,7 @@
                         <outlet property="btnSave" destination="tAH-3E-qAt" id="niy-Gl-Bjo"/>
                         <outlet property="lblNavigationTitle" destination="dNI-a5-Oju" id="r2u-xg-opz"/>
                         <outlet property="lblPlaceholder" destination="T8s-VX-DI9" id="se2-iQ-A9L"/>
+                        <outlet property="lblSave" destination="8Tw-Iq-DjW" id="ZtY-ai-zd3"/>
                         <outlet property="lblTMemo" destination="WR5-OF-d1L" id="DJ8-Zh-DvN"/>
                         <outlet property="lblTName" destination="rpw-kJ-Jcf" id="6Yf-DF-G7r"/>
                         <outlet property="lblTPhone" destination="EsG-3S-V2T" id="edF-ZL-xNq"/>
@@ -24603,6 +24636,7 @@
                         <outlet property="btnSave" destination="Uum-wh-Bm2" id="DQq-4f-h2g"/>
                         <outlet property="lblNavigationTitle" destination="IrP-Ri-gHY" id="CVN-Wj-abA"/>
                         <outlet property="lblPlaceholder" destination="vSn-9E-Hcl" id="VYH-3X-OdX"/>
+                        <outlet property="lblSave" destination="7MU-ZJ-yrE" id="C1h-O3-Ej6"/>
                         <outlet property="lblTMemo" destination="LKY-fT-hMl" id="ggB-3d-MwK"/>
                         <outlet property="lblTName" destination="P5H-Zv-85K" id="Nwk-E9-pTZ"/>
                         <outlet property="lblTPhone" destination="dN3-HW-hmb" id="JE3-NN-i2u"/>
@@ -24696,6 +24730,9 @@
                             <constraint firstItem="9Lx-ci-cgk" firstAttribute="centerY" secondItem="UaH-WY-mhE" secondAttribute="centerY" id="dLb-rA-LBC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSave" destination="yz3-Bw-MkG" id="LZf-7o-VF1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ws0-MN-UwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -25715,6 +25752,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="zNB-E5-8ya" id="9rp-aR-Bi6"/>
                         <outlet property="lblName" destination="UqF-Zd-BTw" id="zPu-xl-mKm"/>
                     </connections>
                 </viewController>
@@ -26006,6 +26044,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="pW1-2N-few" id="7wx-3W-LnB"/>
                         <outlet property="lblName" destination="bA8-Dd-ZXh" id="XWj-A1-w4M"/>
                     </connections>
                 </viewController>
@@ -27133,6 +27172,9 @@
                             <constraint firstItem="UDp-VA-Jwf" firstAttribute="top" secondItem="gRo-o1-Zge" secondAttribute="top" id="qG6-a8-syv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOk" destination="yJa-mI-h1W" id="2XJ-QW-lK5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzY-Tn-k3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29141,6 +29183,7 @@
                     <size key="freeformSize" width="375" height="896"/>
                     <connections>
                         <outlet property="DateView" destination="8z7-LD-vDu" id="cyA-qf-D6U"/>
+                        <outlet property="btnSave" destination="jLj-me-xNp" id="UYR-PU-2wE"/>
                         <outlet property="lblDay" destination="7eL-uI-KyM" id="frW-Qj-A8t"/>
                         <outlet property="lblMonth" destination="6UQ-XU-mVc" id="QxQ-6z-Hz1"/>
                         <outlet property="lblNavigationTitle" destination="Qoe-n3-aSF" id="qj8-at-MEC"/>
@@ -30637,6 +30680,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="896"/>
+                    <connections>
+                        <outlet property="btnOk" destination="Kvc-2G-j3c" id="HXp-sf-0hk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZm-WC-pHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30782,6 +30828,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="896"/>
+                    <connections>
+                        <outlet property="btnOk" destination="7Tq-Yy-812" id="rcG-CV-PiB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="045-5x-EP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30903,6 +30952,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="896"/>
+                    <connections>
+                        <outlet property="btnOk" destination="U2Y-Rk-nFK" id="7ei-M8-SsQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQH-Ed-A3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31048,6 +31100,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="896"/>
+                    <connections>
+                        <outlet property="btnOk" destination="sxd-RQ-lTT" id="CZ0-v4-BII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrQ-00-YSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

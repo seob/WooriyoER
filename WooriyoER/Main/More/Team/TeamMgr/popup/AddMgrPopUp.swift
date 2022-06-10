@@ -11,6 +11,7 @@ import UIKit
 class AddMgrPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnSave: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -23,6 +24,8 @@ class AddMgrPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = SelEmpInfo.name
+        btnSave.backgroundColor = EnterpriseColor.btnColor
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     @IBAction func okClick(_ sender: UIButton) {
         /*

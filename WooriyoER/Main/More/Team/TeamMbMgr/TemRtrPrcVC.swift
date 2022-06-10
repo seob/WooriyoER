@@ -40,7 +40,7 @@ class TemRtrPrcVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOut.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnOut)
         imgProfile.layer.cornerRadius = imgProfile.frame.height/2
         imgProfile.layer.borderWidth = 1
         imgProfile.layer.borderColor = UIColor.clear.cgColor

@@ -10,9 +10,11 @@ import UIKit
 
 class CmpContractPopUp: UIViewController {
     
+    @IBOutlet weak var btnYes: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnYes.backgroundColor = EnterpriseColor.btnColor
+        btnYes.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         // Do any additional setup after loading the view.
     }
     //돌아가기 -> history.back

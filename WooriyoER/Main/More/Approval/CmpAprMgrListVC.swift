@@ -36,7 +36,7 @@ class CmpAprMgrListVC: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOk.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnOk)
         tblList.delegate = self
         tblList.dataSource = self
         searchbar.delegate = self

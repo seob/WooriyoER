@@ -21,6 +21,8 @@ class MulticmtPopVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnText.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnText.backgroundColor = EnterpriseColor.btnColor
         lblPoint.text = "\(CompanyInfo.point)"
         print("\n---------- [ viewflag : \(viewflag) , payType :\(payType)] ----------\n")
         if viewflag == "moreEextension" {

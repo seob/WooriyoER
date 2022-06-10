@@ -155,8 +155,9 @@ class TemSetCmtVC: UIViewController , CLLocationManagerDelegate{
 //        if !authorCk(msg: "권한이 없습니다.\n마스터관리자와 최고관리자만 \n변경이 가능합니다.") {
 //            vwAuthor.isHidden = false
 //        }
+        EnterpriseColor.nonLblBtn(btnSave)
         setUi()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         if view.bounds.width == 414 {
             switchYposition = 340
         }else if view.bounds.width == 375 {

@@ -340,7 +340,7 @@ class EnterpriseColor {
     //변경할 곳
     //1.버튼 색깔
 //    static let btnColor = UIColor.init(hexString: "#FCCA00")
-    static let btnColor = UIColor.init(hexString: "#000000")
+    static let btnColor = UIColor.init(hexString: "#FF3636")
     //2.글자 색깔
     static let lblColor = UIColor.init(hexString: "#FFFFFF")
     

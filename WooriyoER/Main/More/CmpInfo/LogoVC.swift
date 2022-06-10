@@ -16,6 +16,7 @@ class LogoVC: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var vwBox1: UIView!
     @IBOutlet weak var vwBox2: UIView!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     let picker = UIImagePickerController()
     let setWidth = UIScreen.main.bounds.size.width
@@ -28,7 +29,7 @@ class LogoVC: UIViewController, UIScrollViewDelegate {
     //MARK: override
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         picker.delegate = self
         scrollView.delegate = self
     }

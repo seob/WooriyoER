@@ -48,7 +48,7 @@ class TemGoogleMapVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
     var nowip: String = ""          //접속 무선랜 IP
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         loclat = SelTemInfo.loclat
         loclong = SelTemInfo.loclong
         

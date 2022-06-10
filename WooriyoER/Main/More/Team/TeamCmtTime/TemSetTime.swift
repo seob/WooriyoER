@@ -23,6 +23,7 @@ class TemSetTime: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var swBT: UISwitch!
     @IBOutlet weak var lblTname: UILabel!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     @IBOutlet weak var vwMainArea: UIView!
     let toggleBT = ToggleSwitch(with: images)
@@ -40,7 +41,7 @@ class TemSetTime: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         textStart.delegate = self
         textEnd.delegate = self
         

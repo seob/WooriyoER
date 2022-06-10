@@ -53,11 +53,10 @@ class InAppVC: UIViewController , NVActivityIndicatorViewable{
     var paymentTransactionArr:[SKPaymentTransaction] = [SKPaymentTransaction]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        EnterpriseColor.nonLblBtn(btnChargeBtn)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        btnChargeBtn.layer.cornerRadius = 6
         let productIdentifiers = NSSet(objects:
                                        "com.wooriyo.wooriyo.10pin",
                                        "com.wooriyo.wooriyo.20pin",
