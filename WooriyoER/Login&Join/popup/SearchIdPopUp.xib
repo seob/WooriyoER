@@ -14,8 +14,9 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchIdPopUp" customModule="pinplM" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchIdPopUp" customModule="WooriyoER" customModuleProvider="target">
             <connections>
+                <outlet property="btnLogin" destination="NnU-gD-Vdj" id="MjZ-qt-oU4"/>
                 <outlet property="lblEmail" destination="GAh-fD-z5d" id="Tww-yF-kUm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

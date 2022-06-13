@@ -43,8 +43,8 @@ class TemCmtTimeSetVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnAdd.isHidden = true
-        btnAdd.layer.cornerRadius = 6
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnAdd)
+        EnterpriseColor.nonLblBtn(btnSave)
         txtEndDate.delegate = self
         txtStartTime.delegate = self
         txtEndTime.delegate = self

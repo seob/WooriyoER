@@ -10,6 +10,7 @@ import UIKit
 
 class ChangePopUpOk: UIViewController {
   
+    @IBOutlet weak var btnSave: UIButton!
     var selname = ""
     var selenname = ""
     var selphone = ""
@@ -19,6 +20,8 @@ class ChangePopUpOk: UIViewController {
     var selceo = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnSave.backgroundColor = EnterpriseColor.btnColor
     }
     
     // FIXME: 팝업창 닫기

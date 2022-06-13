@@ -22,7 +22,8 @@ class StoragePopVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblPoint.text = "\(CompanyInfo.point)"
-        
+        btnText.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnText.backgroundColor = EnterpriseColor.btnColor
         if CompanyInfo.datalimits >= muticmttodayDate() {
             checkEextension = 1
         }else{

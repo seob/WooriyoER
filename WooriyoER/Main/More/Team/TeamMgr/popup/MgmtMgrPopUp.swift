@@ -11,6 +11,7 @@ import UIKit
 class MgmtMgrPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnCancel: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -19,6 +20,8 @@ class MgmtMgrPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = SelEmpInfo.name.postPositionText(type: 0)
+        btnCancel.backgroundColor = EnterpriseColor.btnColor
+        btnCancel.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
     
     @IBAction func okClick(_ sender: UIButton) {

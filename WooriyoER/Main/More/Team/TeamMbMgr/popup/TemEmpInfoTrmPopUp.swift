@@ -13,6 +13,7 @@ class TemEmpInfoTrmPopUp: UIViewController {
     @IBOutlet weak var lblTname: UILabel!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblPost: UILabel!
+    @IBOutlet weak var btnCancel: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -23,7 +24,8 @@ class TemEmpInfoTrmPopUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnCancel.backgroundColor = EnterpriseColor.btnColor
+        btnCancel.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         lblTname.text = EmpInfoList.tname
         lblName.text = EmpInfoList.name
         lblPost.text = EmpInfoList.name.postPositionText(type: 0, single: true)

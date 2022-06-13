@@ -56,7 +56,7 @@ class SetCmpInfoVC: UIViewController {
     //MARK: override
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         

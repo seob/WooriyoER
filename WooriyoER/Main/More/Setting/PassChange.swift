@@ -22,7 +22,7 @@ class PassChange: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        configureAppearance()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         textPass1.delegate = self
         textPass2.delegate = self
         textPass3.delegate = self

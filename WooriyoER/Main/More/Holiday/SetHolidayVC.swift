@@ -51,9 +51,9 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
         print("\n---------- [ more : \(moreCmpInfo.holiday) , holiday : \(self.holiday)] ----------\n")
         txtDay.delegate = self
         txtTitle.delegate = self
-        btnModify.layer.cornerRadius = 6
-        btnSave.layer.cornerRadius = 6
-        btnYear.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
+        EnterpriseColor.eachLblBtn(btnYear, lblYear)
+        EnterpriseColor.nonLblBtn(btnModify)
         addToolBar(textFields: [txtTitle, txtDay])
         btnNo.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         if addflag {
@@ -73,7 +73,7 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
             print(inputDate)
             switch selRpt {
             case 0:
-                lblNo.textColor = UIColor.black;
+                lblNo.textColor = EnterpriseColor.lblColor
                 lblYear.textColor = UIColor.init(hexString: "#DADADA");
                 
 //                vwNo.shadowColor = UIColor.white;
@@ -88,7 +88,7 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
                 
             case 1:
                 lblNo.textColor = UIColor.init(hexString: "#DADADA");
-                lblYear.textColor = UIColor.black;
+                lblYear.textColor = EnterpriseColor.lblColor
                 
 //                vwNo.shadowColor = UIColor.black;
 //                vwYear.shadowColor = UIColor.white;
@@ -132,11 +132,11 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func clickNo(_ sender: UIButton) {
-        lblNo.textColor = UIColor.black;
-        lblYear.textColor = UIColor.init(hexString: "#DADADA");
-        btnNo.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
-        btnYear.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
+        EnterpriseColor.eachLblBtn(btnNo, lblNo)
         
+        lblYear.textColor = UIColor.init(hexString: "#DADADA");
+        btnYear.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
+        btnYear.layer.cornerRadius = 6
 //        vwNo.shadowColor = UIColor.white;
 //        vwYear.shadowColor = UIColor.black;
         
@@ -151,9 +151,9 @@ class SetHolidayVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func clickYear(_ sender: UIButton) {
         lblNo.textColor = UIColor.init(hexString: "#DADADA");
-        lblYear.textColor = UIColor.black;
-        btnYear.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnNo.layer.cornerRadius = 6
         btnNo.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
+        EnterpriseColor.eachLblBtn(btnYear, lblYear)
         
 //        vwNo.shadowColor = UIColor.black;
 //        vwYear.shadowColor = UIColor.white;

@@ -29,7 +29,7 @@ class AddMemberVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         tblList.delegate = self
         tblList.dataSource = self
         searchbar.delegate = self

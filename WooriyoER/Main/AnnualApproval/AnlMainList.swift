@@ -49,7 +49,8 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        lblWork.textColor = EnterpriseColor.lblColor
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
@@ -81,7 +82,7 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
                 btnWork.isSelected = true
                 btnNotWork.isSelected = false
                 
-                lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+                lblWork.textColor = EnterpriseColor.lblColor
                 lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
                 anlAprArr.removeAll()
                 getAnualList()
@@ -95,7 +96,7 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
                 notitype = ""
                 
                 lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-                lblNotWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+            lblNotWork.textColor = EnterpriseColor.lblColor
             default:
                 clickFlag = true
                 anlAprArr.removeAll()
@@ -103,7 +104,7 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
                 btnWork.isSelected = true
                 btnNotWork.isSelected = false
                 notitype = ""
-                lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+                lblWork.textColor = EnterpriseColor.lblColor
                 lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
         }
         
@@ -134,9 +135,9 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
         btnWork.isSelected = true
         btnNotWork.isSelected = false
         valueSetting()
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        btnWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         btnNotWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         print("\n---------- [ anlAprArr : \(anlAprArr.count) ] ----------\n")
         if anlAprArr.count == 0 {
@@ -159,8 +160,8 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
         valueSetting()
         
         lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        lblNotWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
-        btnNotWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        lblNotWork.textColor = EnterpriseColor.lblColor
+        btnNotWork.backgroundColor = EnterpriseColor.btnColor
         btnWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
         if ApplyArr.count == 0 {
             vwNoApr.isHidden = false

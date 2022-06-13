@@ -11,6 +11,7 @@ import UIKit
 class MasterMgrPopUp: UIViewController {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var btnSave: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -22,6 +23,8 @@ class MasterMgrPopUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lblName.text = selname
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnSave.backgroundColor = EnterpriseColor.btnColor
     }
     
     // FIXME: 팝업창 닫기

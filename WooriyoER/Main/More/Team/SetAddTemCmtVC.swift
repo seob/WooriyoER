@@ -112,8 +112,8 @@ class SetAddTemCmtVC: UIViewController {
     var nSeq = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
-        btnSmallSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
+        EnterpriseColor.nonLblBtn(btnSmallSave)
         textFields = [TextFieldName]
         for textfield in textFields {
             textfield.delegate = self

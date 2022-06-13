@@ -66,8 +66,8 @@ class UdtCmpseal: UIViewController , UIScrollViewDelegate , ProfileViewControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnModify.layer.cornerRadius = 6
-        btnModifysplit.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnModify)
+        EnterpriseColor.nonLblBtn(btnModifysplit)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

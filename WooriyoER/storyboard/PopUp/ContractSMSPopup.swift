@@ -11,9 +11,12 @@ import MessageUI
 
 class ContractSMSPopup: UIViewController,MFMessageComposeViewControllerDelegate {
     
+    @IBOutlet weak var btnOk: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n---------- [ SmsEmpInfo : \(SmsEmpInfo.toJSON()) ] ----------\n")
+        btnOk.backgroundColor = EnterpriseColor.btnColor
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
     }
  
     @IBAction func btnClicked(_ sender: UIButton) {

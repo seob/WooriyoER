@@ -14,6 +14,7 @@ class AflTemVC: UIViewController {
     @IBOutlet weak var lblTTName: UILabel!
     @IBOutlet weak var tblTeamList: UITableView!
     @IBOutlet weak var btnOk: UIButton!
+    @IBOutlet weak var lblOk: UILabel!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -34,7 +35,7 @@ class AflTemVC: UIViewController {
     var selectedArray : [IndexPath] = [IndexPath]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOk.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnOk, lblOk)
         lblTTName.text = tname
         
         tblTeamList.delegate = self

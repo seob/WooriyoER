@@ -45,7 +45,7 @@ class SetAnlVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         if !authorCk(msg: "권한이 없습니다.\n마스터관리자와 최고관리자만 \n변경이 가능합니다.") {
             vwAuthor.isHidden = false
         }

@@ -64,8 +64,8 @@ class MoreVC: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnManual.layer.cornerRadius = 6
-        btnManualWork.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnManual)
+        EnterpriseColor.nonLblBtn(btnManualWork)
         switch deviceHeight() {
         case 1:
             contentHeight.constant = 530

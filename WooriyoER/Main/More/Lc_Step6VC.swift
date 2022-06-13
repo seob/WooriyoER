@@ -55,7 +55,7 @@ class Lc_Step6VC: UIViewController {
     var textFields : [UITextField] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

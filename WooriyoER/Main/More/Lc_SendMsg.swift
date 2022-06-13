@@ -59,7 +59,7 @@ class Lc_SendMsg: UIViewController , NVActivityIndicatorViewable{
             lblNavigationTitle.font = navigationFontSE
         }
         
-        btnSend.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSend)
         btnSend.isEnabled = false
         if viewflagType == "stand_step5" {
             //표준

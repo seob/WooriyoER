@@ -27,7 +27,7 @@ class AprMgrListVC: UIViewController {
     var apr = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
 
         tblList.delegate = self
         tblList.dataSource = self

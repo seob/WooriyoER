@@ -94,7 +94,7 @@ class Ce_AddCmpsealVC: UIViewController, UIScrollViewDelegate  , Ce_ProfileViewC
     override func viewDidLoad() {
         super.viewDidLoad()
         btnWork.backgroundColor = EnterpriseColor.btnColor
-        btnWork.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        lblWork.textColor = EnterpriseColor.lblColor
         EnterpriseColor.nonLblBtn(btnPlus)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE

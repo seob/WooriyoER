@@ -43,7 +43,9 @@ class Lc_empListVC: UIViewController {
         super.viewDidLoad()
         tblList.delegate = self
         tblList.dataSource = self
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
+        lblWork.textColor = EnterpriseColor.lblColor
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         if format == 0 {
             //핀플
             viewflag = "lc_step"
@@ -172,9 +174,9 @@ class Lc_empListVC: UIViewController {
         offShow.isHidden = true
         
         tblList.isHidden = false
-        lblWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
+        lblWork.textColor = EnterpriseColor.lblColor
         lblNotWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        btnWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
         btnNotWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
     }
     
@@ -189,8 +191,8 @@ class Lc_empListVC: UIViewController {
         
         offShow.isHidden = false
         lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-        lblNotWork.textColor = UIColor.rgb(r: 0, g: 0, b: 0)
-        btnNotWork.backgroundColor = UIColor.rgb(r: 252, g: 202, b: 0)
+        lblNotWork.textColor = EnterpriseColor.lblColor
+        btnNotWork.backgroundColor = EnterpriseColor.btnColor
         btnWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
     }
     

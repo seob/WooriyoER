@@ -22,6 +22,7 @@ class SetTime: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnSun: UIButton!
     @IBOutlet weak var swBT: UISwitch!
     @IBOutlet weak var btnOk: UIButton!
+    @IBOutlet weak var lblOk: UILabel!
     
     @IBOutlet weak var vwMainArea: UIView!
     let toggleBT = ToggleSwitch(with: images)
@@ -43,7 +44,7 @@ class SetTime: UIViewController, UITextFieldDelegate {
     var tmpbrktime: Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnOk.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnOk, lblOk)
         btnMon.setImage(UIImage(named: "on_mon"), for: .selected)
         btnMon.setImage(UIImage(named: "off_mon"), for: .normal)
         

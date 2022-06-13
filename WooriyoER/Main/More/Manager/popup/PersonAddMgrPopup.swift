@@ -10,6 +10,7 @@ import UIKit
 
 class PersonAddMgrPopup: UIViewController {
     
+    @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var lblName: UILabel!
      
     
@@ -18,6 +19,8 @@ class PersonAddMgrPopup: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnSave.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnSave.backgroundColor = EnterpriseColor.btnColor
         lblName.text = "'\(name)'을(를)"
     }
     // FIXME: 팝업창 닫기

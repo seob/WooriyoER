@@ -13,6 +13,7 @@ class TemRtrPrcPopUp: UIViewController {
     @IBOutlet weak var lblTname: UILabel!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblPost: UILabel!
+    @IBOutlet weak var btnOut: UIButton!
     
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
@@ -25,6 +26,8 @@ class TemRtrPrcPopUp: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOut.backgroundColor = EnterpriseColor.btnColor
+        btnOut.setTitleColor(EnterpriseColor.lblColor, for: .normal)
         lblTname.text = tname
         lblName.text = name
         lblPost.text = name.postPositionText(type: 0, single: true)

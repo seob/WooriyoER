@@ -50,7 +50,7 @@ class SendMsgVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSend.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSend)
         txtMsg.delegate = self
         addToolBar(textView: txtMsg)
         txtMsg.textContainerInset = UIEdgeInsets(top: 11, left: 10, bottom: 10, right: 10)

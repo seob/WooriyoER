@@ -25,7 +25,7 @@ class SetTemAnlVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         txtField.delegate = self
         addToolBar(textFields: [txtField])
         

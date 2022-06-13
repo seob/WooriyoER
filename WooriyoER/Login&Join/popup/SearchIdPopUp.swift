@@ -11,9 +11,12 @@ import UIKit
 class SearchIdPopUp: UIViewController {
     
     @IBOutlet weak var lblEmail: UILabel!
-       
+    @IBOutlet weak var btnLogin: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnLogin.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnLogin.backgroundColor = EnterpriseColor.btnColor
         lblEmail.text = prefs.value(forKey: "search_email") as? String
     }
     @IBAction func loginClick(_ sender: UIButton) {

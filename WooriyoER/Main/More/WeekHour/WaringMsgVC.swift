@@ -25,7 +25,7 @@ class WaringMsgVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSaveSend.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSaveSend)
         tvMemo.delegate = self
         addToolBar(textView: tvMemo)
         tvMemo.textContainerInset = UIEdgeInsets(top: 11, left: 10, bottom: 10, right: 10)

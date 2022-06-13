@@ -114,7 +114,7 @@ class UserGroupStackedViewController: UIViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnComplete.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnComplete)
         textviews = [TextViewbasepay , TextViewcntnspay , TextViewpstnpay , TextViewhldypay , TextViewbonuspay , TextViewbenefits , TextViewotherVpay , TextViewrsrchsbdypay , TextViewchldexpnspay , TextViewvhclmncstpay , TextViewjobexpnspay , TextViewanualpay ,TextViewnightpay, TextViewadju ]
         addToolBar(textViews: textviews)
         for textView in textviews {

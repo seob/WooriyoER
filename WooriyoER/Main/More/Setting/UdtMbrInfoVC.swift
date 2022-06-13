@@ -54,7 +54,7 @@ class UdtMbrInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnSave)
         imgProfile.layer.cornerRadius = imgProfile.frame.height/2
         imgProfile.layer.borderWidth = 1
         imgProfile.layer.borderColor = UIColor.clear.cgColor

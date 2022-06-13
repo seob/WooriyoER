@@ -23,6 +23,7 @@ class SetAnualOptionVC: UIViewController {
     @IBOutlet weak var lblDay: UILabel!
     
     @IBOutlet weak var DateView: UIView!
+    @IBOutlet weak var btnSave: UIButton!
     var mbrsid = 0
     var cmtmgr = 1 //1월1일
     var aprmgr = 0 //3월1일
@@ -35,6 +36,7 @@ class SetAnualOptionVC: UIViewController {
     var strAnualYear = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        EnterpriseColor.nonLblBtn(btnSave)
         if view.bounds.width == 414 {
             switchYposition = 340
         }else if view.bounds.width == 375 {

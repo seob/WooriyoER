@@ -46,6 +46,7 @@ class TemCmtTimeVC: UIViewController {
     @IBOutlet weak var btnInfoPopC: UIButton!
     @IBOutlet weak var btnInfoPopN: UIButton!
     @IBOutlet weak var btnSave: UIButton!
+    @IBOutlet weak var lblSave: UILabel!
     
     var starttm: String = "09:00"
     var endtm: String = "18:00"
@@ -78,7 +79,7 @@ class TemCmtTimeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnSave.layer.cornerRadius = 6
+        EnterpriseColor.eachLblBtn(btnSave, lblSave)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

@@ -77,7 +77,7 @@ class Lc_Default_Step4VC: UIViewController {
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         setUi()
         setNotification()
         addToolBar(textViews: [firstTextView , twoTextView , threeTextView , fourTextView])

@@ -58,7 +58,7 @@ class StepdayVC: UIViewController , NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("\n---------- [ viewDidLoad ] ----------\n")
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }

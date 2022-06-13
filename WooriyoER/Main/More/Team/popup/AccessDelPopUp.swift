@@ -10,9 +10,12 @@ import UIKit
 
 class AccessDelPopUp: UIViewController {
     var empInfo = HomeCmtAreaInfo()
+    @IBOutlet weak var btnOk: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnOk.setTitleColor(EnterpriseColor.lblColor, for: .normal)
+        btnOk.backgroundColor = EnterpriseColor.btnColor
         homeselsid = empInfo.sid
         // Do any additional setup after loading the view.
     }

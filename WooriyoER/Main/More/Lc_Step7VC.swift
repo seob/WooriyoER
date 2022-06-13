@@ -23,7 +23,7 @@ class Lc_Step7VC: UIViewController {
     let SlyType : [String] = ["월급" , "연봉" , "시급"] 
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnNext.layer.cornerRadius = 6
+        EnterpriseColor.nonLblBtn(btnNext)
         if SE_flag {
             lblNavigationTitle.font = navigationFontSE
         }
