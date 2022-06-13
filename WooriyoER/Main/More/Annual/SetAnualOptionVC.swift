@@ -36,7 +36,6 @@ class SetAnualOptionVC: UIViewController {
     var strAnualYear = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        EnterpriseColor.nonLblBtn(btnSave)
         if view.bounds.width == 414 {
             switchYposition = 340
         }else if view.bounds.width == 375 {
