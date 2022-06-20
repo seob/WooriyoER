@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,  CLLocationManagerDelegat
     var backgroundState: Bool = false
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        
+        sleep(3)
         if #available(iOS 13.0, *) {
             self.window?.overrideUserInterfaceStyle = .light
         }

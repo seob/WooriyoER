@@ -66,7 +66,8 @@ class TotalAnualaprListVC: UIViewController , NVActivityIndicatorViewable {
     var disposeBag: DisposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        EnterpriseColor.eachLblBtn(btnWork, lblWork)
+        btnWork.backgroundColor = EnterpriseColor.btnColor
+        lblWork.textColor = EnterpriseColor.lblColor
         
         tblList.delegate = self
         tblList.dataSource = self
