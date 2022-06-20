@@ -94,9 +94,10 @@ class AnlMainList: UIViewController, NVActivityIndicatorViewable {
                 btnWork.isSelected = false
                 btnNotWork.isSelected = true
                 notitype = ""
-                
+                btnWork.backgroundColor = UIColor.rgb(r: 247, g: 247, b: 250)
+                btnNotWork.backgroundColor = EnterpriseColor.btnColor
                 lblWork.textColor = UIColor.rgb(r: 203, g: 203, b: 211)
-            lblNotWork.textColor = EnterpriseColor.lblColor
+                lblNotWork.textColor = EnterpriseColor.lblColor
             default:
                 clickFlag = true
                 anlAprArr.removeAll()
