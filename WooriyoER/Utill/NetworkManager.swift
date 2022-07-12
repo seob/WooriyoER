@@ -1190,6 +1190,112 @@ class NetworkManager {
         }
         dataTask.resume()
     }
+    // MARK: 관리자가 직원 근무기록 직접 입력 - 2022-07-05 출장 및 근로시간 추가
+    /**
+     관리자가 직원 근무기록 직접 입력 - 출장 및 근로시간 추가
+     - parameter empsid:        직원번호
+     - parameter sdt:            근무 시작일자(형식 : 2019-10-10 09:10) .. URL 인코딩
+     - parameter edt:            근무 종료일자.. 종료일자는 시작일자보다 큰 시간이어야 함(형식 : 2019-10-10 18:20) .. URL 인코딩
+     - parameter memo:           메모.. URL 인코딩    2021-07-26 추가
+     - parameter type:  1.정상출근 2.지각 3.조퇴 4.야근 5.휴일근로 6.출장 7.외출 8.연차 9.결근
+     - parameter usemin:    신청시간 분단위
+     - returns: 성공:1, 실패:0, 시간중복 : -1
+     */
+    func Ins_cmtmgrNew(empsid: Int, sdt: String, edt: String, memo:String, ntype:Int, usemin:Int,  completion: @escaping (_ success:Bool ,_ resCode:Int) ->()) {
+        let url = URL(string: "\(API.baseURL)ios/m/ins_cmtmgrNew.jsp")
+        let config = URLSessionConfiguration.default
+        config.httpAdditionalHeaders = [
+            "Accept" : "application/json",
+            "Content-Type" : "application/x-www-form-urlencoded"
+        ]
+
+        let defaultSession = URLSession(configuration: config)
+
+        var request = URLRequest(url: url!)
+        request.encodeParameters(parameters: [
+            "EMPSID"    :  "\(empsid)",
+            "SDT"      : "\(sdt)",
+            "EDT"       : "\(edt)",
+            "MEMO"      : memo,
+            "TYPE"       : "\(ntype)",
+            "UTM"       : "\(usemin)"
+            ]
+        )
+        // dataTask
+        let dataTask = defaultSession.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+            // getting Data Error
+            guard error == nil else {
+                print("Error occur: \(String(describing: error))")
+                completion(false , 0)
+                return
+            }
+
+            guard let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completion(false , 0)
+                return
+            }
+
+            do {
+                let res = try JSONDecoder().decode(Response.self, from: data)
+                completion(true , res.result)
+            } catch {
+                completion(false , 0)
+            }
+        }
+        dataTask.resume()
+    }
+    
+    // MARK: 관리자가 직원 결근기록 직접 입력 - 결근으로 등록됨
+    /**
+     관리자가 직원 결근기록 직접 입력 - 결근으로 등록됨
+     - parameter empsid:        직원번호
+     - parameter sdt:            근무 시작일자(형식 : 2019-10-10 09:10) .. URL 인코딩
+     - parameter edt:            근무 종료일자.. 종료일자는 시작일자보다 큰 시간이어야 함(형식 : 2019-10-10 18:20) .. URL 인코딩
+     - parameter memo:           메모.. URL 인코딩    2021-07-26 추가
+     - returns: 성공:1, 실패:0, 시간중복 : -1
+     */
+    func Ins_cmtmgrAbs(empsid: Int, sdt: String, edt: String, memo:String, completion: @escaping (_ success:Bool ,_ resCode:Int) ->()) {
+        let url = URL(string: "\(API.baseURL)ios/m/ins_cmtmgrgabs.jsp")
+        let config = URLSessionConfiguration.default
+        config.httpAdditionalHeaders = [
+            "Accept" : "application/json",
+            "Content-Type" : "application/x-www-form-urlencoded"
+        ]
+
+        let defaultSession = URLSession(configuration: config)
+
+        var request = URLRequest(url: url!)
+        print("\n---------- [ request : \(request) ] ----------\n")
+        request.encodeParameters(parameters: [
+            "EMPSID"    :  "\(empsid)",
+            "SDT"      : "\(sdt)",
+            "EDT"       : "\(edt)",
+            "MEMO"   : memo
+            ]
+        )
+        // dataTask
+        let dataTask = defaultSession.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+            // getting Data Error
+            guard error == nil else {
+                print("Error occur: \(String(describing: error))")
+                completion(false , 0)
+                return
+            }
+
+            guard let data = data, let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completion(false , 0)
+                return
+            }
+
+            do {
+                let res = try JSONDecoder().decode(Response.self, from: data)
+                completion(true , res.result)
+            } catch {
+                completion(false , 0)
+            }
+        }
+        dataTask.resume()
+    }
     
     // MARK: 관리자가 직원 근무기록 직접 수정
     /**

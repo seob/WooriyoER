@@ -34,12 +34,17 @@ class PayVC: UIViewController {
     
     @IBOutlet weak var lblStorePin: UILabel!
     @IBOutlet weak var lblFicalPin: UILabel!
+    
+    @IBOutlet weak var lblDisplayAnualDate: UILabel!
+    @IBOutlet weak var btnDisplayAnual: UIButton!
+    
     var bannerM = 0
     var bannner = 0
     var cmtonoff = 0
     var cmtListonoff = 0
     var ficaloff = 0
     var storageoff = 0
+    var displayanualoff = 0
     
     let extensiomimg = UIImage(named: "extension_btn_none")
     override func viewDidLoad() {
@@ -67,6 +72,7 @@ class PayVC: UIViewController {
         btnCmtList.addTarget(self, action: #selector(cmtListAction(_:)), for: .touchUpInside)
         btnFiical.addTarget(self, action: #selector(ficalAction(_:)), for: .touchUpInside)
         btnStorage.addTarget(self, action: #selector(storageAction(_:)), for: .touchUpInside)
+        btnDisplayAnual.addTarget(self, action: #selector(changeDiaplayAnual(_:)), for: .touchUpInside)
     }
     
     
@@ -150,6 +156,11 @@ class PayVC: UIViewController {
                 btnStorage.setBackgroundImage(extensiomimg, for: .normal)
                 lblStorageDate.isHidden = true
                 
+                //근로자 연차 노출설정
+                displayanualoff = 1
+                btnDisplayAnual.setTitle("FREE", for: .normal)
+                btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                lblDisplayAnualDate.isHidden = true
                 
                 lblBannerMPin.text = "\(PayTypeKoArray[moreCmpInfo.freetype])"
                 lblCmtPin.text = "\(PayTypeKoArray[moreCmpInfo.freetype])"
@@ -305,7 +316,28 @@ class PayVC: UIViewController {
                     btnStorage.setBackgroundImage(swOffimg, for: .normal)
                     lblStorageDate.isHidden = true
                 }
-                
+                //근로자 연차 노출 설정
+                if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                    displayanualoff = 1
+                    btnDisplayAnual.setTitle("연장", for: .normal)
+                    btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                    lblDisplayAnualDate.isHidden = false
+                    let orimulti = setJoinDate2(timeStamp: CompanyInfo.displayAualDate)
+                    let str = orimulti.replacingOccurrences(of: "-", with: ".")
+                    let start = str.index(str.startIndex, offsetBy: 2)
+                    let end = str.index(before: str.endIndex)
+                    let multiDate = str[start...end]
+                    if SE_flag {
+                        lblDisplayAnualDate.text = "\(multiDate)"
+                    }else{
+                        lblDisplayAnualDate.text = "종료일 \(multiDate)"
+                    }
+                }else{
+                    displayanualoff = 0
+                    btnDisplayAnual.setTitle("", for: .normal)
+                    btnDisplayAnual.setBackgroundImage(swOffimg, for: .normal)
+                    lblDisplayAnualDate.isHidden = true
+                }
             }
         case 2:
             //   펀프리
@@ -385,6 +417,12 @@ class PayVC: UIViewController {
                 btnStorage.setBackgroundImage(extensiomimg, for: .normal)
                 lblStorageDate.isHidden = true
                 
+                //근로자 연차 노출설정
+                displayanualoff = 1
+                btnDisplayAnual.setTitle("FREE", for: .normal)
+                btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                lblDisplayAnualDate.isHidden = true
+                
                 lblBannerMPin.text = "\(PayTypeKoArray[moreCmpInfo.freetype])"
                 lblCmtPin.text = "\(PayTypeKoArray[moreCmpInfo.freetype])"
                 lblCmtListPin.text = "\(PayTypeKoArray[moreCmpInfo.freetype])"
@@ -538,6 +576,29 @@ class PayVC: UIViewController {
                     btnStorage.setTitle("", for: .normal)
                     btnStorage.setBackgroundImage(swOffimg, for: .normal)
                     lblStorageDate.isHidden = true
+                }
+                
+                //근로자 연차 노출 설정
+                if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                    displayanualoff = 1
+                    btnDisplayAnual.setTitle("연장", for: .normal)
+                    btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                    lblDisplayAnualDate.isHidden = false
+                    let orimulti = setJoinDate2(timeStamp: CompanyInfo.displayAualDate)
+                    let str = orimulti.replacingOccurrences(of: "-", with: ".")
+                    let start = str.index(str.startIndex, offsetBy: 2)
+                    let end = str.index(before: str.endIndex)
+                    let multiDate = str[start...end]
+                    if SE_flag {
+                        lblDisplayAnualDate.text = "\(multiDate)"
+                    }else{
+                        lblDisplayAnualDate.text = "종료일 \(multiDate)"
+                    }
+                }else{
+                    displayanualoff = 0
+                    btnDisplayAnual.setTitle("", for: .normal)
+                    btnDisplayAnual.setBackgroundImage(swOffimg, for: .normal)
+                    lblDisplayAnualDate.isHidden = true
                 }
             }
         case 1 :
@@ -691,6 +752,29 @@ class PayVC: UIViewController {
                 btnStorage.setBackgroundImage(swOffimg, for: .normal)
                 lblStorageDate.isHidden = true
             }
+            
+            //근로자 연차 노출 설정
+            if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                displayanualoff = 1
+                btnDisplayAnual.setTitle("연장", for: .normal)
+                btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                lblDisplayAnualDate.isHidden = false
+                let orimulti = setJoinDate2(timeStamp: CompanyInfo.displayAualDate)
+                let str = orimulti.replacingOccurrences(of: "-", with: ".")
+                let start = str.index(str.startIndex, offsetBy: 2)
+                let end = str.index(before: str.endIndex)
+                let multiDate = str[start...end]
+                if SE_flag {
+                    lblDisplayAnualDate.text = "\(multiDate)"
+                }else{
+                    lblDisplayAnualDate.text = "종료일 \(multiDate)"
+                }
+            }else{
+                displayanualoff = 0
+                btnDisplayAnual.setTitle("", for: .normal)
+                btnDisplayAnual.setBackgroundImage(swOffimg, for: .normal)
+                lblDisplayAnualDate.isHidden = true
+            }
         default:
              
             //관리자앱 배너
@@ -842,6 +926,29 @@ class PayVC: UIViewController {
                 btnStorage.setBackgroundImage(swOffimg, for: .normal)
                 lblStorageDate.isHidden = true
             }
+            
+            //근로자 연차 노출 설정
+            if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                displayanualoff = 1
+                btnDisplayAnual.setTitle("연장", for: .normal)
+                btnDisplayAnual.setBackgroundImage(extensiomimg, for: .normal)
+                lblDisplayAnualDate.isHidden = false
+                let orimulti = setJoinDate2(timeStamp: CompanyInfo.displayAualDate)
+                let str = orimulti.replacingOccurrences(of: "-", with: ".")
+                let start = str.index(str.startIndex, offsetBy: 2)
+                let end = str.index(before: str.endIndex)
+                let multiDate = str[start...end]
+                if SE_flag {
+                    lblDisplayAnualDate.text = "\(multiDate)"
+                }else{
+                    lblDisplayAnualDate.text = "종료일 \(multiDate)"
+                }
+            }else{
+                displayanualoff = 0
+                btnDisplayAnual.setTitle("", for: .normal)
+                btnDisplayAnual.setBackgroundImage(swOffimg, for: .normal)
+                lblDisplayAnualDate.isHidden = true
+            }
         }
     }
     
@@ -989,6 +1096,34 @@ class PayVC: UIViewController {
             self.present(vc, animated: false, completion: nil)
         }
         
+    }
+    
+    //근로자 연차 노출
+    @objc func changeDiaplayAnual(_ sender: UIButton){
+        switch moreCmpInfo.freetype {
+        case 2,3:
+            // 올프리 , 펀프리
+            if moreCmpInfo.freedt >= muticmttodayDate() {
+                print("\n---------- [ 올프리 , 펀프리  ] ----------\n")
+            }else{
+                let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .overFullScreen
+                viewflag = "moreEextension"
+                vc.checkEextension = displayanualoff
+                vc.payType = 6
+                self.present(vc, animated: false, completion: nil)
+            }
+        default:
+            //핀프리 , 사용안함
+            let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .overFullScreen
+            viewflag = "moreEextension"
+            vc.checkEextension = displayanualoff
+            vc.payType = 6
+            self.present(vc, animated: false, completion: nil)
+        }
     }
     
     @IBAction func barBack(_ sender: UIButton) {

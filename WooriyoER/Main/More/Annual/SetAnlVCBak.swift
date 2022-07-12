@@ -28,6 +28,15 @@ class SetAnlVC: UIViewController {
     @IBOutlet weak var switchImageView2: UIImageView!
     @IBOutlet weak var btnSave: UIButton!
     
+    
+    @IBOutlet weak var vwAllAnual: UIView!
+    @IBOutlet weak var vwTeamAnual: UIView!
+    @IBOutlet weak var btnDisplayAllAnual: UIButton!
+    @IBOutlet weak var btnDisplayTeamAnual: UIButton!
+    @IBOutlet weak var switchImageViewAllAnual: UIImageView!
+    @IBOutlet weak var switchImageViewTeamAnual: UIImageView!
+    @IBOutlet weak var btnDisplayAnualExtension: UIButton!
+    @IBOutlet weak var lblAnualDate: UILabel! //근로자 연차 노출 날짜
     let urlClass = UrlClass()
     let httpRequest = HTTPRequest()
     
@@ -43,6 +52,8 @@ class SetAnlVC: UIViewController {
     var switchYposition:CGFloat = 0
     var switchXposition:CGFloat = 0
     
+    var stAllAnual = 0 // 1 회사전체 , 0 팀별보기 default 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         EnterpriseColor.nonLblBtn(btnSave)
@@ -54,7 +65,7 @@ class SetAnlVC: UIViewController {
             lblNavigationTitle.font = navigationFontSE
         }
         
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: .reloadDispalyAnual, object: nil)
         if moreCmpInfo.stanual == 0 {
             let splitArr = moreCmpInfo.stanualyear.split(separator: "-")
 //            lblFicalYear.text = "(\(splitArr[0])월 \(splitArr[1])일)"
@@ -103,8 +114,44 @@ class SetAnlVC: UIViewController {
         btnSetting.addTarget(self, action: #selector(setAnualOption(_:)), for: .touchUpInside)
         btnAnual.addTarget(self, action: #selector(changeFicalValue(_:)), for: .touchUpInside)
         btnAnualYear.addTarget(self, action: #selector(changeFicalValue2(_:)), for: .touchUpInside)
+        btnDisplayAnualExtension.addTarget(self, action: #selector(updateExtensionAnual(_:)), for: .touchUpInside)
     }
   
+    // MARK: reloadTableData
+    @objc func reloadTableData(_ notification: Notification) {
+        if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+            btnDisplayAnualExtension.isHidden = false
+            lblAnualDate.isHidden = false
+            let orimulti = setJoinDate2(timeStamp: moreCmpInfo.displayAualDate)
+            let str = orimulti.replacingOccurrences(of: "-", with: ".")
+            let start = str.index(str.startIndex, offsetBy: 2)
+            let end = str.index(before: str.endIndex)
+            let multiDate = str[start...end]
+            lblAnualDate.text = "종료일 \(multiDate)"
+        }else{
+            btnDisplayAnualExtension.isHidden = true
+            lblAnualDate.isHidden = true
+        }
+        self.view.layoutIfNeeded()
+    }
+    
+    func CmpinfoUpdate() {
+        NetworkManager.shared().getCmpInfo(cmpsid: userInfo.cmpsid) { (isSuccess, errCode, resData) in
+            if(isSuccess){
+                if errCode == 1 {
+                    guard let serverData = resData else { return }
+                    moreCmpInfo = serverData
+                    CompanyInfo = moreCmpInfo
+                    self.setUi()
+                }else{
+                    self.toast("다시 시도해 주세요.")
+                }
+            }else{
+                self.toast("다시 시도해 주세요.")
+            }
+        }
+    }
+    
     func checkEextension() {
         switch moreCmpInfo.freetype {
         case 2,3:
@@ -134,7 +181,35 @@ class SetAnlVC: UIViewController {
         }
         
     }
-    
+    //근로자 연차 노출 연장
+    @IBAction func DisplayAnualExtension(_ sender: UIButton) {
+        switch moreCmpInfo.freetype {
+        case 2,3:
+            if moreCmpInfo.freedt >= muticmttodayDate() {
+                print("\n---------- [올프리 , 펀프리 ] ----------\n")
+            }else{
+                if ismulticmtarea {
+                    let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+                    vc.modalTransitionStyle = .crossDissolve
+                    vc.modalPresentationStyle = .overFullScreen
+                    viewflag = "setDiaplayAnual"
+                    vc.checkEextension = 0
+                    vc.payType = 6
+                    self.present(vc, animated: false, completion: nil)
+                }
+            }
+        default:
+            if ismulticmtarea {
+                let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .overFullScreen
+                viewflag = "setDiaplayAnual"
+                vc.checkEextension = 1
+                vc.payType = 6
+                self.present(vc, animated: false, completion: nil)
+            }
+        }
+    }
     
     @objc func changeFicalValue(_ sender: UIButton){
         sender.isSelected = !sender.isSelected
@@ -258,6 +333,70 @@ class SetAnlVC: UIViewController {
 //            }
 //        }
     }
+    @objc func updateExtensionAnual(_ sender:UIButton){
+        let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+        viewflag = "setDiaplayAnual"
+        if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+            vc.checkEextension = 1
+        }else{
+            vc.checkEextension = 0
+        }
+        vc.payType = 6
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    //근로자 연차 노출 설정 회사전체
+    @IBAction func displayAllAnualList(_ sender: UIButton){
+        stAllAnual = 1
+        switchImageViewAllAnual.image = UIImage(named: "btn_switch_on")
+        switchImageViewTeamAnual.image = UIImage(named: "y_btn_off")
+    }
+    
+    //근로자 연차 노출 설정 팀별
+    @IBAction func displayTeamAnualList(_ sender: UIButton){
+        stAllAnual = 0
+        switch moreCmpInfo.freetype {
+        case 2,3:
+            if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                switchImageViewAllAnual.image = UIImage(named: "btn_switch_off")
+                switchImageViewTeamAnual.image = UIImage(named: "y_btn")
+            }else{
+
+                stAllAnual = 0
+                let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .overFullScreen
+                viewflag = "setDiaplayAnual"
+                if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                    vc.checkEextension = 1
+                }else{
+                    vc.checkEextension = 0
+                }
+                vc.payType = 6
+                self.present(vc, animated: false, completion: nil)
+
+            }
+        default:
+            if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                switchImageViewAllAnual.image = UIImage(named: "btn_switch_off")
+                switchImageViewTeamAnual.image = UIImage(named: "y_btn")
+            }else{
+                let vc = MoreSB.instantiateViewController(withIdentifier: "MulticmtPopVC") as! MulticmtPopVC
+                vc.modalTransitionStyle = .crossDissolve
+                vc.modalPresentationStyle = .overFullScreen
+                viewflag = "setDiaplayAnual"
+                if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+                    vc.checkEextension = 1
+                }else{
+                    vc.checkEextension = 0
+                }
+                vc.payType = 6
+                self.present(vc, animated: false, completion: nil)
+            }
+        }
+    }
     
     func  setlayOut(){
         if anualddctn1 == 1 {
@@ -319,22 +458,98 @@ class SetAnlVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setUi()
+//        cmpsid = userInfo.cmpsid
+//        stAnual = moreCmpInfo.stanual
+//
+//        if stAnual > 0 {
+//            stAnual = 1
+//            btnSetting.isEnabled = false
+//            switchImageView1.image = switchOnImgFree
+//            switchImageView2.image = switchOffImgFree
+//
+//
+//        }else{
+//            stAnual = 0
+//            switchImageView1.image = UIImage(named: "btn_switch_off")
+//            switchImageView2.image = UIImage(named: "y_btn")
+//            btnSetting.isEnabled = true
+//        }
+//
+//        anualddctn1 = moreCmpInfo.anualddctn1
+//        anualddctn2 = moreCmpInfo.anualddctn2
+//        anualddctn3 = moreCmpInfo.anualddctn3
+//
+//        if anualddctn1 == 1 {
+//            swAd1.isOn = true
+//            toggleAd1.setOn(on: true, animated: true)
+//        }else {
+//            swAd1.isOn = false
+//            toggleAd1.setOn(on: false, animated: true)
+//        }
+//
+//        if anualddctn2 == 1 {
+//            swAd2.isOn = true
+//            toggleAd2.setOn(on: true, animated: true)
+//        }else {
+//            swAd2.isOn = false
+//            toggleAd2.setOn(on: false, animated: true)
+//        }
+//
+//        if anualddctn3 == 1 {
+//            swAd3.isOn = true
+//            toggleAd3.setOn(on: true, animated: true)
+//        }else {
+//            swAd3.isOn = false
+//            toggleAd3.setOn(on: false, animated: true)
+//        }
+//
+//
         
+        getCmpinfo()
+    }
+    
+    fileprivate func setUi(){
         cmpsid = userInfo.cmpsid
         stAnual = moreCmpInfo.stanual
-        
+        stAllAnual = moreCmpInfo.stDiaplayAnual
+        print("\n---------- [ stAllAnual : \(moreCmpInfo.stDiaplayAnual) ] ----------\n")
         if stAnual > 0 {
             stAnual = 1
             btnSetting.isEnabled = false
             switchImageView1.image = switchOnImgFree
             switchImageView2.image = switchOffImgFree
-            
- 
         }else{
             stAnual = 0
             switchImageView1.image = UIImage(named: "btn_switch_off")
             switchImageView2.image = UIImage(named: "y_btn")
             btnSetting.isEnabled = true
+        }
+        
+        if stAllAnual > 0 {
+            stAllAnual = 1
+            switchImageViewAllAnual.image = switchOnImgFree
+            switchImageViewTeamAnual.image = UIImage(named: "y_btn_off")
+            btnDisplayAnualExtension.isHidden = true
+        }else{
+            stAllAnual = 0
+            switchImageViewAllAnual.image = UIImage(named: "btn_switch_off")
+            switchImageViewTeamAnual.image = UIImage(named: "y_btn")
+            btnDisplayAnualExtension.isHidden = false
+        }
+        
+        if moreCmpInfo.displayAualDate >= muticmttodayDate() {
+            btnDisplayAnualExtension.isHidden = false
+            lblAnualDate.isHidden = false
+            let orimulti = setJoinDate2(timeStamp: moreCmpInfo.displayAualDate)
+            let str = orimulti.replacingOccurrences(of: "-", with: ".")
+            let start = str.index(str.startIndex, offsetBy: 2)
+            let end = str.index(before: str.endIndex)
+            let multiDate = str[start...end]
+            lblAnualDate.text = "종료일 \(multiDate)"
+        }else{
+            btnDisplayAnualExtension.isHidden = true
+            lblAnualDate.isHidden = true
         }
         
         anualddctn1 = moreCmpInfo.anualddctn1
@@ -364,10 +579,6 @@ class SetAnlVC: UIViewController {
             swAd3.isOn = false
             toggleAd3.setOn(on: false, animated: true)
         }
-        
- 
-        
-        getCmpinfo()
     }
     
     fileprivate func getCmpinfo(){
