@@ -62,6 +62,50 @@ extension UIViewController {
         return diff
     }
     
+    //연차시간추가로
+    func getDiffNew(_ strStartDt: String, _ strEndDt: String,  _ strStartTm: String , _ strEndTm: String) -> Int {
+        var diff = 0
+        let calendar = Calendar.current
+        let dateFormatter = DateFormatter()
+        let today = Date()
+        dateFormatter.dateFormat = "yyyy.MM.dd HH:mm"
+        print("\n---------- [ strStartDt : \(strStartDt) , strEndDt : \(strEndDt) , strStartTm : \(strStartTm) , strEndTm : \(strEndTm)  ] ----------\n")
+        let start = strStartDt + " " + strStartTm
+        let end = strEndDt + " " + strEndTm
+        let tmpStartDt = dateFormatter.date(from: start)
+        let tmpEndDt = dateFormatter.date(from: end)
+        print("\n---------- [ tmpStartDt : \(tmpStartDt) , tmpEndDt : \(tmpEndDt)] ----------\n")
+        let startArr = strStartTm.components(separatedBy: ":")
+        let selHour: Int  = Int(startArr[0]) ?? 0
+        let selMin:Int  = Int(startArr[1]) ?? 0
+        
+        let endArr = strEndTm.components(separatedBy: ":")
+        let endHour: Int  = Int(endArr[0]) ?? 0
+        let endMin:Int  = Int(endArr[1]) ?? 0
+        
+        guard let calStart = calendar.date(bySettingHour: selHour, minute: selMin, second: 0, of: tmpStartDt ?? today) else { return 0}
+        guard let calEnd = calendar.date(bySettingHour: endHour, minute: endMin, second: 0, of: tmpEndDt ?? today) else { return 0 }
+        print("\n---------- [ calStart : \(calStart) , calEnd : \(calEnd)] ----------\n")
+  
+        
+        let unixTime = calStart.timeIntervalSince1970
+        let unixTime2 = calEnd.timeIntervalSince1970
+        let oriWorkingTimeForMic = Int(unixTime2 - unixTime)
+        diff = oriWorkingTimeForMic / 60
+//        diff = oriWorkingTimeForMic / (60 * 60 * 1000)
+//                   let oriCal_rest  = oriWorkingTimeForMic % (60 * 60 * 1000)
+//                                       let oriCal_min = oriCal_rest / (60 * 1000)
+        
+        
+//        print("\n---------- [ oriCal_rest : \(oriCal_rest) , oriCal_min : \(oriCal_min)] ----------\n")
+//
+//        diff = Int(calStart.timeIntervalSince1970 - calEnd.timeIntervalSince1970)
+//        diff = diff / (60*1000)
+        
+        print("\n---------- [ diff : \(diff) ] ----------\n")
+        return diff
+    }
+    
     func getValidTm(_ strStartTm:String , _ strEndTm: String) -> Bool {
         var bValid : Bool = false
         //        //날짜비교    (calStart > calEnd 인경우 1리턴)
@@ -692,6 +736,9 @@ extension Notification.Name {
     static let IAPHelperRestoreNotificationInapp = Notification.Name("IAPHelperRestoreNotificationInapp")
     static let IAPHelperFailNotificationInapp = Notification.Name("IAPHelperFailNotificationInapp")
     
+    static let reloadDispalyAnual = Notification.Name("reloadDispalyAnual")
+    
+    static let reloadAddAnual = Notification.Name("reloadAddAnual")
 }
 
 extension String {

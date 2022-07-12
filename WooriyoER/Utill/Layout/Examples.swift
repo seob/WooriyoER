@@ -250,6 +250,31 @@ func getMinTohm(_ nDistance: Int) -> String {
     return strbDhm
 }
 
+//분을 4h 40m 으로 환산 ( 연차신청시간에서 사용하기 위해 2022-07-05)
+func getMinTohmNew(_ nDistance: Int) -> (Int , Int) {
+    var strHour: Int = 0
+    var strMin: Int = 0
+    if (nDistance == 0) {
+        strHour = 0
+    } else {
+        var nHour = 0
+        var nMin = 0
+        nHour = (nDistance) / 60
+        nMin = (nDistance) % 60
+        
+        if (nMin != 0){
+            
+            strHour = nHour
+            strMin = nMin
+        } else {
+            strHour = nHour
+            strMin = 0
+        }
+    }
+    return (strHour , strMin)
+}
+
+
 // MARK: - 숫자 콤마
 func DecimalWon(value: Int) -> String{
     let numberFormatter = NumberFormatter()

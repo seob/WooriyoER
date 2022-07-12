@@ -97,6 +97,9 @@ class CmpInfo: Mappable {
     var stanual : Int = 0 // 입사일 기준 설정 ( 1 : 입사일 기준 , 0:회계년도 기준 ) deault 1
     var ficalyear: String = "" //회계년도 복수설정 유효일자(월유료)
     
+    var stDiaplayAnual : Int = 0 // 근로자 연차 노출 설정 ( 1 : 회사전체 , 0:팀별 ) deault 1
+    var displayAualDate: String = "" //근로자 연차 노출 유효일자(월유료)
+    
     var datalimits: String = "" // 데이터 보관 유효일자 추가 2021.12.16
     var notice : String = "" //사내공지 종료일자(2022-02-12 추가)
     var cmtlt:Int = 0 //자동퇴근기록 설정 (1. 출근시간으로 자동기록 , 2.회사퇴근시간으로 자동기록, 3.자동 퇴근기록 사용안함 default 1) 2022.01.10 추가
@@ -149,5 +152,7 @@ class CmpInfo: Mappable {
         datalimits    <- map["datalimits"]
         cmtlt    <- map["cmtLt"]
         notice    <- map["notice"]
+        stDiaplayAnual    <- map["stDAnual"]
+        displayAualDate    <- map["displayAualDate"]
     }
 }

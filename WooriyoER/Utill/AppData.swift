@@ -72,6 +72,9 @@ let imagesFreeFical = ToggleSwitchImages(baseOnImage: UIImage(named: "y_btn")!,
                                          thumbOffImage: UIImage(named: "y_btn_off")!)
 
 
+var anlType: Int = 0
+let anlTuple = ["연차", "오전 반차", "오후 반차", "조퇴", "외출", "병가", "공가", "경조", "교육 및 훈련", "포상휴가", "공민권행사", "여성휴가"]
+
 
 // MARK: - color
 let customBlue = UIColor.init(hexString: "#043856").cgColor // 진한 블루
@@ -325,17 +328,7 @@ extension String {
     }
 }
 
-extension Date {
-    func toString() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormatter.timeZone = TimeZone(identifier: "UTC")
-        return
-        dateFormatter.string(from: self)
-    }
-}
-
-//MARK: 버튼 컬러 지정
+//MARK: 버튼 컬러 지정 (엔터프라이즈 용)
 class EnterpriseColor {
     //변경할 곳
     //1.버튼 색깔
